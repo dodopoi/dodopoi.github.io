@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>天赋点 on Show me the code.</title>
+    <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/</link>
+    <description>Recent content in 天赋点 on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Wed, 03 Jan 2024 20:35:27 +0800</lastBuildDate><atom:link href="https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICEM CFD处理多维模型</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 03 Jan 2024 20:35:27 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
+      <description>&lt;p&gt;模型处理&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ET模型网格划分</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</link>
+      <pubDate>Tue, 17 Oct 2023 10:03:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</guid>
+      <description>&lt;p&gt;通过ICEM对ET模型进行网格划分&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>NX1847安装使用</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 23 Aug 2023 23:54:05 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;NX1847安装使用教程记录。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python学习笔记之语言程序设计</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Fri, 29 Jul 2022 13:33:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;python语言程序设计学习&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python IDLE配色设置</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Fri, 29 Jul 2022 12:33:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;p&gt;idle糖果配色&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分类 on Show me the code.</title>
+    <link>https://ziyue.tech/categories/</link>
+    <description>Recent content in 分类 on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Wed, 05 Jun 2024 18:41:27 +0800</lastBuildDate><atom:link href="https://ziyue.tech/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>游戏</title>
+      <link>https://ziyue.tech/categories/%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Wed, 05 Jun 2024 18:41:27 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E6%B8%B8%E6%88%8F/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>驱动</title>
+      <link>https://ziyue.tech/categories/%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Wed, 05 Jun 2024 17:30:36 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E9%A9%B1%E5%8A%A8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>折腾</title>
+      <link>https://ziyue.tech/categories/%E6%8A%98%E8%85%BE/</link>
+      <pubDate>Fri, 17 May 2024 19:39:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E6%8A%98%E8%85%BE/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>网格划分</title>
+      <link>https://ziyue.tech/categories/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</link>
+      <pubDate>Wed, 03 Jan 2024 20:35:27 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>软件</title>
+      <link>https://ziyue.tech/categories/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Wed, 23 Aug 2023 23:54:05 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>读点书</title>
+      <link>https://ziyue.tech/categories/%E8%AF%BB%E7%82%B9%E4%B9%A6/</link>
+      <pubDate>Mon, 19 Jun 2023 15:47:43 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/%E8%AF%BB%E7%82%B9%E4%B9%A6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://ziyue.tech/categories/code/</link>
+      <pubDate>Fri, 29 Jul 2022 13:33:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/categories/code/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

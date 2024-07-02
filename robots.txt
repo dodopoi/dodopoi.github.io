@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ziyue.tech/sitemap.xml

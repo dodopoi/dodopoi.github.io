@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件 on Show me the code.</title>
+    <link>https://ziyue.tech/categories/%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 软件 on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Wed, 23 Aug 2023 23:54:05 +0800</lastBuildDate><atom:link href="https://ziyue.tech/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NX1847安装使用</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 23 Aug 2023 23:54:05 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;NX1847安装使用教程记录。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mac下通过ClashX实现全局透明代理</title>
+      <link>https://ziyue.tech/posts/clash%E6%97%81%E8%B7%AF/</link>
+      <pubDate>Tue, 27 Jun 2023 09:42:46 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/clash%E6%97%81%E8%B7%AF/</guid>
+      <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

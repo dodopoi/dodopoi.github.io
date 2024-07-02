@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>折腾 on Show me the code.</title>
+    <link>https://ziyue.tech/categories/%E6%8A%98%E8%85%BE/</link>
+    <description>Recent content in 折腾 on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Fri, 17 May 2024 19:39:59 +0800</lastBuildDate><atom:link href="https://ziyue.tech/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于VMware Workstation Pro17.5.2使用体验</title>
+      <link>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</link>
+      <pubDate>Fri, 17 May 2024 19:39:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</guid>
+      <description>Vmware使用体验 # VMware并入Broadcom后，V</description>
+      
+    </item>
+    
+    <item>
+      <title>Windows之间实现文件网络共享</title>
+      <link>https://ziyue.tech/posts/windows%E4%B9%8B%E9%97%B4%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sun, 17 Mar 2024 20:13:01 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/windows%E4%B9%8B%E9%97%B4%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E8%AE%BE%E7%BD%AE/</guid>
+      <description>在同一局域网下的电脑，可以在某一台电脑上设置一个共享文件夹，</description>
+      
+    </item>
+    
+    <item>
+      <title>4 联想Lenovo小新I2000黑苹果首发体验之旅</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/4.0%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</link>
+      <pubDate>Fri, 30 Jun 2023 23:59:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/4.0%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</guid>
+      <description>&lt;h4 class=&#34;relative group&#34;&gt;写在前面： 
+    &lt;div id=&#34;%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;文末有EFI文件可直接拿来使用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经过多次版本迭代，EFI文件已趋于完善，请以文末最新版为准！&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.8 配置UEFI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.8%E9%85%8D%E7%BD%AEuefi/</link>
+      <pubDate>Fri, 30 Jun 2023 08:05:39 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.8%E9%85%8D%E7%BD%AEuefi/</guid>
+      <description>&lt;p&gt;这种 config.list 的最后一章节，姿势有点杂，但是成功就在眼前了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.7 配置Platformlnfo</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.7%E9%85%8D%E7%BD%AEplatformlnfo/</link>
+      <pubDate>Thu, 29 Jun 2023 22:04:09 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.7%E9%85%8D%E7%BD%AEplatformlnfo/</guid>
+      <description>&lt;p&gt;这部分主要介绍的机型相关的信息，可以使用 OCC 这类工具一键生成，选择和自己 CPU 相近的即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.6 配置NVRAM</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.6%E9%85%8D%E7%BD%AEnvram/</link>
+      <pubDate>Thu, 29 Jun 2023 12:02:17 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.6%E9%85%8D%E7%BD%AEnvram/</guid>
+      <description>&lt;p&gt;NVRAM 部分，这部分基本上是通用的，这样就不用考虑各个机型了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.5 配置Misc</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.5%E9%85%8D%E7%BD%AEmisc/</link>
+      <pubDate>Thu, 29 Jun 2023 02:01:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.5%E9%85%8D%E7%BD%AEmisc/</guid>
+      <description>&lt;p&gt;Misc 杂项部分，这部分基本上是通用的，这样就不用考虑各个机型了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.4 配置Kernel</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.4%E9%85%8D%E7%BD%AEkernel/</link>
+      <pubDate>Wed, 28 Jun 2023 20:36:43 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.4%E9%85%8D%E7%BD%AEkernel/</guid>
+      <description>&lt;p&gt;内核相关的选项设置。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.3 配置DeviceProperties</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3%E9%85%8D%E7%BD%AEdeviceproperties/</link>
+      <pubDate>Wed, 28 Jun 2023 20:20:39 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3%E9%85%8D%E7%BD%AEdeviceproperties/</guid>
+      <description>&lt;p&gt;设备配置通过专用缓冲区提供给 macOS，用于设置 PCI 设备属性。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.2 配置Booter</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEbooter/</link>
+      <pubDate>Fri, 23 Jun 2023 08:41:31 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEbooter/</guid>
+      <description>&lt;p&gt;本节允许对操作系统引导加载程序应用不同类型的UEFI修改，主要是Apple引导加载程序（boot.efi）。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.1 配置ACPI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEacpi/</link>
+      <pubDate>Fri, 23 Jun 2023 08:26:11 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEacpi/</guid>
+      <description>&lt;p&gt;通过上一节准备工作的配置，我们的 SSDT 应该都已经加载进来了，此时一般调整下 Quiks（怪癖）即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.8 Kexts微调</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8kexts%E5%BE%AE%E8%B0%83/</link>
+      <pubDate>Tue, 20 Jun 2023 02:12:29 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8kexts%E5%BE%AE%E8%B0%83/</guid>
+      <description>&lt;p&gt;Kexts 也有顺序的要求，而且有些 Kexts 会冲突无法开机，关于这块也比杂了，因为 Kexts 的开发者都不相同。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.7 初步配置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.7%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 20 Jun 2023 01:32:29 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.7%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;调整文件夹结构 
+    &lt;div id=&#34;%E8%B0%83%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%B0%83%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.6 OC编辑器</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.6oc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Tue, 20 Jun 2023 01:21:21 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.6oc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>&lt;p&gt;因为 OpenCore 的核显配置 文件是 &lt;strong&gt;.plist&lt;/strong&gt; 结尾的，所以需要专门的编辑器来编辑，常见的 OC 编辑器的优缺点如下：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.5 Drives说明</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.5drivers%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 19 Jun 2023 23:59:14 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.5drivers%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;完整的 Drivers 说明 
+    &lt;div id=&#34;%E5%AE%8C%E6%95%B4%E7%9A%84-drivers-%E8%AF%B4%E6%98%8E&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%AE%8C%E6%95%B4%E7%9A%84-drivers-%E8%AF%B4%E6%98%8E&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;OC/Drivers&lt;/code&gt; 里放着一些驱动文件，这些驱动均已 .efi 后缀结尾，OC 官方默认的驱动文件以及说明如下：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4.2 macOS12蓝牙设置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.2macos%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 19 Jun 2023 22:50:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.2macos%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Intel 无线网卡 
+    &lt;div id=&#34;intel-%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#intel-%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;BlueToolFixup.kext&lt;/code&gt; 替代掉 &lt;code&gt;IntelBluetoothInjector.kext&lt;/code&gt; 即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4.1 USB定制</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.1usb%E5%AE%9A%E5%88%B6/</link>
+      <pubDate>Mon, 19 Jun 2023 20:50:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.1usb%E5%AE%9A%E5%88%B6/</guid>
+      <description>&lt;h3 class=&#34;relative group&#34;&gt;USB 定制的意义 
+    &lt;div id=&#34;usb-%E5%AE%9A%E5%88%B6%E7%9A%84%E6%84%8F%E4%B9%89&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#usb-%E5%AE%9A%E5%88%B6%E7%9A%84%E6%84%8F%E4%B9%89&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;如果 USB 定制不完美的话，可能会出现以下情况：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4 准备Kexts</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4%E5%87%86%E5%A4%87kexts/</link>
+      <pubDate>Mon, 19 Jun 2023 19:44:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4%E5%87%86%E5%A4%87kexts/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;基本概念 
+    &lt;div id=&#34;%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Kext 的英文全称叫做 &lt;strong&gt;K&lt;/strong&gt;ernel &lt;strong&gt;Ext&lt;/strong&gt;ension，即内核扩展，我们可以通俗的理解为这个就是 macOS 的驱动。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.3 准备ACPI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.3%E5%87%86%E5%A4%87acpi/</link>
+      <pubDate>Sun, 18 Jun 2023 01:10:54 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.3%E5%87%86%E5%A4%87acpi/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;基本概念 
+    &lt;div id=&#34;%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;APCI 
+    &lt;div id=&#34;apci&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#apci&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;高级配置与电源接口（Advanced Configuration and Power Interface），是 1997 年由英特尔、微软、东芝共同提出、制定的操作系统电源管理、硬件配置接口，ACPI 定义了系统固件 BIOS 或 UEFI 和操作系统之间的硬件抽象接口。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.2 OC文件结构</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.2oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 17 Jun 2023 23:36:31 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.2oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;p&gt;下载 OpenCore-x.x.x-RELEASE.zip 并解压，这样就得到 OC 的最原始的文件了,这里以OpenCore-0.7.3-RELEASE为例。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.1 BIOS设置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.1bios%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sat, 17 Jun 2023 22:27:38 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.1bios%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;p&gt;以下 BIOS 设置尽量参考一下，因为主板型号凌乱的原因，找不全也是很正常的，尽量靠齐这些设置就行。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>1.2 写入镜像</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.2%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Sat, 17 Jun 2023 13:30:52 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.2%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</guid>
+      <description>&lt;p&gt;写入镜像实际上也有很多工具，这里推荐一个后来居上的工具 &lt;a href=&#34;https://www.balena.io/etcher&#34;   target=&#34;_blank&#34;&gt;
+    balenaEthcher&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>1.1 黑苹果单OC分区引导镜像制作</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.1%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
+      <pubDate>Fri, 16 Jun 2023 13:30:52 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.1%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</guid>
+      <description>&lt;h4 class=&#34;relative group&#34;&gt;写在前面： 
+    &lt;div id=&#34;%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h4&gt;
+&lt;p&gt;需要在mac系统里进行，并在商店里下载好需要的&lt;a href=&#34;https://support.apple.com/zh-cn/HT211683&#34;   target=&#34;_blank&#34;&gt;
+    镜像&lt;/a&gt;文件，这里以monterey12.6.7为例。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

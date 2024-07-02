@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to my blog website! on Show me the code.</title>
+    <link>https://ziyue.tech/</link>
+    <description>Recent content in Welcome to my blog website! on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Wed, 05 Jun 2024 18:41:27 +0800</lastBuildDate><atom:link href="https://ziyue.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>暗黑破坏神4裸连方法</title>
+      <link>https://ziyue.tech/posts/%E6%9A%97%E9%BB%91%E7%A0%B4%E5%9D%8F%E7%A5%9E4%E8%A3%B8%E8%BF%9E%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 05 Jun 2024 18:41:27 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E6%9A%97%E9%BB%91%E7%A0%B4%E5%9D%8F%E7%A5%9E4%E8%A3%B8%E8%BF%9E%E6%96%B9%E6%B3%95/</guid>
+      <description>适逢英伟达推出活动，可以免费兑换3个xgp会员，暗黑4也加入</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E6%9A%97%E9%BB%91%E7%A0%B4%E5%9D%8F%E7%A5%9E4%E8%A3%B8%E8%BF%9E%E6%96%B9%E6%B3%95/featured.png" />
+    </item>
+    
+    <item>
+      <title>NVIDIA低版本驱动下载方法</title>
+      <link>https://ziyue.tech/posts/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 05 Jun 2024 17:30:36 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</guid>
+      <description>进入英伟达驱动下载官网，选择自己显卡对应的型号，点击任意版本</description>
+      
+    </item>
+    
+    <item>
+      <title>淘宝购买游戏注意事项</title>
+      <link>https://ziyue.tech/posts/%E6%B7%98%E5%AE%9D%E8%B4%AD%E4%B9%B0steam%E6%B8%B8%E6%88%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Thu, 23 May 2024 19:29:37 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E6%B7%98%E5%AE%9D%E8%B4%AD%E4%B9%B0steam%E6%B8%B8%E6%88%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+      <description>前言 # 事出反常必有妖。 steam游戏购买 # steam上平时除</description>
+      
+    </item>
+    
+    <item>
+      <title>关于VMware Workstation Pro17.5.2使用体验</title>
+      <link>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</link>
+      <pubDate>Fri, 17 May 2024 19:39:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</guid>
+      <description>Vmware使用体验 # VMware并入Broadcom后，V</description>
+      
+    </item>
+    
+    <item>
+      <title>六 使用自定义域名激活Vercel部署的Waline服务</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/6%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%BF%80%E6%B4%BBvercel%E9%83%A8%E7%BD%B2%E7%9A%84waline%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Tue, 16 Apr 2024 14:33:18 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/6%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%BF%80%E6%B4%BBvercel%E9%83%A8%E7%BD%B2%E7%9A%84waline%E6%9C%8D%E5%8A%A1/</guid>
+      <description>通过Vercel部署的Waline服务，在国内通常无法正常访</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/6%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E6%BF%80%E6%B4%BBvercel%E9%83%A8%E7%BD%B2%E7%9A%84waline%E6%9C%8D%E5%8A%A1/featured.gif" />
+    </item>
+    
+    <item>
+      <title>五 为博客添加评论功能</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/5%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Thu, 11 Apr 2024 15:44:05 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/5%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+      <description>前言 # Waline配置 # 进入 Waline官网进行快速设置。 LeanCloud</description>
+      
+    </item>
+    
+    <item>
+      <title>在本地配置多个GitHub账号</title>
+      <link>https://ziyue.tech/posts/git/github_zhanghao_peizhi/</link>
+      <pubDate>Wed, 10 Apr 2024 20:54:42 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/git/github_zhanghao_peizhi/</guid>
+      <description>1.取消全局配置 # git config --global --unset user.name git config --global --unset user.email 2.建立ssh连接 # 2</description>
+      
+    </item>
+    
+    <item>
+      <title>Windows之间实现文件网络共享</title>
+      <link>https://ziyue.tech/posts/windows%E4%B9%8B%E9%97%B4%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sun, 17 Mar 2024 20:13:01 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/windows%E4%B9%8B%E9%97%B4%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E8%AE%BE%E7%BD%AE/</guid>
+      <description>在同一局域网下的电脑，可以在某一台电脑上设置一个共享文件夹，</description>
+      
+    </item>
+    
+    <item>
+      <title>1.1 git简介</title>
+      <link>https://ziyue.tech/posts/git/1.1git%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Sat, 09 Mar 2024 21:18:13 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/git/1.1git%E7%AE%80%E4%BB%8B/</guid>
+      <description>Git是什么？ # Git是目前世界上最先进的分布式版本控制系统</description>
+      
+    </item>
+    
+    <item>
+      <title>ICEM CFD处理多维模型</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 03 Jan 2024 20:35:27 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
+      <description>&lt;p&gt;模型处理&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>关于Git推送的一些问题</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 15 Dec 2023 19:54:25 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;git推送博客被拒绝解决办法。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/featured.gif" />
+    </item>
+    
+    <item>
+      <title>ET模型网格划分</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</link>
+      <pubDate>Tue, 17 Oct 2023 10:03:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</guid>
+      <description>&lt;p&gt;通过ICEM对ET模型进行网格划分&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>NX1847安装使用</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 23 Aug 2023 23:54:05 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;NX1847安装使用教程记录。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>4 联想Lenovo小新I2000黑苹果首发体验之旅</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/4.0%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</link>
+      <pubDate>Fri, 30 Jun 2023 23:59:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/4.0%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</guid>
+      <description>&lt;h4 class=&#34;relative group&#34;&gt;写在前面： 
+    &lt;div id=&#34;%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;文末有EFI文件可直接拿来使用&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;经过多次版本迭代，EFI文件已趋于完善，请以文末最新版为准！&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.8 配置UEFI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.8%E9%85%8D%E7%BD%AEuefi/</link>
+      <pubDate>Fri, 30 Jun 2023 08:05:39 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.8%E9%85%8D%E7%BD%AEuefi/</guid>
+      <description>&lt;p&gt;这种 config.list 的最后一章节，姿势有点杂，但是成功就在眼前了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.7 配置Platformlnfo</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.7%E9%85%8D%E7%BD%AEplatformlnfo/</link>
+      <pubDate>Thu, 29 Jun 2023 22:04:09 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.7%E9%85%8D%E7%BD%AEplatformlnfo/</guid>
+      <description>&lt;p&gt;这部分主要介绍的机型相关的信息，可以使用 OCC 这类工具一键生成，选择和自己 CPU 相近的即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.6 配置NVRAM</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.6%E9%85%8D%E7%BD%AEnvram/</link>
+      <pubDate>Thu, 29 Jun 2023 12:02:17 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.6%E9%85%8D%E7%BD%AEnvram/</guid>
+      <description>&lt;p&gt;NVRAM 部分，这部分基本上是通用的，这样就不用考虑各个机型了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.5 配置Misc</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.5%E9%85%8D%E7%BD%AEmisc/</link>
+      <pubDate>Thu, 29 Jun 2023 02:01:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.5%E9%85%8D%E7%BD%AEmisc/</guid>
+      <description>&lt;p&gt;Misc 杂项部分，这部分基本上是通用的，这样就不用考虑各个机型了。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.4 配置Kernel</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.4%E9%85%8D%E7%BD%AEkernel/</link>
+      <pubDate>Wed, 28 Jun 2023 20:36:43 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.4%E9%85%8D%E7%BD%AEkernel/</guid>
+      <description>&lt;p&gt;内核相关的选项设置。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.3 配置DeviceProperties</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3%E9%85%8D%E7%BD%AEdeviceproperties/</link>
+      <pubDate>Wed, 28 Jun 2023 20:20:39 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3%E9%85%8D%E7%BD%AEdeviceproperties/</guid>
+      <description>&lt;p&gt;设备配置通过专用缓冲区提供给 macOS，用于设置 PCI 设备属性。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mac下通过ClashX实现全局透明代理</title>
+      <link>https://ziyue.tech/posts/clash%E6%97%81%E8%B7%AF/</link>
+      <pubDate>Tue, 27 Jun 2023 09:42:46 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/clash%E6%97%81%E8%B7%AF/</guid>
+      <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.2 配置Booter</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEbooter/</link>
+      <pubDate>Fri, 23 Jun 2023 08:41:31 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEbooter/</guid>
+      <description>&lt;p&gt;本节允许对操作系统引导加载程序应用不同类型的UEFI修改，主要是Apple引导加载程序（boot.efi）。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>3.1 配置ACPI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEacpi/</link>
+      <pubDate>Fri, 23 Jun 2023 08:26:11 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEacpi/</guid>
+      <description>&lt;p&gt;通过上一节准备工作的配置，我们的 SSDT 应该都已经加载进来了，此时一般调整下 Quiks（怪癖）即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.8 Kexts微调</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8kexts%E5%BE%AE%E8%B0%83/</link>
+      <pubDate>Tue, 20 Jun 2023 02:12:29 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8kexts%E5%BE%AE%E8%B0%83/</guid>
+      <description>&lt;p&gt;Kexts 也有顺序的要求，而且有些 Kexts 会冲突无法开机，关于这块也比杂了，因为 Kexts 的开发者都不相同。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.7 初步配置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.7%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 20 Jun 2023 01:32:29 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.7%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;调整文件夹结构 
+    &lt;div id=&#34;%E8%B0%83%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E8%B0%83%E6%95%B4%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.6 OC编辑器</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.6oc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Tue, 20 Jun 2023 01:21:21 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.6oc%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>&lt;p&gt;因为 OpenCore 的核显配置 文件是 &lt;strong&gt;.plist&lt;/strong&gt; 结尾的，所以需要专门的编辑器来编辑，常见的 OC 编辑器的优缺点如下：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.5 Drives说明</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.5drivers%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 19 Jun 2023 23:59:14 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.5drivers%E8%AF%B4%E6%98%8E/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;完整的 Drivers 说明 
+    &lt;div id=&#34;%E5%AE%8C%E6%95%B4%E7%9A%84-drivers-%E8%AF%B4%E6%98%8E&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%AE%8C%E6%95%B4%E7%9A%84-drivers-%E8%AF%B4%E6%98%8E&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;OC/Drivers&lt;/code&gt; 里放着一些驱动文件，这些驱动均已 .efi 后缀结尾，OC 官方默认的驱动文件以及说明如下：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4.2 macOS12蓝牙设置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.2macos%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 19 Jun 2023 22:50:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.2macos%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Intel 无线网卡 
+    &lt;div id=&#34;intel-%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#intel-%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;BlueToolFixup.kext&lt;/code&gt; 替代掉 &lt;code&gt;IntelBluetoothInjector.kext&lt;/code&gt; 即可。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4.1 USB定制</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.1usb%E5%AE%9A%E5%88%B6/</link>
+      <pubDate>Mon, 19 Jun 2023 20:50:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4.1usb%E5%AE%9A%E5%88%B6/</guid>
+      <description>&lt;h3 class=&#34;relative group&#34;&gt;USB 定制的意义 
+    &lt;div id=&#34;usb-%E5%AE%9A%E5%88%B6%E7%9A%84%E6%84%8F%E4%B9%89&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#usb-%E5%AE%9A%E5%88%B6%E7%9A%84%E6%84%8F%E4%B9%89&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;如果 USB 定制不完美的话，可能会出现以下情况：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.4 准备Kexts</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4%E5%87%86%E5%A4%87kexts/</link>
+      <pubDate>Mon, 19 Jun 2023 19:44:55 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.4%E5%87%86%E5%A4%87kexts/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;基本概念 
+    &lt;div id=&#34;%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;p&gt;Kext 的英文全称叫做 &lt;strong&gt;K&lt;/strong&gt;ernel &lt;strong&gt;Ext&lt;/strong&gt;ension，即内核扩展，我们可以通俗的理解为这个就是 macOS 的驱动。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>理想国</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E7%90%86%E6%83%B3%E5%9B%BD/</link>
+      <pubDate>Mon, 19 Jun 2023 15:47:43 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E7%90%86%E6%83%B3%E5%9B%BD/</guid>
+      <description>&lt;p&gt;草稿&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.3 准备ACPI</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.3%E5%87%86%E5%A4%87acpi/</link>
+      <pubDate>Sun, 18 Jun 2023 01:10:54 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.3%E5%87%86%E5%A4%87acpi/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;基本概念 
+    &lt;div id=&#34;%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;APCI 
+    &lt;div id=&#34;apci&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#apci&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;高级配置与电源接口（Advanced Configuration and Power Interface），是 1997 年由英特尔、微软、东芝共同提出、制定的操作系统电源管理、硬件配置接口，ACPI 定义了系统固件 BIOS 或 UEFI 和操作系统之间的硬件抽象接口。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.2 OC文件结构</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.2oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 17 Jun 2023 23:36:31 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.2oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;p&gt;下载 OpenCore-x.x.x-RELEASE.zip 并解压，这样就得到 OC 的最原始的文件了,这里以OpenCore-0.7.3-RELEASE为例。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2.1 BIOS设置</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.1bios%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sat, 17 Jun 2023 22:27:38 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.1bios%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;p&gt;以下 BIOS 设置尽量参考一下，因为主板型号凌乱的原因，找不全也是很正常的，尽量靠齐这些设置就行。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>1.2 写入镜像</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.2%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Sat, 17 Jun 2023 13:30:52 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.2%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</guid>
+      <description>&lt;p&gt;写入镜像实际上也有很多工具，这里推荐一个后来居上的工具 &lt;a href=&#34;https://www.balena.io/etcher&#34;   target=&#34;_blank&#34;&gt;
+    balenaEthcher&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>1.1 黑苹果单OC分区引导镜像制作</title>
+      <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.1%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
+      <pubDate>Fri, 16 Jun 2023 13:30:52 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/1.1%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</guid>
+      <description>&lt;h4 class=&#34;relative group&#34;&gt;写在前面： 
+    &lt;div id=&#34;%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h4&gt;
+&lt;p&gt;需要在mac系统里进行，并在商店里下载好需要的&lt;a href=&#34;https://support.apple.com/zh-cn/HT211683&#34;   target=&#34;_blank&#34;&gt;
+    镜像&lt;/a&gt;文件，这里以monterey12.6.7为例。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>和时间赛跑</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</link>
+      <pubDate>Wed, 05 Oct 2022 16:38:26 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</guid>
+      <description>&lt;p&gt;读小学的时候，我的外祖母去世了。外祖母生前最疼爱我。我无法排除自己的忧伤，每天在学校的操场上一圈一圈地跑着，跑得累倒在地上，扑在草坪上痛哭。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python学习笔记之语言程序设计</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Fri, 29 Jul 2022 13:33:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;python语言程序设计学习&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python IDLE配色设置</title>
+      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Fri, 29 Jul 2022 12:33:04 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;p&gt;idle糖果配色&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>四 Hugo主题Blowfish添加友链</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/4hugo%E5%8D%9A%E5%AE%A2blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</link>
+      <pubDate>Thu, 28 Jul 2022 22:43:21 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/4hugo%E5%8D%9A%E5%AE%A2blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/</guid>
+      <description>创建 shortcode 模板 # 在 &amp;lt;博客根目录&amp;gt;/layouts/s</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/4hugo%E5%8D%9A%E5%AE%A2blowfish%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE/featured.gif" />
+    </item>
+    
+    <item>
+      <title>三 为博客添加搜索功能</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/3%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Thu, 28 Jul 2022 01:45:41 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/3%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;p&gt;视博客主题而定，有的博客主题不用进行下面的配置也能实现搜索功能，有的博客支持自定义搜索方式。下文针对曾使用过的主题hugo-NexT主题添加搜索功能。&lt;/p&gt;
+&lt;a id=&#34;github-46b814afd4e03816ea59a668dd744270&#34; target=&#34;_blank&#34; href=&#34;https://github.com/hugo-next/hugo-theme-next&#34; class=&#34;cursor-pointer&#34;&gt;
+  &lt;div
+    class=&#34;w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl&#34;&gt;
+
+    &lt;div class=&#34;flex items-center&#34;&gt;
+      &lt;span class=&#34;text-2xl text-neutral-800 dark:text-neutral&#34; style=&#34;margin-right:10px;&#34;&gt;
+        
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 496 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z&#34;/&gt;&lt;/svg&gt;
+
+  &lt;/span&gt;
+
+
+      &lt;/span&gt;
+      &lt;div
+        id=&#34;github-46b814afd4e03816ea59a668dd744270-full_name&#34;
+        class=&#34;m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral&#34;&gt;
+        hugo-next/hugo-theme-next
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p id=&#34;github-46b814afd4e03816ea59a668dd744270-description&#34; class=&#34;m-0 mt-2 text-md text-neutral-800 dark:text-neutral&#34;&gt;
+      Easily &amp;amp; powerful theme for Hugo engine.
+    &lt;/p&gt;
+
+    &lt;div class=&#34;m-0 mt-2 flex items-center&#34;&gt;
+
+      &lt;span class=&#34;mr-1 inline-block h-3 w-3 rounded-full&#34;
+        style=&#34;background-color: #c6538c&#34;&gt;&lt;/span&gt;
+      &lt;div class=&#34;m-0 mr-5 text-md text-neutral-800 dark:text-neutral&#34;&gt;
+         SCSS 
+      &lt;/div&gt;
+
+      &lt;span class=&#34;text-md mr-1 text-neutral-800 dark:text-neutral&#34;&gt;
+        
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 576 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+
+
+      &lt;/span&gt;
+      &lt;div id=&#34;github-46b814afd4e03816ea59a668dd744270-stargazers&#34; class=&#34;m-0 mr-5 text-md text-neutral-800 dark:text-neutral&#34;&gt;
+        207
+      &lt;/div&gt;
+
+      &lt;span class=&#34;text-md mr-1 text-neutral-800 dark:text-neutral&#34;&gt;
+        
+
+  &lt;span class=&#34;relative block icon&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 448 512&#34;&gt;&lt;path fill=&#34;currentColor&#34; d=&#34;M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z&#34;/&gt;&lt;/svg&gt;
+  &lt;/span&gt;
+
+
+      &lt;/span&gt;
+      &lt;div id=&#34;github-46b814afd4e03816ea59a668dd744270-forks&#34; class=&#34;m-0 mr-5 text-md text-neutral-800 dark:text-neutral&#34;&gt;
+        38
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;script&gt;
+    fetch(&#34;https://api.github.com/repos/hugo-next/hugo-theme-next&#34;, {
+      headers: new Headers({
+        &#39;User-agent&#39;: &#39;Mozilla/4.0 Custom User Agent&#39;
+      })
+    })
+      .then(response =&gt; response.json())
+      .then(data =&gt; {
+        document.getElementById(&#39;github-46b814afd4e03816ea59a668dd744270-full_name&#39;).innerHTML = data.full_name;
+        document.getElementById(&#39;github-46b814afd4e03816ea59a668dd744270-description&#39;).innerHTML = data.description;
+        document.getElementById(&#39;github-46b814afd4e03816ea59a668dd744270-stargazers&#39;).innerHTML = data.stargazers_count;
+        document.getElementById(&#39;github-46b814afd4e03816ea59a668dd744270-forks&#39;).innerHTML = data.forks;
+      })
+      .catch(error =&gt; console.error(error))
+  &lt;/script&gt;
+&lt;/a&gt;
+&lt;p&gt;博客搭建逐渐完善，博文内容也逐渐增多，添加搜索功能可以很方便的检索内容，需要博客主题支持。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/3%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/featured.gif" />
+    </item>
+    
+    <item>
+      <title>二 图床选择</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/2%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</link>
+      <pubDate>Wed, 27 Jul 2022 22:47:21 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/2%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/</guid>
+      <description>&lt;p&gt;工欲善其事，必先利其器。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/2%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9/featured.gif" />
+    </item>
+    
+    <item>
+      <title>一 通过Hugo搭建blowfish主题博客</title>
+      <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BAblowfish%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 27 Jul 2022 21:47:21 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BAblowfish%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;div class=&#34;lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl&#34;&gt;
+  &lt;div id=&#34;typeit-30628676781ba6bd5ea945998680d5c3&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+      new TypeIt(&#34;#typeit-30628676781ba6bd5ea945998680d5c3&#34;, {
+        strings: [&#34;&#34;,&#34;&#34;,&#34;记住也好，记不住也好，我的名头很重要。&#34;,&#34;&#34;,&#34;&#34;],
+        speed:  50 ,
+        lifeLike:  false ,
+        startDelay:  0 ,
+        breakLines:  false ,
+        waitUntilVisible:  true ,
+        loop:  true 
+      }).go();
+    });
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;持续更新······&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;博客由hexo迁移至hugo，两者使用下来，hugo生成静态网页的速度明显优于hexo，博客数量越多体验越明显，另外在Mac系统下两者的使用体验要优于Windows，hugo的不足之处在于开箱即用的主题不如hexo丰富。&lt;/p&gt;
+&lt;p&gt;迁移前第一步选一个喜欢的hugo博客主题，这里以&lt;a href=&#34;https://blowfish.page&#34;   target=&#34;_blank&#34;&gt;
+    blowfish&lt;/a&gt;为例。&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BAblowfish%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2/featured.gif" />
+    </item>
+    
+    <item>
+      <title>友链</title>
+      <link>https://ziyue.tech/youlink/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:01 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/youlink/</guid>
+      <description>📍 hello-algo That was less than stellar 廖雪峰 廖雪峰的官方网站 🌊有朋自远方来 凡梦星尘空</description>
+      
+    </item>
+    
+    <item>
+      <title>为什么搭建博客？</title>
+      <link>https://ziyue.tech/about/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/about/</guid>
+      <description>为什么要搭建自己的博客呢？ 有背书的平台，文章修改起来也要重新</description>
+      
+    </item>
+    
+  </channel>
+</rss>

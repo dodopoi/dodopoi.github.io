@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>虚拟机 on Show me the code.</title>
+    <link>https://ziyue.tech/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on Show me the code.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 柴西</copyright>
+    <lastBuildDate>Fri, 17 May 2024 19:39:59 +0800</lastBuildDate><atom:link href="https://ziyue.tech/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于VMware Workstation Pro17.5.2使用体验</title>
+      <link>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</link>
+      <pubDate>Fri, 17 May 2024 19:39:59 +0800</pubDate>
+      
+      <guid>https://ziyue.tech/posts/vmware17.5.2/vmware17.5.2/</guid>
+      <description>Vmware使用体验 # VMware并入Broadcom后，V</description>
+      
+    </item>
+    
+  </channel>
+</rss>
