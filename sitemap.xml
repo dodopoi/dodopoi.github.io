@@ -4,7 +4,37 @@
 
   <url>
     <loc>https://ziyue.tech/</loc>
-    <lastmod>2024-07-24T14:11:58+08:00</lastmod>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ziyue.tech/tags/</loc>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ziyue.tech/categories/</loc>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ziyue.tech/posts/%E7%8C%AB%E5%A4%B4%E9%B9%B0noctuahome%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%B9%B3%E6%9B%BF/</loc>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ziyue.tech/categories/%E6%88%91%E7%9A%84%E6%A1%8C%E9%9D%A2/</loc>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ziyue.tech/tags/%E6%A1%8C%E6%90%AD/</loc>
+    <lastmod>2024-07-24T18:42:05+08:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -22,18 +52,6 @@
   </url>
   <url>
     <loc>https://ziyue.tech/tags/%E6%9A%B4%E9%9B%AA/</loc>
-    <lastmod>2024-06-05T18:41:27+08:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://ziyue.tech/tags/</loc>
-    <lastmod>2024-06-05T18:41:27+08:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://ziyue.tech/categories/</loc>
     <lastmod>2024-06-05T18:41:27+08:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
