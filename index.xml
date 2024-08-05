@@ -119,16 +119,6 @@
     </item>
     
     <item>
-      <title>ICEM CFD处理多维模型</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Wed, 03 Jan 2024 20:35:27 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/icemcfd%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
-      <description>&lt;p&gt;模型处理&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>关于Git推送的一些问题</title>
       <link>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 15 Dec 2023 19:54:25 +0800</pubDate>
@@ -136,26 +126,6 @@
       <guid>https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;git推送博客被拒绝解决办法。&lt;/p&gt;</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ziyue.tech/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/7%E5%85%B3%E4%BA%8Egit%E6%8E%A8%E9%80%81%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/featured.gif" />
-    </item>
-    
-    <item>
-      <title>ET模型网格划分</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</link>
-      <pubDate>Tue, 17 Oct 2023 10:03:59 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/icem/01et%E6%A8%A1%E5%9E%8B%E7%BD%91%E6%A0%BC%E5%88%92%E5%88%86/</guid>
-      <description>&lt;p&gt;通过ICEM对ET模型进行网格划分&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>NX1847安装使用</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Wed, 23 Aug 2023 23:54:05 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6/nx1847%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;NX1847安装使用教程记录。&lt;/p&gt;</description>
-      
     </item>
     
     <item>
@@ -389,16 +359,6 @@
     </item>
     
     <item>
-      <title>理想国</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E7%90%86%E6%83%B3%E5%9B%BD/</link>
-      <pubDate>Mon, 19 Jun 2023 15:47:43 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E7%90%86%E6%83%B3%E5%9B%BD/</guid>
-      <description>&lt;p&gt;草稿&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>2.3 准备ACPI</title>
       <link>https://ziyue.tech/posts/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.3%E5%87%86%E5%A4%87acpi/</link>
       <pubDate>Sun, 18 Jun 2023 01:10:54 +0800</pubDate>
@@ -479,36 +439,6 @@
 &lt;/h4&gt;
 &lt;p&gt;需要在mac系统里进行，并在商店里下载好需要的&lt;a href=&#34;https://support.apple.com/zh-cn/HT211683&#34;   target=&#34;_blank&#34;&gt;
     镜像&lt;/a&gt;文件，这里以monterey12.6.7为例。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>和时间赛跑</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</link>
-      <pubDate>Wed, 05 Oct 2022 16:38:26 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E9%98%85%E8%AF%BB/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</guid>
-      <description>&lt;p&gt;读小学的时候，我的外祖母去世了。外祖母生前最疼爱我。我无法排除自己的忧伤，每天在学校的操场上一圈一圈地跑着，跑得累倒在地上，扑在草坪上痛哭。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Python学习笔记之语言程序设计</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Fri, 29 Jul 2022 13:33:04 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/1python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;python语言程序设计学习&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Python IDLE配色设置</title>
-      <link>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</link>
-      <pubDate>Fri, 29 Jul 2022 12:33:04 +0800</pubDate>
-      
-      <guid>https://ziyue.tech/posts/%E7%A7%91%E6%8A%80%E6%A0%91/%E5%A4%A9%E8%B5%8B%E7%82%B9/python123/0python-idle%E9%85%8D%E8%89%B2%E8%AE%BE%E7%BD%AE/</guid>
-      <description>&lt;p&gt;idle糖果配色&lt;/p&gt;</description>
       
     </item>
     
