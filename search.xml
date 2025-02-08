@@ -105,25 +105,6 @@
     
     
     <entry>
-      <title>Github创建多个项目站点</title>
-      <link href="/2024/10/02/git/github%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%AB%99%E7%82%B9/"/>
-      <url>/2024/10/02/git/github%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%AB%99%E7%82%B9/</url>
-      
-        <content type="html"><![CDATA[<p>在 GitHub 上创建项目站点（GitHub Pages for a project）相对简单。以下是详细的步骤：</p><h3 id="1-创建一个新仓库"><a href="#1-创建一个新仓库" class="headerlink" title="1. 创建一个新仓库"></a>1. 创建一个新仓库</h3><ol><li><strong>登录</strong>到你的 GitHub 账号。</li><li><strong>创建一个新仓库</strong>，你可以为其选择任意名称。例如，<code>my-project</code>。</li></ol><h3 id="2-添加项目代码"><a href="#2-添加项目代码" class="headerlink" title="2. 添加项目代码"></a>2. 添加项目代码</h3><p>在你的仓库中添加项目代码（如 HTML、CSS、JavaScript 文件）：</p><ol><li>点击 “Add file” &gt; “Create new file” 来添加文件，或者将文件上传到这个仓库。</li><li>确保至少有一个 <code>index.html</code> 文件，因为这是默认的首页。</li></ol><h3 id="3-启用-GitHub-Pages"><a href="#3-启用-GitHub-Pages" class="headerlink" title="3. 启用 GitHub Pages"></a>3. 启用 GitHub Pages</h3><ol><li>在你的仓库页面，点击 “Settings”（设置）。</li><li>向下滚动到 “Pages” 部分。</li><li>在 “Source” 下拉菜单中选择 <code>main</code>（或 <code>master</code>）分支，并选择 <code>/ (root)</code> 文件夹作为发布源。</li><li>点击 “Save”。</li></ol><h3 id="4-访问你的网站"><a href="#4-访问你的网站" class="headerlink" title="4. 访问你的网站"></a>4. 访问你的网站</h3><ul><li>等待几分钟后，你应该可以访问你的网站，URL 格式为 <code>https://username.github.io/my-project</code>（将 <code>username</code> 替换为你的 GitHub 用户名，<code>my-project</code> 替换为你的项目名称）。</li></ul><h3 id="5-自定义站点（可选）"><a href="#5-自定义站点（可选）" class="headerlink" title="5. 自定义站点（可选）"></a>5. 自定义站点（可选）</h3><ul><li>你可以添加其他页面（如 <code>about.html</code>、<code>contact.html</code>等），并在 <code>&lt;nav&gt;</code> 中链接它们。</li><li>可以使用 CSS 来美化站点。</li></ul><h3 id="6-使用-Jekyll（可选）"><a href="#6-使用-Jekyll（可选）" class="headerlink" title="6. 使用 Jekyll（可选）"></a>6. 使用 Jekyll（可选）</h3><p>如果你需要进一步自定义，GitHub Pages 支持使用 Jekyll。这允许你使用模板、布局等功能：</p><ol><li>在仓库中创建 <code>_config.yml</code> 文件来配置 Jekyll 设置。</li><li>创建 <code>_layouts</code> 和 <code>_posts</code> 文件夹来管理模板和内容。</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>4 Hexo安知鱼主题修改控制台打印logo</title>
       <link href="/2024/10/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/4%E3%80%81Hexo%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%89%93%E5%8D%B0logo/"/>
       <url>/2024/10/01/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/4%E3%80%81Hexo%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%89%93%E5%8D%B0logo/</url>
