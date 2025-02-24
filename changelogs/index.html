@@ -401,79 +401,57 @@ document.addEventListener('DOMContentLoaded', function () {
 <p>通过插件<code>npm install hexo-blog-encrypt --save</code>为博客添加加密功能。</p>
 <h3 id="20240927">2024.09.27</h3>
 <p>因为一个主题，博客从hugo迁移至hexo，目前来看静态网页生成速度还可以。</p>
-<!-- raw HTML omitted -->
+<h3 id="20240922">2024.09.22</h3>
 <p>blowfish升级至v2.76.0。</p>
 <p>Breaking change</p>
-<p>Hugo is deprecating .Site.Author refs in v0.124.0. @unacro submitted a PR to change to move the current login in language.X.toml config files from [author] to [params.author]. <!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p>Hugo is deprecating .Site.Author refs in v0.124.0. @unacro submitted a PR to change to move the current login in language.X.toml config files from [author] to [params.author].</p>
+<h3 id="20240919">2024.09.19</h3>
 <p>测速功能</p>
-<p>Cloud flare完全性下自动程序里的自动程序攻击模式打开后会无法测速，阻止AI爬虫程序和爬网程序可以打开。<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p>Cloud flare完全性下自动程序里的自动程序攻击模式打开后会无法测速，阻止AI爬虫程序和爬网程序可以打开。</p>
+<h3 id="20240712">2024.07.12</h3>
 <p>bug修复。</p>
 <p>Cloud flare证书设置为灵活时会无法提交评论，显示错误，需要设置成完全。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240701">2024.07.01</h3>
 <p>停用画廊功能。</p>
 <p>重装系统从云盘同步到本地后，在生成静态网页时会报错，需要重新生成画廊图片的地址，于是停用画廊功能，改为正常插入图片。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240506">2024.05.06</h3>
 <p>变更图床cdn为Cloudflare，采用不绑定域名方案。</p>
 <p>变更迁移图床仓库至另一账号，直接fork仓库似乎不能完整取代原图床信息，原仓库删除后博客图片也会失效，需要将博客图片重新插入和上传至新仓库。</p>
 <p>现在博客里的图片不多，迁移起来还不算麻烦。同时幸好博客图片在云盘里存有备份，才顺利完成迁移工作，以后非必需不再动图床仓库。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240418">2024.04.18</h3>
 <p>关闭文章背景虚化，在桌面端开了该功能还好，在移动端显示有类似穿模的效果。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240416">2024.04.16</h3>
 <p>文章头图格式为featured.gif，大小超过2MB时，生成静态网页时会因超时而失败。另默认背景图不宜过大，会导致博客文件夹大小剧增，图片压缩确实很有必要。</p>
 <p>bug：</p>
 <p>文章<code>x级标题</code>不能只有一个单词waline，不然评论页面会加载不出来。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240415">2024.04.15</h3>
 <p>添加归档页面，完善友链页面显示。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240412">2024.04.12</h3>
 <p>创建Firebase数据库，用来存储点击数据。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240410">2024.04.10</h3>
 <p>添加评论功能。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240310">2024.03.10</h3>
 <p>博客blowfish主题的搜索功能失效，经定位问题出在GitHub Pages域名绑定上，解决办法：修改配置文件config&gt;_default&gt;hugo.toml或config.toml。</p>
 <p>“baseURL = &ldquo;域名&rdquo;”</p>
 <p>如果没有购买域名，上面域名处填写“https://githubusename.github.io”，只要配置文件里的域名地址与GitHub Pages域名地址保持一致，搜索功能就可以正常使用。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240309">2024.03.09</h3>
 <p>github在国内访问时好时坏，这也导致自己在访问博客时，出现和访问github一样的问题。图床既然可以进行CDN加速，网站应该也有类似的方法。经过比对，选择将域名解析从阿里云迁移至cloudflare上，利用cloudflare对博客进行CDN加速。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20240206">2024.02.06</h3>
 <p>加入十年之约。</p>
-<!-- raw HTML omitted -->
-<p>{% endtimeline %}</p>
-<p>{% timeline 2024 %}</p>
-<!-- raw HTML omitted -->
+<h3 id="20230720">2023.07.20</h3>
 <p>主题更换为blowfish。</p>
 <p>新写完一篇文章，如果在生成静态网页时遇到错误，是默认生成的md文档格式不对，需将博客目录下archetypes/default.md替换为blowfish示例文件夹内的archetypes/default.md，以后新建.md文件就不会出错了。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20230618">2023.06.18</h3>
 <p>随着博客数量越来越多，hexo生成静态网页需要的时间越来越多，有了将博客从hexo迁移至hugo上的想法。</p>
 <p>博客迁移成功，同时有NexT爱好者将主题移植到hugo上，省去重新部署的时间，为作者点个👍。</p>
-<!-- raw HTML omitted -->
-<p>{% endtimeline %}</p>
-<p>{% timeline 2023 %}</p>
-<!-- raw HTML omitted -->
+<h3 id="20220927">2022.09.27</h3>
 <p>写博客时遇到了sm.ms图床上传图片失败的问题，免费的方案七牛云有10G空间，貌似不错，但是需要一个备案的域名。域名要想备案需要购买云服务器，与七牛云客服小姐姐沟通域名必须要备案才可以使用，绕不开。</p>
-<p>最后选择某一个GitHub公开仓库配合CDN加速作为图床，这肯定是违背GitHub本身作为代码托管的初衷的，不推荐这么做。同时，当这个仓库存放图片到一定阈值时可能会面临审查的风险。<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<p>最后选择某一个GitHub公开仓库配合CDN加速作为图床，这肯定是违背GitHub本身作为代码托管的初衷的，不推荐这么做。同时，当这个仓库存放图片到一定阈值时可能会面临审查的风险。</p>
+<h3 id="20220723">2022.07.23</h3>
 <p>博客伊始。</p>
 <p>有了域名，就想把平时写的一点东西收集起来，搭建自己的博客，这样更自由一些。博客首次使用hexo框架搭建，博客主题为NexT，同时把博客部署到GitHub Pages上。</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<h3 id="20220722">2022.07.22</h3>
 <p>在阿里云199购买了10年ziyue.tech域名。</p>
-<!-- raw HTML omitted -->
-<p>{% endtimeline %}</p>
-<p>{% timeline 2022 %}</p>
-<p>{% endtimeline %}</p>
 
 
     
@@ -685,7 +663,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="flex items-center gap-2">
     <div class="i-carbon-text-font w-4 h-4"></div>
     <span>
-        共 <span class="tabular-nums font-mono">68455</span> 字
+        共 <span class="tabular-nums font-mono">68449</span> 字
         <span class="mx-1">·</span>
         写完一本 埃克苏佩里 的《小王子》了!
     </span>
