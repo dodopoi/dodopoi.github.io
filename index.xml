@@ -11,7 +11,7 @@
     <managingEditor>dodopoi</managingEditor>
     <webMaster>dodopoi</webMaster>
     <copyright></copyright>
-    <lastBuildDate>Tue, 25 Feb 2025 13:43:15 &#43;0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 19:29:37 &#43;0800</lastBuildDate>
     <category>Blog</category>
     <generator>Hugo -- gohugo.io</generator>  <atom:link href="https://moyu.re/index.xml" rel="self" type="application/rss+xml" />  <item>
       <title>暂停营业</title>
@@ -396,10 +396,10 @@ git pull origin main
 </figure></p>
       ]]></content:encoded> </item> <item>
       <title>Python IDLE修改代码配色及语法高亮主题</title>
-      <link>https://moyu.re/python-idle%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E9%85%8D%E8%89%B2%E5%8F%8A%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98/</link>
+      <link>https://moyu.re/python-idle-theme/</link>
       <pubDate>Thu, 03 Oct 2024 00:48:16 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>https://moyu.re/python-idle%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E9%85%8D%E8%89%B2%E5%8F%8A%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
+      <guid>https://moyu.re/python-idle-theme/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
         <p>找到名为<strong>config-highlight.cfg</strong>的文件，在Windows 7下路径为：<code>C:\Users\&lt;用户名&gt;\.idlerc\</code>如果没有就新建一个。</p>
 <pre><code class="language-sh">[tango]
 definition-foreground = #fce94f
