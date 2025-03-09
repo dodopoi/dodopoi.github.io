@@ -8,23 +8,23 @@
     <link>https://xiaoxiami.xyz/</link>
     <description></description>
     <language>zh-CN</language>
-    <managingEditor>dodopoi</managingEditor>
-    <webMaster>dodopoi</webMaster>
+    <managingEditor>小虾米</managingEditor>
+    <webMaster>小虾米</webMaster>
     <copyright></copyright>
-    <lastBuildDate>Sun, 09 Mar 2025 18:40:21 &#43;0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 18:48:48 &#43;0800</lastBuildDate>
     <category>Blog</category>
     <generator>Hugo -- gohugo.io</generator>  <atom:link href="https://xiaoxiami.xyz/index.xml" rel="self" type="application/rss+xml" />  <item>
       <title>暂停营业</title>
       <link>https://xiaoxiami.xyz/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</link>
       <pubDate>Mon, 11 Nov 2024 11:11:00 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</guid> <description></description> <content:encoded><![CDATA[
         
       ]]></content:encoded> </item> <item>
       <title>一 python语言程序设计</title>
       <link>https://xiaoxiami.xyz/%E4%B8%80-python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Sat, 15 Feb 2025 21:41:50 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E4%B8%80-python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
         <h2 id="0课程导学">0.课程导学</h2>
 <p>1套python基础语法体系</p>
@@ -95,7 +95,7 @@ turtle.circle(160)
       <title>网页底部svg图片标签修改方法</title>
       <link>https://xiaoxiami.xyz/%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8svg%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 09 Feb 2025 15:26:08 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8svg%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE%E4%BF%AE%E6%94%B9%E6%96%B9%E6%B3%95/</guid> <category>svg</category> <description></description> <content:encoded><![CDATA[
         <h2 id="deepseek">deepseek</h2>
 <p>给出修改思路和方法。</p>
@@ -279,14 +279,14 @@ turtle.circle(160)
       <title>原来我们一直都没有好好说再见</title>
       <link>https://xiaoxiami.xyz/%E5%8E%9F%E6%9D%A5%E6%88%91%E4%BB%AC%E4%B8%80%E7%9B%B4%E9%83%BD%E6%B2%A1%E6%9C%89%E5%A5%BD%E5%A5%BD%E8%AF%B4%E5%86%8D%E8%A7%81/</link>
       <pubDate>Tue, 22 Oct 2024 22:23:07 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E5%8E%9F%E6%9D%A5%E6%88%91%E4%BB%AC%E4%B8%80%E7%9B%B4%E9%83%BD%E6%B2%A1%E6%9C%89%E5%A5%BD%E5%A5%BD%E8%AF%B4%E5%86%8D%E8%A7%81/</guid> <description></description> <content:encoded><![CDATA[
         
       ]]></content:encoded> </item> <item>
       <title>静态博客工作流</title>
       <link>https://xiaoxiami.xyz/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Thu, 10 Oct 2024 13:51:59 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/</guid> <category>Typora</category> <category>Picgo</category> <category>Github</category> <category>Cloudflare</category> <description></description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
@@ -398,7 +398,7 @@ git pull origin main
       <title>Python IDLE修改代码配色及语法高亮主题</title>
       <link>https://xiaoxiami.xyz/python-idle-theme/</link>
       <pubDate>Thu, 03 Oct 2024 00:48:16 &#43;0000</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/python-idle-theme/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
         <p>找到名为<strong>config-highlight.cfg</strong>的文件，在Windows 7下路径为：<code>C:\Users\&lt;用户名&gt;\.idlerc\</code>如果没有就新建一个。</p>
 <pre><code class="language-sh">[tango]
@@ -434,7 +434,7 @@ error-background = #2e3436
       <title>猫头鹰Noctua HOME系列产品平替</title>
       <link>https://xiaoxiami.xyz/%E7%8C%AB%E5%A4%B4%E9%B9%B0noctua-home%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%B9%B3%E6%9B%BF/</link>
       <pubDate>Wed, 24 Jul 2024 18:42:05 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E7%8C%AB%E5%A4%B4%E9%B9%B0noctua-home%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%B9%B3%E6%9B%BF/</guid> <category>桌搭</category> <description>&lt;p&gt;🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。&lt;/p&gt;</description> <content:encoded><![CDATA[
         <p>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。</p>
 <!-- raw HTML omitted -->
@@ -491,7 +491,7 @@ error-background = #2e3436
       <title>是bug么？Windows 10家庭版可以通过商店免费升级到专业版</title>
       <link>https://xiaoxiami.xyz/%E6%98%AFbug%E4%B9%88windows-10%E5%AE%B6%E5%BA%AD%E7%89%88%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%95%86%E5%BA%97%E5%85%8D%E8%B4%B9%E5%8D%87%E7%BA%A7%E5%88%B0%E4%B8%93%E4%B8%9A%E7%89%88/</link>
       <pubDate>Wed, 24 Jul 2024 14:11:58 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E6%98%AFbug%E4%B9%88windows-10%E5%AE%B6%E5%BA%AD%E7%89%88%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%95%86%E5%BA%97%E5%85%8D%E8%B4%B9%E5%8D%87%E7%BA%A7%E5%88%B0%E4%B8%93%E4%B8%9A%E7%89%88/</guid> <description>&lt;p&gt;不知道是不是bug，在搜索office时，偶然顺手搜了下Windows，没有购买过Windows专业版，登录微软账户，点开后页面后没有购买页面，而是安装页面。升级完成以后查看激活信息，部分产品密钥是3V66T。&lt;/p&gt;</description> <content:encoded><![CDATA[
         <p>不知道是不是bug，在搜索office时，偶然顺手搜了下Windows，没有购买过Windows专业版，登录微软账户，点开后页面后没有购买页面，而是安装页面。升级完成以后查看激活信息，部分产品密钥是3V66T。</p>
 <p><figure class="my-8">
@@ -533,7 +533,7 @@ error-background = #2e3436
       <title>暗黑破坏神4裸连方法</title>
       <link>https://xiaoxiami.xyz/%E6%9A%97%E9%BB%91%E7%A0%B4%E5%9D%8F%E7%A5%9E4%E8%A3%B8%E8%BF%9E%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 05 Jun 2024 18:41:27 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E6%9A%97%E9%BB%91%E7%A0%B4%E5%9D%8F%E7%A5%9E4%E8%A3%B8%E8%BF%9E%E6%96%B9%E6%B3%95/</guid> <category>暴雪</category> <description>&lt;p&gt;适逢英伟达推出活动，可以免费兑换3个xgp会员，暗黑4也加入到xgp里，正好可以进行体验。国内游玩暗黑4需要开加速器，这里可以通过修改hosts文件实现裸连，但是要稳定游玩还是建议购买加速器相关服务。&lt;/p&gt;</description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo-1.pages.dev//featured.png" alt="暗黑破坏神4裸连方法" />
@@ -602,7 +602,7 @@ error-background = #2e3436
       <title>NVIDIA低版本驱动下载方法</title>
       <link>https://xiaoxiami.xyz/nvidia%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 05 Jun 2024 17:30:36 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/nvidia%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</guid> <category>驱动</category> <description>&lt;p&gt;进入英伟达显卡驱动官网，选择自己显卡对应的型号，点击任意版本驱动进入下载页面，可以通过更改下载链接的版本号，来实现下载旧版本的显卡驱动。&lt;/p&gt;</description> <content:encoded><![CDATA[
         <p>进入英伟达显卡驱动官网，选择自己显卡对应的型号，点击任意版本驱动进入下载页面，可以通过更改下载链接的版本号，来实现下载旧版本的显卡驱动。</p>
 <blockquote>
@@ -617,7 +617,7 @@ error-background = #2e3436
       <title>淘宝购买游戏注意事项</title>
       <link>https://xiaoxiami.xyz/%E6%B7%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E6%B8%B8%E6%88%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
       <pubDate>Thu, 23 May 2024 19:29:37 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E6%B7%98%E5%AE%9D%E8%B4%AD%E4%B9%B0%E6%B8%B8%E6%88%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid> <category>steam</category> <description></description> <content:encoded><![CDATA[
         <h3 id="前言">前言</h3>
 <p>事出反常必有妖。</p>
@@ -688,7 +688,7 @@ WIN+Q 搜索powershell
       <title>在本地配置多个github账号</title>
       <link>https://xiaoxiami.xyz/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7/</link>
       <pubDate>Wed, 10 Apr 2024 20:54:42 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7/</guid> <category>git</category> <description></description> <content:encoded><![CDATA[
         <h4 id="1取消全局配置">1.取消全局配置</h4>
 <pre><code class="language-sh">git config --global --unset user.name
@@ -810,7 +810,7 @@ git config user.email E1
       <title>Windows之间实现文件网络共享</title>
       <link>https://xiaoxiami.xyz/windows%E4%B9%8B%E9%97%B4%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB/</link>
       <pubDate>Sun, 17 Mar 2024 20:13:01 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/windows%E4%B9%8B%E9%97%B4%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB/</guid> <category>Windows</category> <description></description> <content:encoded><![CDATA[
         <p>在同一局域网下的电脑，可以在某一台电脑上设置一个共享文件夹，使每一台电脑都可以进行访问、增删、修改和拷贝文件。设置共享文件夹的电脑称为目标电脑，用微软账号登陆，这样可以在后续访问这台电脑带来极大的便利，设置起来也很简单，共享选项里设置为everyone即可。</p>
 <p><figure class="my-8">
@@ -826,7 +826,7 @@ git config user.email E1
       <title>4 联想Lenovo小新I2000黑苹果首发体验之旅</title>
       <link>https://xiaoxiami.xyz/4-%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</link>
       <pubDate>Fri, 30 Jun 2023 23:59:59 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/4-%E8%81%94%E6%83%B3lenovo%E5%B0%8F%E6%96%B0i2000%E9%BB%91%E8%8B%B9%E6%9E%9C%E9%A6%96%E5%8F%91%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85/</guid> <category>黑苹果</category> <description>装机实测</description> <content:encoded><![CDATA[
         <h4 id="写在前面">写在前面：</h4>
 <p><strong>文末有EFI文件可直接拿来使用</strong></p>
@@ -1008,7 +1008,7 @@ git config user.email E1
       <title>3.8 配置UEFI</title>
       <link>https://xiaoxiami.xyz/3.8-%E9%85%8D%E7%BD%AEuefi/</link>
       <pubDate>Fri, 30 Jun 2023 08:05:39 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.8-%E9%85%8D%E7%BD%AEuefi/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置uefi">配置UEFI</h1>
 <p>这种 config.list 的最后一章节，姿势有点杂，但是成功就在眼前了。</p>
@@ -1203,7 +1203,7 @@ git config user.email E1
       <title>3.7 配置Platformlnfo</title>
       <link>https://xiaoxiami.xyz/3.7-%E9%85%8D%E7%BD%AEplatformlnfo/</link>
       <pubDate>Thu, 29 Jun 2023 22:04:09 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.7-%E9%85%8D%E7%BD%AEplatformlnfo/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置platformlnfo">配置Platformlnfo</h1>
 <p>这部分主要介绍的机型相关的信息，可以使用 OCC 这类工具一键生成，选择和自己 CPU 相近的即可。</p>
@@ -1277,7 +1277,7 @@ git config user.email E1
       <title>3.6 配置NVRAM</title>
       <link>https://xiaoxiami.xyz/3.6-%E9%85%8D%E7%BD%AEnvram/</link>
       <pubDate>Thu, 29 Jun 2023 12:02:17 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.6-%E9%85%8D%E7%BD%AEnvram/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置nvram">配置NVRAM</h1>
 <p>NVRAM 部分，这部分基本上是通用的，这样就不用考虑各个机型了。</p>
@@ -1445,7 +1445,7 @@ git config user.email E1
       <title>3.5 配置Misc</title>
       <link>https://xiaoxiami.xyz/3.5-%E9%85%8D%E7%BD%AEmisc/</link>
       <pubDate>Thu, 29 Jun 2023 02:01:04 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.5-%E9%85%8D%E7%BD%AEmisc/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置misc">配置Misc</h1>
 <p>Misc 杂项部分，这部分基本上是通用的，这样就不用考虑各个机型了。</p>
@@ -1519,7 +1519,7 @@ git config user.email E1
       <title>3.4 配置Kernel</title>
       <link>https://xiaoxiami.xyz/3.4-%E9%85%8D%E7%BD%AEkernel/</link>
       <pubDate>Wed, 28 Jun 2023 20:36:43 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.4-%E9%85%8D%E7%BD%AEkernel/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置kernel">配置Kernel</h1>
 <p>内核相关的选项设置。</p>
@@ -1756,7 +1756,7 @@ git config user.email E1
       <title>3.3 配置DeviceProperties</title>
       <link>https://xiaoxiami.xyz/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/</link>
       <pubDate>Wed, 28 Jun 2023 20:20:39 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置deviceproperties">配置DeviceProperties</h1>
 <p>设备配置通过专用缓冲区提供给 macOS，用于设置 PCI 设备属性，如英特尔缓冲帧补丁，声卡 Layout ID 等。当然声卡的 ID 也可以直接通过启动项添加 <code>alcid=xx</code> 这种形式来添加也是 OK 的。</p>
@@ -3684,7 +3684,7 @@ git config user.email E1
       <title>Mac下通过ClashX实现全局透明代理</title>
       <link>https://xiaoxiami.xyz/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</link>
       <pubDate>Tue, 27 Jun 2023 09:42:46 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</guid> <category>clash</category> <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description> <content:encoded><![CDATA[
         <p>通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。</p>
 <p>在Mac上需要使用闭源内核的<a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro</a>，添加好订阅链接，设置成系统代理并打开增强模式。</p>
@@ -3710,7 +3710,7 @@ git config user.email E1
       <title>3.2 配置Booter</title>
       <link>https://xiaoxiami.xyz/3.2-%E9%85%8D%E7%BD%AEbooter/</link>
       <pubDate>Fri, 23 Jun 2023 08:41:31 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.2-%E9%85%8D%E7%BD%AEbooter/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置booter">配置Booter</h1>
 <p>本节允许对操作系统引导加载程序应用不同类型的UEFI修改，主要是Apple引导加载程序（boot.efi）。这些修改目前为不同的固件类型提供了各种修补程序和环境更改。其中一些功能最初是作为 AptioeMoryFix.efi （不再维护）的一部分实现的。</p>
@@ -4176,7 +4176,7 @@ git config user.email E1
       <title>3.1 配置ACPI</title>
       <link>https://xiaoxiami.xyz/3.1-%E9%85%8D%E7%BD%AEacpi/</link>
       <pubDate>Fri, 23 Jun 2023 08:26:11 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/3.1-%E9%85%8D%E7%BD%AEacpi/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="配置acpi">配置ACPI</h1>
 <p>通过上一节准备工作的配置，我们的 SSDT 应该都已经加载进来了，此时一般调整下 Quiks（怪癖）即可，少数的 SSDT 需要打对应的补丁才可以生效。</p>
@@ -4380,7 +4380,7 @@ git config user.email E1
       <title>2.8 Kexts微调</title>
       <link>https://xiaoxiami.xyz/2.8-kexts%E5%BE%AE%E8%B0%83/</link>
       <pubDate>Tue, 20 Jun 2023 02:12:29 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.8-kexts%E5%BE%AE%E8%B0%83/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="kexts微调">Kexts微调</h1>
 <p>Kexts 也有顺序的要求，而且有些 Kexts 会冲突无法开机，关于这块也比杂了，因为 Kexts 的开发者都不相同。</p>
@@ -4511,7 +4511,7 @@ git config user.email E1
       <title>2.7 初步配置</title>
       <link>https://xiaoxiami.xyz/2.7-%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 20 Jun 2023 01:32:29 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.7-%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="初步配置">初步配置</h1>
 <h2 id="调整文件夹结构">调整文件夹结构</h2>
@@ -4658,7 +4658,7 @@ git config user.email E1
       <title>2.6 OC编辑器</title>
       <link>https://xiaoxiami.xyz/2.6-oc%E7%BC%96%E8%BE%91%E5%99%A8/</link>
       <pubDate>Tue, 20 Jun 2023 01:21:21 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.6-oc%E7%BC%96%E8%BE%91%E5%99%A8/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="oc-编辑器">OC 编辑器</h1>
 <p>因为 OpenCore 的核显配置 文件是 <strong>.plist</strong> 结尾的，所以需要专门的编辑器来编辑，常见的 OC 编辑器的优缺点如下：</p>
@@ -4762,7 +4762,7 @@ git config user.email E1
       <title>2.5 Drives说明</title>
       <link>https://xiaoxiami.xyz/2.5-drives%E8%AF%B4%E6%98%8E/</link>
       <pubDate>Mon, 19 Jun 2023 23:59:14 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.5-drives%E8%AF%B4%E6%98%8E/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="drivers-说明">Drivers 说明</h1>
 <h2 id="完整的-drivers-说明">完整的 Drivers 说明</h2>
@@ -4824,7 +4824,7 @@ git config user.email E1
       <title>2.4.2 macOS12蓝牙设置</title>
       <link>https://xiaoxiami.xyz/2.4.2-macos12%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 19 Jun 2023 22:50:55 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.4.2-macos12%E8%93%9D%E7%89%99%E8%AE%BE%E7%BD%AE/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h2 id="intel-无线网卡">Intel 无线网卡</h2>
 <p>使用 <code>BlueToolFixup.kext</code> 替代掉 <code>IntelBluetoothInjector.kext</code> 即可。</p>
@@ -4847,7 +4847,7 @@ git config user.email E1
       <title>2.4.1 USB定制</title>
       <link>https://xiaoxiami.xyz/2.4.1-usb%E5%AE%9A%E5%88%B6/</link>
       <pubDate>Mon, 19 Jun 2023 20:50:55 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.4.1-usb%E5%AE%9A%E5%88%B6/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h3 id="usb-定制的意义">USB 定制的意义</h3>
 <p>如果 USB 定制不完美的话，可能会出现以下情况：</p>
@@ -4968,7 +4968,7 @@ git config user.email E1
       <title>2.4 准备Kexts</title>
       <link>https://xiaoxiami.xyz/2.4-%E5%87%86%E5%A4%87kexts/</link>
       <pubDate>Mon, 19 Jun 2023 19:44:55 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.4-%E5%87%86%E5%A4%87kexts/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="准备-kexts">准备 Kexts</h1>
 <h2 id="基本概念">基本概念</h2>
@@ -5402,7 +5402,7 @@ git config user.email E1
       <title>2.3 准备ACPI</title>
       <link>https://xiaoxiami.xyz/2.3-%E5%87%86%E5%A4%87acpi/</link>
       <pubDate>Sun, 18 Jun 2023 01:10:54 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.3-%E5%87%86%E5%A4%87acpi/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="准备-acpi">准备 ACPI</h1>
 <h2 id="基本概念">基本概念</h2>
@@ -5805,7 +5805,7 @@ git config user.email E1
       <title>2.2 OC文件结构</title>
       <link>https://xiaoxiami.xyz/2.2-oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</link>
       <pubDate>Sat, 17 Jun 2023 23:36:31 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.2-oc%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="oc-文件结构">OC 文件结构</h1>
 <h2 id="原始文件结构">原始文件结构</h2>
@@ -5953,7 +5953,7 @@ git config user.email E1
       <title>2.1 BIOS设置</title>
       <link>https://xiaoxiami.xyz/2.1-bios%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Sat, 17 Jun 2023 22:27:38 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/2.1-bios%E8%AE%BE%E7%BD%AE/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h1 id="bios设置">BIOS设置</h1>
 <p>以下 BIOS 设置尽量参考一下，因为主板型号凌乱的原因，找不全也是很正常的，尽量靠齐这些设置就行。</p>
@@ -6138,7 +6138,7 @@ git config user.email E1
       <title>1.2 写入镜像</title>
       <link>https://xiaoxiami.xyz/1.2-%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</link>
       <pubDate>Sat, 17 Jun 2023 13:30:52 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/1.2-%E5%86%99%E5%85%A5%E9%95%9C%E5%83%8F/</guid> <category>黑苹果</category> <description>&lt;p&gt;写入镜像实际上也有很多工具，这里推荐一个后来居上的工具 &lt;a href=&#34;https://www.balena.io/etcher&#34;&gt;balenaEthcher&lt;/a&gt;&lt;/p&gt;</description> <content:encoded><![CDATA[
         <p>写入镜像实际上也有很多工具，这里推荐一个后来居上的工具 <a href="https://www.balena.io/etcher">balenaEthcher</a></p>
 <p><figure class="my-8">
@@ -6161,7 +6161,7 @@ git config user.email E1
       <title>1.1 黑苹果单OC分区引导镜像制作</title>
       <link>https://xiaoxiami.xyz/1.1-%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
       <pubDate>Fri, 16 Jun 2023 13:30:52 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/1.1-%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</guid> <category>黑苹果</category> <description></description> <content:encoded><![CDATA[
         <h4 id="写在前面">写在前面：</h4>
 <p>需要在mac系统里进行，并在商店里下载好需要的<a href="https://support.apple.com/zh-cn/HT211683">镜像</a>文件，这里以monterey12.6.7为例。</p>
@@ -6249,7 +6249,7 @@ git config user.email E1
       <title>git教程</title>
       <link>https://xiaoxiami.xyz/git%E6%95%99%E7%A8%8B/</link>
       <pubDate>Sat, 23 Jul 2022 21:18:13 &#43;0800</pubDate>
-      <author>dodopoi</author>
+      <author>小虾米</author>
       <guid>https://xiaoxiami.xyz/git%E6%95%99%E7%A8%8B/</guid> <category>git</category> <description></description> <content:encoded><![CDATA[
         <h2 id="git是什么">Git是什么？</h2>
 <p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
