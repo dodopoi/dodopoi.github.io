@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on 摸魚惹</title>
-    <link>https://moyu.re/series/</link>
-    <description>Recent content in Series on 摸魚惹</description>
+    <title>Series on 拯救世界去了</title>
+    <link>https://xiaoxiami.xyz/series/</link>
+    <description>Recent content in Series on 拯救世界去了</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="https://moyu.re/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xiaoxiami.xyz/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

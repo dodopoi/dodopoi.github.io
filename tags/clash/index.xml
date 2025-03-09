@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clash on 摸魚惹</title>
-    <link>https://moyu.re/tags/clash/</link>
-    <description>Recent content in Clash on 摸魚惹</description>
+    <title>Clash on 拯救世界去了</title>
+    <link>https://xiaoxiami.xyz/tags/clash/</link>
+    <description>Recent content in Clash on 拯救世界去了</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 27 Jun 2023 09:42:46 +0800</lastBuildDate>
-    <atom:link href="https://moyu.re/tags/clash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xiaoxiami.xyz/tags/clash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac下通过ClashX实现全局透明代理</title>
-      <link>https://moyu.re/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</link>
+      <link>https://xiaoxiami.xyz/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</link>
       <pubDate>Tue, 27 Jun 2023 09:42:46 +0800</pubDate>
-      <guid>https://moyu.re/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</guid>
+      <guid>https://xiaoxiami.xyz/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</guid>
       <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description>
     </item>
   </channel>
