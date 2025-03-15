@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>拯救世界去了</title>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer"><meta name="description"
+    content="My personal blog, my nook of the internet, my cyber eutopia.">
+
+<meta name="keywords" content="黑苹果">
+
+
+
+
+<meta name="application-name" content="拯救世界去了">
+<meta name="apple-mobile-web-app-title" content="拯救世界去了">
+
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1b1e" media="(prefers-color-scheme: dark)">
+
+
+<meta property="og:title" content="2.4.1 USB定制 - 拯救世界去了">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://xiaoxiami.co/2.4.1lenovo-xiaoxini2000-hackintosh-monterey/">
+<meta property="og:site_name" content="拯救世界去了">
+
+
+
+    
+    <meta property="article:published_time" content="2023-06-19T20:50:55&#43;08:00">
+    
+
+    
+    <meta property="article:modified_time" content="2023-06-19T20:50:55&#43;08:00">
+    
+
+    
+    
+    <meta property="article:author" content="小虾米">
+    
+
+    
+    
+    
+    <meta property="article:tag" content="黑苹果">
+    
+    
+
+    
+    
+    
+    <meta property="article:section" content="折腾">
+    
+    
+
+
+<meta property="og:image" content="https://picgo-2.pages.dev//Avatar_Genie.gif">
+
+<title>2.4.1 USB定制 | 拯救世界去了</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+
+<script>
+  (function () {
+    const theme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+      (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<link rel="stylesheet" href="/css/main.min.e464c965adcb359ccf50018707280010cd22711ea4585b4f4f3a54d6cefb9f9f.css" integrity="sha256-5GTJZa3LNZzPUAGHBygAEM0icR6kWFtPTzpU1s77n58=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/uno.min.416df9943316c2a6b2717afb8023203c52ed8e1d86d9efd819b9eec5310a99a5.css" integrity="sha256-QW35lDMWwqaycXr7gCMgPFLtjh2G2e/YGbnuxTEKmaU=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/prose.min.f0c212c4b13681cfb352c460e3a6a4c4a4345f7f9a38a1b6cad7f42c5204b2ac.css" integrity="sha256-8MISxLE2gc&#43;zUsRg46akxKQ0X3&#43;aOKG2ytf0LFIEsqw=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/lightbox.min.ffc5cc4e2e6402cf607cdbb904a5d747f8443612c8cb8014ab901cc6c41f5dd2.css" integrity="sha256-/8XMTi5kAs9gfNu5BKXXR/hENhLIy4AUq5AcxsQfXdI=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/scroll.min.c86a4db3c7b214919b90295be86a8ac6490610845c0f6d8cd8cc7d230478a22e.css" integrity="sha256-yGpNs8eyFJGbkClb6GqKxkkGEIRcD22M2Mx9IwR4oi4=" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/css/components/shiki.min.c0e6db88b257cd1eb6333abe1275a053124ebdc0c8e7c930a89591f44c43c577.css" integrity="sha256-wObbiLJXzR62Mzq&#43;EnWgUxJOvcDI58kwqJWR9ExDxXc=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/css/components/clickcopy.min.84a456e78e8f6cbbd747aa26ded29875ddb051d01f29ff9185ebd9aee32ef397.css" integrity="sha256-hKRW546PbLvXR6om3tKYdd2wUdAfKf&#43;RhevZruMu85c=" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous">
+
+<script src="/js/components/lightbox.9bc8b6a23d67e97480f013aa933f45e43ff50ca0f5ad37b9b4da1db6ce09b901.js" integrity="sha256-m8i2oj1n6XSA8BOqkz9F5D/1DKD1rTe5tNodts4JuQE=" crossorigin="anonymous"  defer  ></script>
+
+
+<script src="/js/components/clickcopy.5bbf4d054a73a21043f7d84298fc4772b74b329b7609640ee165a537d054c93c.js" integrity="sha256-W79NBUpzohBD99hCmPxHcrdLMpt2CWQO4WWlN9BUyTw=" crossorigin="anonymous"  defer  ></script>
+
+
+
+
+    
+</head>
+
+<body class="flex flex-col min-h-screen bg-background text-foreground dark:bg-background-dark dark:text-foreground-dark 
+             transition-colors">
+
+    
+    <div id="loading-screen"
+    class="fixed inset-0 z-[100] bg-background flex items-center justify-center transition-opacity duration-500">
+    <div class="flex flex-col items-center gap-4">
+        <div class="relative w-12 h-12">
+            <div class="absolute inset-0 border-t-2 border-primary/20 rounded-full"></div>
+            <div class="absolute inset-0 border-t-2 border-primary rounded-full animate-spin"></div>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-1"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-2"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-3"></div>
+        </div>
+        <div class="text-sm text-muted-foreground/70 animate-pulse">
+            别着急，坐和放宽
+        </div>
+    </div>
+</div>
+
+    
+    <div class="flex flex-col flex-grow">
+        <nav class="fixed top-0 left-0 right-0 bg-background/80 dark:bg-background-dark/80 backdrop-blur z-50">
+    <div class="container max-w-6xl mx-auto px-4 flex items-center h-16">
+        <a href="/" class="shrink-0">
+            <img src="https://picgo-2.pages.dev//Avatar_Genie.gif" alt="avatar"
+                class="w-8 h-8 rounded-full object-cover ring-2 ring-background dark:ring-background-dark shadow-sm">
+        </a>
+        <div class="flex mx-auto transition-all duration-300" id="nav-menu">
+            <div
+                class="flex items-center bg-accent/50 dark:bg-accent-dark/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium">
+                
+                
+                
+                <div class="relative group">
+                    <a aria-label="归档" href="https://xiaoxiami.co/"
+                        class="text-muted-foreground hover:text-primary transition-colors">
+                        归档
+                    </a>
+                    
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible 
+                            group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-32 py-1 rounded-lg border border-border/50 dark:border-border-dark/50 
+                                backdrop-blur
+                                shadow-lg shadow-accent/5 flex flex-col overflow-hidden">
+                            
+                            <a aria-label="分类" href="https://xiaoxiami.co/categories" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                hover:text-primary hover:bg-accent/40 dark:hover:bg-accent-dark/40 transition-colors
+                                ">
+                                分类
+                            </a>
+                            
+                            <a aria-label="标签" href="https://xiaoxiami.co/tags" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                hover:text-primary hover:bg-accent/40 dark:hover:bg-accent-dark/40 transition-colors
+                                ">
+                                标签
+                            </a>
+                            
+                            <a aria-label="时间" href="https://xiaoxiami.co/posts" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                hover:text-primary hover:bg-accent/40 dark:hover:bg-accent-dark/40 transition-colors
+                                ">
+                                时间
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <a aria-label="友链" href="https://xiaoxiami.co/links" class="text-muted-foreground dark:text-muted-foreground-dark hover:text-primary transition-colors
+                    ">
+                    友链
+                </a>
+                
+                
+                
+                <div class="relative group">
+                    <a aria-label="关于" href="https://xiaoxiami.co/about"
+                        class="text-muted-foreground hover:text-primary transition-colors">
+                        关于
+                    </a>
+                    
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible 
+                            group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="w-32 py-1 rounded-lg border border-border/50 dark:border-border-dark/50 
+                                backdrop-blur
+                                shadow-lg shadow-accent/5 flex flex-col overflow-hidden">
+                            
+                            <a aria-label="朋友圈" href="https://monments.xiaoxiami.co/" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                hover:text-primary hover:bg-accent/40 dark:hover:bg-accent-dark/40 transition-colors
+                                ">
+                                朋友圈
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <a aria-label="日志" href="https://xiaoxiami.co/changelogs" class="text-muted-foreground dark:text-muted-foreground-dark hover:text-primary transition-colors
+                    ">
+                    日志
+                </a>
+                
+                
+            </div>
+        </div>
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 cursor-pointer transition-all duration-300 
+            max-w-[50%] sm:max-w-[60%]" id="nav-title">
+            <h2 class="text-base font-medium truncate hover:text-primary transition-colors"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth'});" aria-label="返回顶部">
+                2.4.1 USB定制
+            </h2>
+        </div>
+        <div class="flex items-center gap-2">
+            
+            <button type="button" id="search-button" class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full
+                bg-background/80 dark:bg-background-dark/80
+                ring-0 dark:ring-0 border-0 dark:border-0
+                text-muted-foreground/70 dark:text-muted-foreground-dark/70
+                hover:bg-accent/50 dark:hover:bg-accent-dark/50
+                transition-colors" aria-label="搜索" onclick="document.querySelector('.DocSearch-Button').click()">
+                <div class="i-carbon-search w-4 h-4"></div>
+            </button>
+
+            
+            <div class="relative group">
+                <button id="theme-toggle" class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full
+            bg-background/80
+            ring-0 border-0
+            text-muted-foreground/70
+            hover:bg-accent/50
+            transition-colors" aria-label="切换主题">
+                    <div class="i-carbon-sun w-4 h-4"></div>
+                </button>
+
+                
+                <div class="absolute right-0 top-full mt-2 opacity-0 invisible 
+                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                    <div class="w-9 flex flex-col rounded-xl
+                        shadow-sm shadow-accent/5">
+                        
+                        
+
+
+<button class="w-9 h-9 flex items-center justify-center rounded-full
+    bg-background ring-1 ring-border dark:ring-white/40 border-0
+    text-muted-foreground/70
+    hover:bg-accent/50
+    hover:text-foreground
+    transition-colors my-0.5" onclick="setTheme('light')" aria-label="">
+    <div class="i-carbon-sun w-4 h-4"></div>
+</button>
+
+                        
+                        
+
+
+<button class="w-9 h-9 flex items-center justify-center rounded-full
+    bg-background ring-1 ring-border dark:ring-white/40 border-0
+    text-muted-foreground/70
+    hover:bg-accent/50
+    hover:text-foreground
+    transition-colors my-0.5" onclick="setTheme('dark')" aria-label="">
+    <div class="i-carbon-moon w-4 h-4"></div>
+</button>
+
+                        
+                        
+
+
+<button class="w-9 h-9 flex items-center justify-center rounded-full
+    bg-background ring-1 ring-border dark:ring-white/40 border-0
+    text-muted-foreground/70
+    hover:bg-accent/50
+    hover:text-foreground
+    transition-colors my-0.5" onclick="setTheme('auto')" aria-label="">
+    <div class="i-carbon-screen w-4 h-4"></div>
+</button>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<link rel="preconnect" href="https://JEYKH670AO-dsn.algolia.net" crossorigin />
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/@docsearch/css@3" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="/css/components/search/docsearch.min.e9ab6523c0591ffe9d81ad080ff72fb1b120253095c4d22c3772cc170c9eec2e.css" integrity="sha256-6atlI8BZH/6dga0ID/cvsbEgJTCVxNIsN3LMFwye7C4=" crossorigin="anonymous">
+
+<div id="docsearch"></div>
+
+<script src="https://cdn.jsdmirror.com/npm/@docsearch/js@3" crossorigin="anonymous" defer></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        docsearch({
+            appId: 'JEYKH670AO',
+            apiKey: '413895b53ca7b783b0fce6f3599fcdbf',
+            indexName: 'xiaoxiami',
+            container: '#docsearch',
+            placeholder: 'so一下~'
+        });
+    });
+</script>
+
+
+
+
+<script>
+    function getTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        return savedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function setTheme(theme) {
+    const htmlElement = document.documentElement;
+    // 先移除所有可能的主题类
+    htmlElement.classList.remove('light', 'dark');
+
+    if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+    } else if (theme === 'light') {
+        htmlElement.classList.add('light');
+    } else {
+        // 自动模式
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isDark) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.add('light');
+        }
+    }
+    localStorage.setItem('theme', theme);
+    updateThemeIcon(theme);
+}
+
+function updateThemeIcon(theme) {
+    const themeToggle = document.getElementById('theme-toggle');
+    const iconClass = theme === 'dark' ? 'i-carbon-moon' :
+        theme === 'light' ? 'i-carbon-sun' :
+            'i-carbon-screen';
+    themeToggle.innerHTML = `<div class="${iconClass} w-4 h-4 text-muted-foreground/70 dark:text-muted-foreground-dark/70"></div>`;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const theme = getTheme();
+    setTheme(theme);
+
+    // 监听系统主题变化
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (localStorage.getItem('theme') === 'auto') {
+            setTheme('auto');
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navMenu = document.getElementById('nav-menu');
+    const navTitle = document.getElementById('nav-title');
+    let lastScrollY = window.scrollY;
+    const scrollThreshold = 100; // 滚动阈值
+
+    function updateNav() {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > scrollThreshold) {
+            navMenu.style.opacity = '0';
+            navMenu.style.pointerEvents = 'none';
+            navTitle.style.opacity = '1';
+            navTitle.style.pointerEvents = 'auto';
+        } else {
+            navMenu.style.opacity = '1';
+            navMenu.style.pointerEvents = 'auto';
+            navTitle.style.opacity = '0';
+            navTitle.style.pointerEvents = 'none';
+        }
+
+        lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+});
+</script>
+
+        <main class="flex-grow">
+            
+<div class="container max-w-6xl mx-auto px-4 pt-24 pb-16">
+    <div class="flex gap-16">
+        <div class="relative">
+            <div class="flex gap-8 max-w-6xl mx-auto px-4 py-12 md:py-20">
+                <div class="w-full lg:max-w-3xl">
+                    <header class="mb-12">
+                        <h1 class="text-3xl font-bold mb-6">2.4.1 USB定制</h1>
+                    </header>
+
+                    
+                    <div class="relative my-8 p-6 rounded-xl border border-border/40 dark:border-border-dark/40 
+    backdrop-blur transition-all duration-300
+    hover:border-border/60 dark:hover:border-border-dark/60 
+    " id="ai-summary-toggle">
+    
+    <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="i-carbon-ai-status w-5 h-5 text-primary dark:text-primary-dark"></div>
+            <span class="text-base font-medium">AI 摘要</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="px-2.5 py-0.5 text-xs rounded-md
+                text-primary/80 dark:text-primary-dark/80
+                ring-1 ring-primary/20 dark:ring-primary-dark/20">
+                109酱
+            </span>
+            <button class="group bg-inherit border-none ring-1 ring-gray-600 dark:ring-gray-400" aria-label="展开/收起摘要">
+                <div class="i-carbon-chevron-down w-5 h-5
+                    text-muted-foreground/60 dark:text-muted-foreground-dark/60
+                    transition-transform duration-200 ease-out" id="ai-summary-icon">
+                </div>
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="my-4 border-t border-border/30 dark:border-border-dark/30"></div>
+
+    
+    <div class="overflow-hidden transition-[height,opacity] duration-200 ease-out" style="height: 0; opacity: 0;"
+        id="ai-summary-content">
+        <div class="text-sm leading-relaxed text-muted-foreground dark:text-muted-foreground-dark">
+            
+        </div>
+    </div>
+</div>
+
+
+<script defer>
+    document.getElementById('ai-summary-toggle')?.addEventListener('click', function () {
+        const content = document.getElementById('ai-summary-content');
+        const icon = document.getElementById('ai-summary-icon');
+        const contentInner = content.querySelector('div');
+
+        if (content.style.height === '0px' || content.style.height === '') {
+            
+            content.style.height = contentInner.offsetHeight + 'px';
+            content.style.opacity = '1';
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            
+            content.style.height = '0px';
+            content.style.opacity = '0';
+            icon.style.transform = '';
+        }
+    });
+
+    
+    window.addEventListener('resize', () => {
+        const content = document.getElementById('ai-summary-content');
+        const contentInner = content.querySelector('div');
+
+        if (content.style.height !== '0px' && content.style.height !== '') {
+            content.style.height = contentInner.offsetHeight + 'px';
+        }
+    });
+</script>
+
+                    
+                    <article class="prose prose-neutral dark:prose-invert max-w-none">
+                        
+
+    <h3 id="usb-定制的意义">USB 定制的意义</h3>
+<p>如果 USB 定制不完美的话，可能会出现以下情况：</p>
+<!-- raw HTML omitted -->
+<ol>
+<li>蓝牙无法使用，因为蓝牙走 USB 协议</li>
+<li>无法正常进入系统安装界面，提示鼠标或者妙控板之类的画面</li>
+<li>睡眠立马就醒来，因为蓝牙等 USB 没有内建</li>
+<li>USB 接口没有反应或者速率无法跑满</li>
+<li><strong>建议安装系统前先定制一下 USB，避免后面遇到不必要的麻烦</strong></li>
+</ol>
+<h3 id="啰嗦一下">啰嗦一下</h3>
+<p>早期使用 Hackintool 工具定制 USB 这种方法比较多，但是到 macOS 11 后面的版本的时候，这种方法不再好用了，目前最完美的方法就是 Windows 下使用 USBToolBox 来定制 USB，最后再使用 Hackintool 简单微调修正一下。</p>
+<h3 id="运行工具">运行工具</h3>
+<p>USBToolBox 的官方项目地址：https://github.com/USBToolBox/tool/</p>
+<p>已编译的下载地址：https://github.com/USBToolBox/tool/releases</p>
+<p>下载 「Windows.exe」到 Windows 平台，双击即可运行：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B601.webp" alt="2.4.1USB定制01" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<h3 id="探测端口">探测端口</h3>
+<p>输入 <strong>D</strong> 然后回车来探测电脑上的端口：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B602.webp" alt="2.4.1USB定制02" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>此时的会出现如下界面：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B603.webp" alt="2.4.1USB定制03" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>这个界面每 5 秒会刷新一次。</p>
+<h3 id="插入-usb-设备">插入 USB 设备</h3>
+<p>分部在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录，最终我的笔记本最终探测端口的效果如下：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B604.webp" alt="2.4.1USB定制04" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>都挨个插一遍后，输入 <strong>B</strong> 回车即可返回主菜单：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B605.webp" alt="2.4.1USB定制05" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<h3 id="查看端口">查看端口</h3>
+<p>回到主菜单，输入 <strong>S</strong> 来查看端口探测的结果：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B606.webp" alt="2.4.1USB定制06" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>最终我的设备端口探测的结果如下：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B607.webp" alt="2.4.1USB定制07" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>可以看到 1、2、4、5、6、10、13、15、16 这个 9 个都是活跃的 USB 的端口。</p>
+<h3 id="导出端口">导出端口</h3>
+<p>此时结果查看感觉没问题的话，输入 <strong>K</strong> 回车，即可导出 <code>UTBMap.kext</code> 文件：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B608.webp" alt="2.4.1USB定制08" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>一般情况下会保存在当前程序的同级目录下：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B609.webp" alt="2.4.1USB定制09" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<h3 id="oc-加载-kexts">OC 加载 Kexts</h3>
+<p>除了上述生成的 <code>UTBMap.kext</code> 文件以外，我们还需要配合 <code>USBToolBox.kext</code> 使用。</p>
+<p>USBToolBox.kext 官方下载地址为：https://github.com/USBToolBox/kext/releases</p>
+<p>将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，然后记得取消 <strong>XhciPortLimit</strong> 勾选：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B610.webp" alt="2.4.1USB定制10" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>重启即可生效，至此你的 USB 基本上定制完了，正常使用不是问题了，强迫症换着可以继续看下去。</p>
+<h3 id="hackintool-验证">Hackintool 验证</h3>
+<p>使用 Hackintool 查看发现 USB 各个接口均正常识别并工作：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B611.webp" alt="2.4.1USB定制11" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>不过各个接口都插一遍，发现这个 SS02 的端口确实多了，非强逼症可以不用管它，引用罗永浩那句名言：又不是不能用？</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B612.webp" alt="2.4.1USB定制12" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<h3 id="hackintool-优化">Hackintool 优化</h3>
+<p>使用 Hackintool 重新删除掉多余的 SS02 端口，然后导出 USBPorts.kext，使用 OC 加载，然后取消之前 USBToolBox 的两个 Kexts 的启用状态：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B613.webp" alt="2.4.1USB定制13" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>重启，最终的效果如下：</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//2.4.1USB%E5%AE%9A%E5%88%B614.webp" alt="2.4.1USB定制14" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<blockquote>
+<p>这样强逼症终于舒服了，也没有多余的端口。</p>
+<p>实际上还是有瑕疵，就是第一个 HS01 应该是 USB2 设备，解决方法就是使用 Hackintool 纠正再定制一下，又不是不能用！</p>
+</blockquote>
+
+
+                    </article>
+
+                    
+                    
+
+                    
+                    <div class="mt-12 md:mt-16 p-6 rounded-xl border border-border/40 dark:border-border-dark/40 
+    backdrop-blur">
+    <div class="flex flex-col sm:flex-row gap-6">
+        
+        <div class="hidden sm:block flex-shrink-0">
+            <div class="w-14 h-14 rounded-xl border border-border/40 dark:border-border-dark/40
+                bg-accent/30 dark:bg-accent-dark/30
+                flex items-center justify-center">
+                <div class="i-carbon-license w-7 h-7 text-primary/80"></div>
+            </div>
+        </div>
+
+        
+        <div class="flex-1 space-y-4">
+            
+            <div class="space-y-1">
+                <h3 class="text-base font-medium">版权声明</h3>
+                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground/70">
+                    <span>本文采用</span>
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1 text-primary/80 hover:text-primary transition-colors">
+                        <div class="i-carbon-link w-3.5 h-3.5"></div>
+                        <span>CC BY-NC-SA 4.0</span>
+                    </a>
+                    <span>许可协议。</span>
+                </div>
+            </div>
+
+            
+            <div class="text-sm space-y-2 text-muted-foreground/70">
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>转载请注明出处：<span class="select-all">https://xiaoxiami.co/2.4.1lenovo-xiaoxini2000-hackintosh-monterey/</span></span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>本文作者：小虾米</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>发布时间：<time class="tabular-nums">2023-06-19 20:50</time></span>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                    
+
+
+
+<link rel="stylesheet" href="/css/components/twikoo.min.0c1c68a789714e0d50c874179f667a51d380faebfbfe7a1649e72b6e87f4138f.css" integrity="sha256-DBxop4lxTg1QyHQXn2Z6UdOA&#43;uv7/noWSecrbof0E48=" crossorigin="anonymous">
+
+<div class="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-border/40 dark:border-border-dark/40">
+    
+    <div class="flex items-center gap-2 mb-8">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h3 class="text-lg font-medium">评论</h3>
+    </div>
+    
+    
+    <div id="twikoo" class="plain-link-container"></div>
+</div>
+
+
+<script src="https://cdn.jsdmirror.com/gh/chlorine3545/customcdn@2b63d63/js/twikoo/1_6_41.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        twikoo.init({
+            envId: 'https:\/\/changyan.xiaoxiami.co',
+            el: '#twikoo',
+            lang: 'zh-CN'
+        });
+    });
+</script>
+
+
+
+<script src="/js/components/twikoo-owo.js" defer></script>
+
+
+ 
+                </div>
+
+                
+                <aside class="hidden lg:block w-64 flex-shrink-0">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        
+
+<link rel="stylesheet" href="/css/components/toc.css">
+
+
+<div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">目录</h3>
+    <nav class="text-sm text-foreground/70">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#usb-定制的意义">USB 定制的意义</a></li>
+        <li><a href="#啰嗦一下">啰嗦一下</a></li>
+        <li><a href="#运行工具">运行工具</a></li>
+        <li><a href="#探测端口">探测端口</a></li>
+        <li><a href="#插入-usb-设备">插入 USB 设备</a></li>
+        <li><a href="#查看端口">查看端口</a></li>
+        <li><a href="#导出端口">导出端口</a></li>
+        <li><a href="#oc-加载-kexts">OC 加载 Kexts</a></li>
+        <li><a href="#hackintool-验证">Hackintool 验证</a></li>
+        <li><a href="#hackintool-优化">Hackintool 优化</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</div>
+
+
+                        <div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">阅读进度</h3>
+    <div class="relative h-1 bg-border/50 rounded-full overflow-hidden">
+        <div id="reading-progress" class="absolute inset-y-0 left-0 bg-primary/80 transition-all duration-150"
+            style="width: 0%"></div>
+    </div>
+    <div class="text-sm text-muted-foreground text-center">
+        <span id="percent">0</span>% 已读
+    </div>
+</div>
+
+
+<script src="/js/components/reading-progress.e3f08ae433dbb92815c63445f7b352616aec446a0cc33300d08d0d5335dfda4e.js" integrity="sha256-4/CK5DPbuSgVxjRF97NSYWrsRGoMwzMA0I0NUzXf2k4=" crossorigin="anonymous"  defer  ></script>
+                    </div>
+                </aside>
+            </div>
+
+            <div id="reading-progress-ball" class="lg:hidden fixed right-4 bottom-20 w-12 h-12 rounded-full 
+                backdrop-blur 
+                shadow-lg border border-border/20 dark:border-border-dark/20
+                flex items-center justify-center text-sm font-medium tabular-nums
+                transition-all duration-300 transform translate-y-24 opacity-0">
+    0%
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const progressBall = document.getElementById('reading-progress-ball');
+    const article = document.querySelector('article');
+
+    function updateReadingProgress() {
+        const rect = article.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const articleHeight = article.offsetHeight;
+
+        // 计算阅读进度百分比
+        let progress = (windowHeight - rect.top) / (articleHeight - windowHeight) * 100;
+        progress = Math.min(100, Math.max(0, progress));
+
+        // 更新移动端进度球
+        if (progressBall) {
+            progressBall.textContent = `${Math.round(progress)}%`;
+
+            // 控制进度球的显示/隐藏
+            if (progress > 0 && progress < 100) {
+                progressBall.classList.remove('translate-y-24', 'opacity-0');
+            } else {
+                progressBall.classList.add('translate-y-24', 'opacity-0');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', updateReadingProgress);
+    updateReadingProgress();
+});
+</script>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+
+    
+    <footer class="plain-link-container mt-auto py-4 backdrop-blur border-t border-border/50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col gap-6">
+            
+            <div class="hidden mt-3 md:flex items-center gap-4 text-sm text-muted-foreground/70">
+                <script type="text/javascript">
+    function formatNumber(n) {
+        return n < 10 ? '0' + n : n;
+    }
+    
+    function runtime() {
+        const startTime = new Date("07\/22\/2022 12:00:00");
+        const currentTime = new Date();
+        const timeDifference = currentTime - startTime;
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeDifference / 1000) % 60);
+        
+        const timeString = `${days} 天 ${formatNumber(hours)} : ${formatNumber(minutes)} : ${formatNumber(seconds)}`;
+        document.getElementById("runningtime").innerHTML = timeString;
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        runtime();
+        setInterval(runtime, 1000);
+    });
+</script>
+
+<div class="flex items-center gap-2">
+    <div class="i-carbon-time w-4 h-4"></div>
+    <span class="tabular-nums font-mono tracking-wider">
+        <span class="text-primary/70">已运行</span>
+        <span id="runningtime" class="ml-1"></span>
+    </span>
+</div> 
+                <span class="w-1 h-1 rounded-full bg-muted-foreground/30"></span>
+                <script type="text/javascript">
+    function formatNumber(n) {
+        return n < 10 ? '0' + n : n;
+    }
+    
+    function runtime() {
+        const startTime = new Date("07\/22\/2022 12:00:00");
+        const currentTime = new Date();
+        const timeDifference = currentTime - startTime;
+        
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeDifference / 1000) % 60);
+        
+        const timeString = `${days} 天 ${formatNumber(hours)} : ${formatNumber(minutes)} : ${formatNumber(seconds)}`;
+        document.getElementById("runningtime").innerHTML = timeString;
+    }
+    
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        runtime();
+        setInterval(runtime, 1000);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex items-center gap-2">
+    <div class="i-carbon-text-font w-4 h-4"></div>
+    <span>
+        共 <span class="tabular-nums font-mono">41541</span> 字
+        <span class="mx-1">·</span>
+        还在努力更新中..加油！加油啦
+    </span>
+</div>
+            </div>
+
+            
+            <div class="hidden md:visible h-px bg-border/10"></div>
+
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-muted-foreground/60">
+                <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+    <span>© 2025 小虾米</span>
+    <div class="flex items-center gap-4">
+        <span>Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer"
+                class="hover:text-primary transition-colors">Hugo</a></span>
+        
+    </div>
+</div>
+                
+
+<div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+    
+    
+
+    
+    
+
+    
+    
+    <span class="hidden md:inline text-border/40">|</span>
+    <a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
+        
+        <span>萌ICP备20240549号</span>
+    </a>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<footer>
+    
+        <script>document.addEventListener('DOMContentLoaded', function () {
+    const loadingScreen = document.getElementById('loading-screen');
+    let loadingTimeout;
+
+    function hideLoading() {
+        if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 400);
+        }
+        if (loadingTimeout) {
+            clearTimeout(loadingTimeout);
+            loadingTimeout = null;
+        }
+    }
+
+    function showLoading() {
+        if (loadingScreen) {
+            loadingScreen.style.display = 'flex';
+            // 强制重排以确保过渡动画生效
+            loadingScreen.offsetHeight;
+            loadingScreen.style.opacity = '1';
+            
+            // 设置超时保护，最多显示3秒
+            loadingTimeout = setTimeout(hideLoading, 3000);
+        }
+    }
+
+    // 页面加载完成时隐藏
+    window.addEventListener('load', hideLoading);
+
+    // 处理浏览器返回按钮
+    window.addEventListener('pageshow', function(event) {
+        // 如果是从缓存加载的页面，也需要隐藏加载动画
+        if (event.persisted) {
+            hideLoading();
+        }
+    });
+
+    // 页面跳转时显示
+    document.addEventListener('click', function (e) {
+        const link = e.target.closest('a');
+        if (link &&
+            link.href &&
+            !link.href.startsWith('#') &&
+            !link.href.includes('#') &&
+            link.href !== window.location.href &&
+            !link.hasAttribute('download') &&
+            link.target !== '_blank' &&
+            link.hostname === window.location.hostname) {
+
+            e.preventDefault(); // 阻止默认跳转
+            showLoading();
+
+            // 延迟跳转
+            setTimeout(() => {
+                window.location.href = link.href;
+            }, 500);
+        }
+    });
+
+    // 初始隐藏加载动画（以防万一）
+    hideLoading();
+});</script>
+    
+</footer>
+
+</html>
