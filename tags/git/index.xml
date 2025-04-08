@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on 拯救世界去了</title>
-    <link>https://xiaoxiami.co/tags/git/</link>
+    <link>https://occamsrazor.cn/tags/git/</link>
     <description>Recent content in Git on 拯救世界去了</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 14 Mar 2025 20:09:50 +0800</lastBuildDate>
-    <atom:link href="https://xiaoxiami.co/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://occamsrazor.cn/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一个github账号下创建多个github pages页面的方法</title>
-      <link>https://xiaoxiami.co/github-pages/</link>
+      <link>https://occamsrazor.cn/github-pages/</link>
       <pubDate>Fri, 14 Mar 2025 20:09:50 +0800</pubDate>
-      <guid>https://xiaoxiami.co/github-pages/</guid>
+      <guid>https://occamsrazor.cn/github-pages/</guid>
       <description>&lt;p&gt;准备一个域名方便一些。&lt;/p&gt;</description>
     </item>
     <item>
       <title>在本地配置多个github账号</title>
-      <link>https://xiaoxiami.co/github/</link>
+      <link>https://occamsrazor.cn/github/</link>
       <pubDate>Wed, 10 Apr 2024 20:54:42 +0800</pubDate>
-      <guid>https://xiaoxiami.co/github/</guid>
+      <guid>https://occamsrazor.cn/github/</guid>
       <description></description>
     </item>
     <item>
       <title>git教程</title>
-      <link>https://xiaoxiami.co/learngit/</link>
+      <link>https://occamsrazor.cn/learngit/</link>
       <pubDate>Sat, 23 Jul 2022 21:18:13 +0800</pubDate>
-      <guid>https://xiaoxiami.co/learngit/</guid>
+      <guid>https://occamsrazor.cn/learngit/</guid>
       <description></description>
     </item>
   </channel>

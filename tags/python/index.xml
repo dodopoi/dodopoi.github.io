@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 拯救世界去了</title>
-    <link>https://xiaoxiami.co/tags/python/</link>
+    <link>https://occamsrazor.cn/tags/python/</link>
     <description>Recent content in Python on 拯救世界去了</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 15 Feb 2025 21:41:50 +0000</lastBuildDate>
-    <atom:link href="https://xiaoxiami.co/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://occamsrazor.cn/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一 python语言程序设计</title>
-      <link>https://xiaoxiami.co/python-course/</link>
+      <link>https://occamsrazor.cn/python-course/</link>
       <pubDate>Sat, 15 Feb 2025 21:41:50 +0000</pubDate>
-      <guid>https://xiaoxiami.co/python-course/</guid>
+      <guid>https://occamsrazor.cn/python-course/</guid>
       <description></description>
     </item>
     <item>
       <title>Python IDLE修改代码配色及语法高亮主题</title>
-      <link>https://xiaoxiami.co/python-idle-theme/</link>
+      <link>https://occamsrazor.cn/python-idle-theme/</link>
       <pubDate>Thu, 03 Oct 2024 00:48:16 +0000</pubDate>
-      <guid>https://xiaoxiami.co/python-idle-theme/</guid>
+      <guid>https://occamsrazor.cn/python-idle-theme/</guid>
       <description></description>
     </item>
   </channel>

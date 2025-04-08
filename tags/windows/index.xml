@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 拯救世界去了</title>
-    <link>https://xiaoxiami.co/tags/windows/</link>
+    <link>https://occamsrazor.cn/tags/windows/</link>
     <description>Recent content in Windows on 拯救世界去了</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 17 Mar 2024 20:13:01 +0800</lastBuildDate>
-    <atom:link href="https://xiaoxiami.co/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://occamsrazor.cn/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows之间实现文件网络共享</title>
-      <link>https://xiaoxiami.co/share/</link>
+      <link>https://occamsrazor.cn/share/</link>
       <pubDate>Sun, 17 Mar 2024 20:13:01 +0800</pubDate>
-      <guid>https://xiaoxiami.co/share/</guid>
+      <guid>https://occamsrazor.cn/share/</guid>
       <description></description>
     </item>
   </channel>
