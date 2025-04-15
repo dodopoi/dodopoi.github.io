@@ -4,14 +4,14 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>拯救世界去了</title>
+    <title>过客</title>
     <link>https://guoke.co/</link>
     <description></description>
     <language>zh-CN</language>
     <managingEditor>非鱼君</managingEditor>
     <webMaster>非鱼君</webMaster>
     <copyright></copyright>
-    <lastBuildDate>Sat, 12 Apr 2025 15:31:12 &#43;0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Apr 2025 05:44:49 &#43;0800</lastBuildDate>
     <category>Blog</category>
     <generator>Hugo -- gohugo.io</generator>  <atom:link href="https://guoke.co/index.xml" rel="self" type="application/rss+xml" />  <item>
       <title>暂停营业</title>
