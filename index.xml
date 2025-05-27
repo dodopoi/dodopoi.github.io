@@ -11,7 +11,7 @@
     <managingEditor>dodopoi</managingEditor>
     <webMaster>dodopoi</webMaster>
     <copyright></copyright>
-    <lastBuildDate>Thu, 22 May 2025 12:05:31 &#43;0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 May 2025 23:33:49 &#43;0800</lastBuildDate>
     <category>Blog</category>
     <generator>Hugo</generator>  <atom:link href="https://guoke.co/index.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://guoke.co/feed.atom" rel="alternate" type="application/atom+xml" /><item>
       <title>暂停营业</title>
@@ -51,10 +51,10 @@
       <author>dodopoi</author>
       <guid>https://guoke.co/%E6%97%A0%E9%A2%98/</guid> <category></category> <description></description> <content:encoded><![CDATA[
         <figure>
-          <img src="https://picgo1.pages.dev//you.gif" alt="无题" />
+          <img src="https://picgo1.guoke.co//you.gif" alt="无题" />
         </figure>
         <p><figure class="my-8">
-    <img src="https://picgo1.pages.dev//you.gif" alt="you" 
+    <img src="https://picgo1.guoke.co//you.gif" alt="you" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>

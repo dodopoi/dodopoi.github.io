@@ -8,7 +8,7 @@
     <link href="https://guoke.co/feed.atom" rel="self" type="application/atom&#43;xml" />
   
   <id>https://guoke.co/</id>
-  <updated>2025-05-22T12:05:31&#43;08:00</updated>
+  <updated>2025-05-27T23:33:49&#43;08:00</updated>
   <author>
     <name>dodopoi</name>
   </author>
@@ -83,10 +83,10 @@
     <content type="html">
       <![CDATA[
       <figure>
-        <img src="https://picgo1.pages.dev//you.gif" alt="无题" />
+        <img src="https://picgo1.guoke.co//you.gif" alt="无题" />
       </figure>
       <p><figure class="my-8">
-    <img src="https://picgo1.pages.dev//you.gif" alt="you" 
+    <img src="https://picgo1.guoke.co//you.gif" alt="you" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
