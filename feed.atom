@@ -8,7 +8,7 @@
     <link href="https://guoke.co/feed.atom" rel="self" type="application/atom&#43;xml" />
   
   <id>https://guoke.co/</id>
-  <updated>2025-05-28T00:37:45&#43;08:00</updated>
+  <updated>2025-05-28T10:26:59&#43;08:00</updated>
   <author>
     <name>dodopoi</name>
   </author>
@@ -29,11 +29,11 @@
     <content type="html">
       <![CDATA[
       <figure>
-        <img src="https://picgo1.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" />
+        <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" />
       </figure>
       <p>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \</p>
 <p><figure class="my-8">
-    <img src="https://picgo1.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" 
+    <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
@@ -56,10 +56,10 @@
     <content type="html">
       <![CDATA[
       <figure>
-        <img src="https://picgo1.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="时光" />
+        <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="时光" />
       </figure>
       <p><figure class="my-8">
-    <img src="https://picgo1.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="幸福" 
+    <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="幸福" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
@@ -85,11 +85,7 @@
       <figure>
         <img src="https://picgo1.pages.dev//you.gif" alt="无题" />
       </figure>
-      <p><figure class="my-8">
-    <img src="https://picgo1.pages.dev//you.gif" alt="you" 
-        class="mx-auto rounded-lg block" loading="lazy"  />
-    
-</figure></p>
+      
       ]]>
     </content>
     
