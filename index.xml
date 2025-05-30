@@ -5,20 +5,20 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>果壳中的宇宙</title>
-    <link>http://localhost:4981/</link>
-    <description> | Note: This RSS feed is deprecated. Please use the Atom feed at http://localhost:4981/feed.atom for future updates.</description>
+    <link>https://guoke.co/</link>
+    <description> | Note: This RSS feed is deprecated. Please use the Atom feed at https://guoke.co/feed.atom for future updates.</description>
     <language>zh-CN</language>
     <managingEditor>dodopoi</managingEditor>
     <webMaster>dodopoi</webMaster>
     <copyright></copyright>
-    <lastBuildDate>Wed, 28 May 2025 21:05:47 &#43;0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 May 2025 11:45:12 &#43;0800</lastBuildDate>
     <category>Blog</category>
-    <generator>Hugo</generator>  <atom:link href="http://localhost:4981/index.xml" rel="self" type="application/rss+xml" /> <atom:link href="http://localhost:4981/feed.atom" rel="alternate" type="application/atom+xml" /><item>
+    <generator>Hugo</generator>  <atom:link href="https://guoke.co/index.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://guoke.co/feed.atom" rel="alternate" type="application/atom+xml" /><item>
       <title>暂停营业</title>
-      <link>http://localhost:4981/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</link>
+      <link>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</link>
       <pubDate>Mon, 11 Nov 2024 11:11:00 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</guid> <description>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \
+      <guid>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</guid> <description>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \
 </description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" />
@@ -31,10 +31,10 @@
 </figure></p>
       ]]></content:encoded> </item><item>
       <title>时光</title>
-      <link>http://localhost:4981/%E6%97%B6%E5%85%89/</link>
+      <link>https://guoke.co/%E6%97%B6%E5%85%89/</link>
       <pubDate>Wed, 23 Apr 2025 23:23:22 &#43;0800</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/%E6%97%B6%E5%85%89/</guid> <category></category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/%E6%97%B6%E5%85%89/</guid> <category></category> <description></description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="时光" />
         </figure>
@@ -46,10 +46,10 @@
 <center>治愈</center>
       ]]></content:encoded> </item><item>
       <title>无题</title>
-      <link>http://localhost:4981/%E6%97%A0%E9%A2%98/</link>
+      <link>https://guoke.co/%E6%97%A0%E9%A2%98/</link>
       <pubDate>Fri, 25 Apr 2025 23:43:29 &#43;0800</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/%E6%97%A0%E9%A2%98/</guid> <category></category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/%E6%97%A0%E9%A2%98/</guid> <category></category> <description></description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo2.pages.dev//you.gif" alt="无题" />
         </figure>
@@ -60,10 +60,10 @@
 </figure></p>
       ]]></content:encoded> </item><item>
       <title>成都</title>
-      <link>http://localhost:4981/chengdu/</link>
+      <link>https://guoke.co/chengdu/</link>
       <pubDate>Sun, 09 Mar 2025 19:00:00 &#43;0800</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/chengdu/</guid> <category>四川</category> <category>成都</category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/chengdu/</guid> <category>四川</category> <category>成都</category> <description></description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo2.pages.dev//P50312-171526.jpg" alt="成都" />
         </figure>
@@ -117,10 +117,10 @@
 </figure></p>
       ]]></content:encoded> </item><item>
       <title>一个github账号下创建多个github pages页面的方法</title>
-      <link>http://localhost:4981/github-pages/</link>
+      <link>https://guoke.co/github-pages/</link>
       <pubDate>Fri, 14 Mar 2025 20:09:50 &#43;0800</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/github-pages/</guid> <category>git</category> <description>准备一个域名方便一些。
+      <guid>https://guoke.co/github-pages/</guid> <category>git</category> <description>准备一个域名方便一些。
 </description> <content:encoded><![CDATA[
         <p>准备一个域名方便一些。</p>
 <p><figure class="my-8">
@@ -146,10 +146,10 @@
 </figure></p>
       ]]></content:encoded> </item><item>
       <title>一 python语言程序设计</title>
-      <link>http://localhost:4981/python-course/</link>
+      <link>https://guoke.co/python-course/</link>
       <pubDate>Sat, 15 Feb 2025 21:41:50 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/python-course/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/python-course/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
         <h2 id="0课程导学">0.课程导学</h2>
 <p>1套python基础语法体系</p>
 <p>7个常用的python程序设计模块</p>
@@ -217,17 +217,17 @@ turtle.circle(160)
 <h2 id="9全课程总结与学习展望">9+.全课程总结与学习展望</h2>
       ]]></content:encoded> </item><item>
       <title>原来我们一直都没有好好说再见</title>
-      <link>http://localhost:4981/say-goodbye/</link>
+      <link>https://guoke.co/say-goodbye/</link>
       <pubDate>Tue, 22 Oct 2024 22:23:07 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/say-goodbye/</guid> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/say-goodbye/</guid> <description></description> <content:encoded><![CDATA[
         
       ]]></content:encoded> </item><item>
       <title>静态博客工作流</title>
-      <link>http://localhost:4981/blog/</link>
+      <link>https://guoke.co/blog/</link>
       <pubDate>Thu, 10 Oct 2024 13:51:59 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/blog/</guid> <category>Typora</category> <category>Picgo</category> <category>Github</category> <category>Cloudflare</category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/blog/</guid> <category>Typora</category> <category>Picgo</category> <category>Github</category> <category>Cloudflare</category> <description></description> <content:encoded><![CDATA[
         <figure>
           <img src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
         </figure>
@@ -336,10 +336,10 @@ git pull origin main
 </figure></p>
       ]]></content:encoded> </item><item>
       <title>Python IDLE修改代码配色及语法高亮主题</title>
-      <link>http://localhost:4981/python-idle-theme/</link>
+      <link>https://guoke.co/python-idle-theme/</link>
       <pubDate>Thu, 03 Oct 2024 00:48:16 &#43;0000</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/python-idle-theme/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
+      <guid>https://guoke.co/python-idle-theme/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
         <p>找到名为<strong>config-highlight.cfg</strong>的文件，在Windows 7下路径为：<code>C:\Users\&lt;用户名&gt;\.idlerc\</code>如果没有就新建一个。</p>
 <pre><code class="language-sh">[tango]
 definition-foreground = #fce94f
@@ -372,10 +372,10 @@ error-background = #2e3436
 </code></pre>
       ]]></content:encoded> </item><item>
       <title>猫头鹰Noctua HOME系列产品平替</title>
-      <link>http://localhost:4981/noctua-home/</link>
+      <link>https://guoke.co/noctua-home/</link>
       <pubDate>Wed, 24 Jul 2024 18:42:05 &#43;0800</pubDate>
       <author>dodopoi</author>
-      <guid>http://localhost:4981/noctua-home/</guid> <category>桌搭</category> <description>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。
+      <guid>https://guoke.co/noctua-home/</guid> <category>桌搭</category> <description>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。
 </description> <content:encoded><![CDATA[
         <p>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。</p>
 <!--more-->
