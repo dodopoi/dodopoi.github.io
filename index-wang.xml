@@ -1,117 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"
-      xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <title>果壳中的宇宙
-  </title>
-  <link href="https://guoke.co/" rel="alternate" />
-  
-    <link href="https://guoke.co/feed.atom" rel="self" type="application/atom&#43;xml" />
-  
-  <id>https://guoke.co/</id>
-  <updated>2025-06-14T13:52:56&#43;08:00</updated>
-  <author>
-    <name>dodopoi</name>
-  </author>
-  <rights></rights>
-  <generator>Hugo -- The best static site generator</generator>
-  <entry>
-    <title>暂停营业</title>
-    <link href="https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/" />
-    <id>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</id>
-    <updated>2024-11-11T11:11:00Z</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      &lt;p&gt;不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \&lt;/p&gt;
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <figure>
-        <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" />
-      </figure>
-      <p>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \</p>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>果壳中的宇宙</title>
+    <link>https://guoke.co/</link>
+    <description> | Note: This RSS feed is deprecated. Please use the Atom feed at https://guoke.co/feed.atom for future updates.</description>
+    <language>zh-CN</language>
+    <managingEditor>dodopoi</managingEditor>
+    <webMaster>dodopoi</webMaster>
+    <copyright></copyright>
+    <lastBuildDate>Fri, 13 Jun 2025 20:23:40 &#43;0800</lastBuildDate>
+    <category>Blog</category>
+    <generator>Hugo</generator>  <atom:link href="https://guoke.co/index.xml" rel="self" type="application/rss+xml" /> <atom:link href="https://guoke.co/feed.atom" rel="alternate" type="application/atom+xml" /><item>
+      <title>暂停营业</title>
+      <link>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</link>
+      <pubDate>Mon, 11 Nov 2024 11:11:00 &#43;0000</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</guid> <description>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \
+</description> <content:encoded><![CDATA[
+        <figure>
+          <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" />
+        </figure>
+        <p>不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \</p>
 <p><figure class="my-8">
     <img src="https://picgo2.pages.dev//%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A.jpg" alt="暂停营业" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>时光</title>
-    <link href="https://guoke.co/%E6%97%B6%E5%85%89/" />
-    <id>https://guoke.co/%E6%97%B6%E5%85%89/</id>
-    <updated>2025-04-23T23:23:22&#43;08:00</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <figure>
-        <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="时光" />
-      </figure>
-      <p><figure class="my-8">
+      ]]></content:encoded> </item><item>
+      <title>时光</title>
+      <link>https://guoke.co/%E6%97%B6%E5%85%89/</link>
+      <pubDate>Wed, 23 Apr 2025 23:23:22 &#43;0800</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/%E6%97%B6%E5%85%89/</guid> <category></category> <description></description> <content:encoded><![CDATA[
+        <figure>
+          <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="时光" />
+        </figure>
+        <p><figure class="my-8">
     <img src="https://picgo2.pages.dev//%E5%B9%B8%E7%A6%8F.jpg" alt="幸福" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
 <center>治愈</center>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>无题</title>
-    <link href="https://guoke.co/%E6%97%A0%E9%A2%98/" />
-    <id>https://guoke.co/%E6%97%A0%E9%A2%98/</id>
-    <updated>2025-04-25T23:43:29&#43;08:00</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <figure>
-        <img src="https://picgo2.pages.dev//you.gif" alt="无题" />
-      </figure>
-      <p><figure class="my-8">
+      ]]></content:encoded> </item><item>
+      <title>无题</title>
+      <link>https://guoke.co/%E6%97%A0%E9%A2%98/</link>
+      <pubDate>Fri, 25 Apr 2025 23:43:29 &#43;0800</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/%E6%97%A0%E9%A2%98/</guid> <category></category> <description></description> <content:encoded><![CDATA[
+        <figure>
+          <img src="https://picgo2.pages.dev//you.gif" alt="无题" />
+        </figure>
+        <p><figure class="my-8">
     <img src="https://picgo2.pages.dev//you.gif" alt="you" 
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>成都</title>
-    <link href="https://guoke.co/chengdu/" />
-    <id>https://guoke.co/chengdu/</id>
-    <updated>2025-03-09T19:00:00&#43;08:00</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <figure>
-        <img src="https://picgo2.pages.dev//P50312-171526.jpg" alt="成都" />
-      </figure>
-      <p>2025.03.09</p>
+      ]]></content:encoded> </item><item>
+      <title>成都</title>
+      <link>https://guoke.co/chengdu/</link>
+      <pubDate>Sun, 09 Mar 2025 19:00:00 &#43;0800</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/chengdu/</guid> <category>四川</category> <category>成都</category> <description></description> <content:encoded><![CDATA[
+        <figure>
+          <img src="https://picgo2.pages.dev//P50312-171526.jpg" alt="成都" />
+        </figure>
+        <p>2025.03.09</p>
 <p><figure class="my-8">
     <img src="https://picgo1.pages.dev//P50309-164019.jpg" alt="P50309-164019" 
         class="mx-auto rounded-lg block" loading="lazy"  />
@@ -159,25 +115,14 @@
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>一个github账号下创建多个github pages页面的方法</title>
-    <link href="https://guoke.co/github-pages/" />
-    <id>https://guoke.co/github-pages/</id>
-    <updated>2025-03-14T20:09:50&#43;08:00</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      &lt;p&gt;准备一个域名方便一些。&lt;/p&gt;
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <p>准备一个域名方便一些。</p>
+      ]]></content:encoded> </item><item>
+      <title>一个github账号下创建多个github pages页面的方法</title>
+      <link>https://guoke.co/github-pages/</link>
+      <pubDate>Fri, 14 Mar 2025 20:09:50 &#43;0800</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/github-pages/</guid> <category>git</category> <description>准备一个域名方便一些。
+</description> <content:encoded><![CDATA[
+        <p>准备一个域名方便一些。</p>
 <p><figure class="my-8">
     <img src="https://picgo1.pages.dev//GitHub%E5%A4%9A%E9%A1%B5%E9%9D%A2%E5%88%9B%E5%BB%BA01.png" alt="GitHub多页面创建01" 
         class="mx-auto rounded-lg block" loading="lazy"  />
@@ -199,25 +144,13 @@
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>一 python语言程序设计</title>
-    <link href="https://guoke.co/python-course/" />
-    <id>https://guoke.co/python-course/</id>
-    <updated>2025-02-15T21:41:50Z</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <h2 id="0课程导学">0.课程导学</h2>
+      ]]></content:encoded> </item><item>
+      <title>一 python语言程序设计</title>
+      <link>https://guoke.co/python-course/</link>
+      <pubDate>Sat, 15 Feb 2025 21:41:50 &#43;0000</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/python-course/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
+        <h2 id="0课程导学">0.课程导学</h2>
 <p>1套python基础语法体系</p>
 <p>7个常用的python程序设计模块</p>
 <p>16个优秀的python课程实践案例、</p>
@@ -282,47 +215,23 @@ turtle.circle(160)
 <h2 id="8程序设计方法学">8.程序设计方法学</h2>
 <h2 id="9python计算生态概览">9.python计算生态概览</h2>
 <h2 id="9全课程总结与学习展望">9+.全课程总结与学习展望</h2>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>原来我们一直都没有好好说再见</title>
-    <link href="https://guoke.co/say-goodbye/" />
-    <id>https://guoke.co/say-goodbye/</id>
-    <updated>2024-10-22T22:23:07Z</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>静态博客工作流</title>
-    <link href="https://guoke.co/blog/" />
-    <id>https://guoke.co/blog/</id>
-    <updated>2024-10-10T13:51:59Z</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <figure>
-        <img src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
-      </figure>
-      <h2 id="前言">前言</h2>
+      ]]></content:encoded> </item><item>
+      <title>原来我们一直都没有好好说再见</title>
+      <link>https://guoke.co/say-goodbye/</link>
+      <pubDate>Tue, 22 Oct 2024 22:23:07 &#43;0000</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/say-goodbye/</guid> <description></description> <content:encoded><![CDATA[
+        
+      ]]></content:encoded> </item><item>
+      <title>静态博客工作流</title>
+      <link>https://guoke.co/blog/</link>
+      <pubDate>Thu, 10 Oct 2024 13:51:59 &#43;0000</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/blog/</guid> <category>Typora</category> <category>Picgo</category> <category>Github</category> <category>Cloudflare</category> <description></description> <content:encoded><![CDATA[
+        <figure>
+          <img src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
+        </figure>
+        <h2 id="前言">前言</h2>
 <p>静态博客工作流程：</p>
 <pre><code class="language-mermaid">
     sequenceDiagram
@@ -425,25 +334,13 @@ git pull origin main
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>Python IDLE修改代码配色及语法高亮主题</title>
-    <link href="https://guoke.co/python-idle-theme/" />
-    <id>https://guoke.co/python-idle-theme/</id>
-    <updated>2024-10-03T00:48:16Z</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <p>找到名为<strong>config-highlight.cfg</strong>的文件，在Windows 7下路径为：<code>C:\Users\&lt;用户名&gt;\.idlerc\</code>如果没有就新建一个。</p>
+      ]]></content:encoded> </item><item>
+      <title>Python IDLE修改代码配色及语法高亮主题</title>
+      <link>https://guoke.co/python-idle-theme/</link>
+      <pubDate>Thu, 03 Oct 2024 00:48:16 &#43;0000</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/python-idle-theme/</guid> <category>python</category> <description></description> <content:encoded><![CDATA[
+        <p>找到名为<strong>config-highlight.cfg</strong>的文件，在Windows 7下路径为：<code>C:\Users\&lt;用户名&gt;\.idlerc\</code>如果没有就新建一个。</p>
 <pre><code class="language-sh">[tango]
 definition-foreground = #fce94f
 error-foreground = #fa8072
@@ -473,25 +370,14 @@ string-foreground = #e9b96e
 hilite-foreground = #2e3436
 error-background = #2e3436
 </code></pre>
-      ]]>
-    </content>
-    
-  </entry>
-  <entry>
-    <title>猫头鹰Noctua HOME系列产品平替</title>
-    <link href="https://guoke.co/noctua-home/" />
-    <id>https://guoke.co/noctua-home/</id>
-    <updated>2024-07-24T18:42:05&#43;08:00</updated>
-    <author>
-      <name>dodopoi</name>
-    </author>
-    <summary type="html">
-      &lt;p&gt;🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。&lt;/p&gt;
-    </summary>
-    
-    <content type="html">
-      <![CDATA[
-      <p>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。</p>
+      ]]></content:encoded> </item><item>
+      <title>猫头鹰Noctua HOME系列产品平替</title>
+      <link>https://guoke.co/noctua-home/</link>
+      <pubDate>Wed, 24 Jul 2024 18:42:05 &#43;0800</pubDate>
+      <author>dodopoi</author>
+      <guid>https://guoke.co/noctua-home/</guid> <category>桌搭</category> <description>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。
+</description> <content:encoded><![CDATA[
+        <p>🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。</p>
 <!--more-->
 <p><figure class="my-8">
     <img src="https://picgo-1.pages.dev//%E7%8C%AB%E5%A4%B4%E9%B9%B0Noctua%20HOME%20%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%B9%B3%E6%9B%BF01.webp" alt="猫头鹰Noctua HOME 系列产品平替01" 
@@ -542,8 +428,5 @@ error-background = #2e3436
         class="mx-auto rounded-lg block" loading="lazy"  />
     
 </figure></p>
-      ]]>
-    </content>
-    
-  </entry>
-</feed>
+      ]]></content:encoded> </item> </channel>
+</rss>

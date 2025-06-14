@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    <title>404 Page not found</title>
+    <title>Windows之间实现文件网络共享</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +10,7 @@
 <meta name="referrer" content="no-referrer"><meta name="description"
     content="My personal blog, my secret garden, my cyber eutopia.">
 
-<meta name="keywords" content="Blog, 拯救世界去了, Open Source, Computer Science, Writing, 中文博客, dodopoi">
+<meta name="keywords" content="Windows">
 
 
 
@@ -23,18 +23,45 @@
 <meta name="theme-color" content="#1a1b1e" media="(prefers-color-scheme: dark)">
 
 
-<meta property="og:title" content="404 Page not found - 果壳中的宇宙">
+<meta property="og:title" content="Windows之间实现文件网络共享 - 果壳中的宇宙">
 <meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://guoke.co/404.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://guoke.co/share/">
 <meta property="og:site_name" content="果壳中的宇宙">
 
 
 
+    
+    <meta property="article:published_time" content="2024-03-17T20:13:01&#43;08:00">
+    
+
+    
+    <meta property="article:modified_time" content="2024-03-17T20:13:01&#43;08:00">
+    
+
+    
+    
+    <meta property="article:author" content="dodopoi">
+    
+
+    
+    
+    
+    <meta property="article:tag" content="Windows">
+    
+    
+
+    
+    
+    
+    <meta property="article:section" content="折腾">
+    
+    
+
 
 <meta property="og:image" content="https://img.viento.cc/avatar/02.webp">
 
-<title>404 Page not found | 果壳中的宇宙</title>
+<title>Windows之间实现文件网络共享 | 果壳中的宇宙</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
 
@@ -186,7 +213,7 @@
             max-w-[50%] sm:max-w-[60%]" id="nav-title">
             <h2 class="text-base font-medium truncate hover:text-primary transition-colors"
                 onclick="window.scrollTo({ top: 0, behavior: 'smooth'});" aria-label="返回顶部">
-                404 Page not found
+                Windows之间实现文件网络共享
             </h2>
         </div>
         <div class="flex items-center gap-2">
@@ -319,39 +346,282 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <main class="flex-grow">
             
-<div class="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
-    <h1 class="text-8xl font-bold bg-gradient-to-r from-primary to-muted bg-clip-text text-transparent 
-               animate-pulse">404</h1>
+<div class="container max-w-6xl mx-auto px-4 pt-24 pb-16">
+    <div class="flex gap-16">
+        <div class="relative">
+            <div class="flex gap-8 max-w-6xl mx-auto px-4 py-12 md:py-20">
+                <div class="w-full lg:max-w-3xl">
+                    <header class="mb-12">
+                        <h1 class="text-3xl font-bold mb-6">Windows之间实现文件网络共享</h1>
+                    </header>
 
-    
-    <h2 class="mt-4 text-2xl font-medium text-foreground/80">页面未找到</h2>
+                    
+                    
+<link rel="stylesheet" href="/css/components/article/ai-summary.min.2cc7520c09092e75a992b583187a21d1f73b0ef9439f84adeb1a8c4a16636c6a.css" integrity="sha256-LMdSDAkJLnWpkrWDGHoh0fc7DvlDn4St6xqMShZjbGo=" crossorigin="anonymous">
 
-    
-    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="/" class="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white dark:text-black hover:bg-primary/90 
-                          transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-            <div class="i-carbon-arrow-left w-4 h-4 mr-2"></div>
-            <span class="font-medium">返回首页</span>
-        </a>
-        <a href="/posts" class="inline-flex items-center px-6 py-3 rounded-lg border-2 border-primary text-primary hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl
-                               transform hover:-translate-y-0.5">
-            <div class="i-carbon-document w-4 h-4 mr-2"></div>
-            <span class="font-medium">浏览文章</span>
-        </a>
-    </div>
+<div class="ai-summary" data-component="ai-summary">
+    <input type="checkbox" id="ai-summary__checkbox" class="ai-summary__checkbox absolute opacity-0">
 
+    <label for="ai-summary__checkbox" class="cursor-pointer block">
+        <div class="ai-summary__container relative my-8 p-6 rounded-xl border border-border/40 
+             backdrop-blur transition-all duration-300
+             hover:border-border/60">
+            
+            <div class="ai-summary__header flex items-center justify-between">
+                <div class="ai-summary__title flex items-center gap-3">
+                    <div class="i-carbon-ai-status w-5 h-5 text-primary"></div>
+                    <span class="text-base font-medium">AI 摘要</span>
+                </div>
+                <div class="ai-summary__controls flex items-center gap-3">
+                    <span class="ai-summary__badge px-2.5 py-0.5 text-xs rounded-md
+                          text-primary/80 dark:text-primary-dark/80
+                          ring-1 ring-primary/20 dark:ring-primary-dark/20">
+                        109酱
+                    </span>
+                    <div class="ai-summary__toggle group bg-inherit border-none ring-1 ring-gray-600 dark:ring-gray-400"
+                        aria-label="展开/收起摘要">
+                        <div class="ai-summary__icon i-carbon-chevron-down w-5 h-5
+                             text-muted-foreground/60
+                             transition-transform duration-200 ease-out">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="ai-summary__divider my-4 border-t border-border/30"></div>
+
+            
+            <div class="ai-summary__content">
+                <div class="ai-summary__text text-sm leading-relaxed text-muted-foreground">
+                    
+                </div>
+            </div>
+        </div>
+    </label>
+</div>
+
+                    
+                    <article class="prose max-w-none">
+                        
+                            <p>在同一局域网下的电脑，可以在某一台电脑上设置一个共享文件夹，使每一台电脑都可以进行访问、增删、修改和拷贝文件。设置共享文件夹的电脑称为目标电脑，用微软账号登陆，这样可以在后续访问这台电脑带来极大的便利，设置起来也很简单，共享选项里设置为everyone即可。</p>
+<p><figure class="my-8">
+    <img src="https://picgo-1.pages.dev//Windows%E4%B9%8B%E9%97%B4%E5%85%B1%E4%BA%AB.webp" alt="Windows之间共享" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
     
-    <div class="mt-12 max-w-lg">
+</figure></p>
+<p>设置好共享文件夹后，打开Windows的资源管理器&gt;网络，初始化完成后就能在计算机一栏看见局域网内的电脑。找到目标电脑打开后，输入目标电脑登陆的微软账号和密码，就能访问到共享文件夹。</p>
+
+
+<blockquote class="my-6 border-l-4 border-border/60 pl-4">
+    <p>如果共享的是onedrive文件夹，在Windows7&amp;8中通过网络共享访问时会遇到一直加载的问题。</p>
+</blockquote>
+                        
+                    </article>
+
+                    
+                    
+
+                    
+                    <div class="mt-12 md:mt-16 p-6 rounded-xl border border-border/40 dark:border-border-dark/40 
+    backdrop-blur">
+    <div class="flex flex-col sm:flex-row gap-6">
         
+        <div class="hidden sm:block flex-shrink-0">
+            <div class="w-14 h-14 rounded-xl border border-border/40 dark:border-border-dark/40
+                bg-muted/30 dark:bg-muted-dark/30
+                flex items-center justify-center">
+                <div class="i-carbon-license w-7 h-7 text-primary/80"></div>
+            </div>
+        </div>
 
-  
-  
-  
-    <blockquote class="text-sm text-foreground/60 italic">
-      「我们必须拿我们所有的，去换我们所没有的。」 ——惠特曼
-    </blockquote>
-  
+        
+        <div class="flex-1 space-y-4">
+            
+            <div class="space-y-1">
+                <h3 class="text-base font-medium">版权声明</h3>
+                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground/70">
+                    <span>本文采用</span>
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1 text-primary/80 hover:text-primary transition-colors">
+                        <div class="i-carbon-link w-3.5 h-3.5"></div>
+                        <span>CC BY-NC-SA 4.0</span>
+                    </a>
+                    <span>许可协议。</span>
+                </div>
+            </div>
 
+            
+            <div class="text-sm space-y-2 text-muted-foreground/70">
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>转载请注明出处：<span class="select-all">https://guoke.co/share/</span></span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>本文作者：dodopoi</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>发布时间：<time class="tabular-nums">2024-03-17 20:13</time></span>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                    
+
+    
+    
+<link rel="stylesheet" href="/css/components/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous">
+
+<div class="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-border/40 dark:border-border-dark/40">
+    
+    <div class="flex items-center gap-2 mb-8">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h3 class="text-lg font-medium">评论</h3>
+    </div>
+    
+    
+    <div id="twikoo" class="plain-link"></div>
+</div>
+
+
+<script src="https://cdn.jsdmirror.com/gh/chlorine3545/customcdn@2b63d63/js/twikoo/1_6_41.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        twikoo.init({
+            envId: 'https:\/\/changyan.guoke.co',
+            el: '#twikoo',
+            lang: 'zh-CN'
+        });
+    });
+</script>
+
+
+
+<script src="/js/components/twikoo-owo.js" defer></script>
+
+
+                </div>
+
+                
+                <aside class="hidden lg:block w-64 flex-shrink-0">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        
+
+<link rel="stylesheet" href="/css/components/article/toc.css">
+
+
+<div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">目录</h3>
+    <nav class="text-sm text-foreground/70">
+        <nav id="TableOfContents"></nav>
+    </nav>
+</div>
+
+
+                        <div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">阅读进度</h3>
+    <div class="relative h-1 bg-border/50 rounded-full overflow-hidden">
+        <div id="reading-progress" class="absolute inset-y-0 left-0 bg-primary/80 transition-all duration-150"
+            style="width: 0%"></div>
+    </div>
+    <div class="text-sm text-muted-foreground text-center">
+        <span id="percent">0</span>% 已读
+    </div>
+</div>
+
+
+<script src="/js/components/reading-progress.5f39156caf6576d6ce40fdecfcab492aeda6ea0932e102e04845c9361be5caa8.js" integrity="sha256-XzkVbK9ldtbOQP3s/KtJKu2m6gky4QLgSEXJNhvlyqg=" crossorigin="anonymous"  defer  ></script>
+                    </div>
+                </aside>
+            </div>
+
+            <div id="reading-progress-ball" class="lg:hidden fixed right-4 bottom-20 w-12 h-12 rounded-full 
+            backdrop-blur z-50
+            shadow-lg border border-border/20 dark:border-border-dark/20
+            flex items-center justify-center text-sm font-medium tabular-nums
+            transition-all duration-300 transform translate-y-24 opacity-0">
+    0%
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const progressBall = document.getElementById('reading-progress-ball');
+    if (!progressBall) return;
+
+    const article = document.querySelector('article');
+    if (!article) return;
+
+    function updateReadingProgress() {
+        // 获取实时位置和尺寸信息
+        const rect = article.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // 计算关键指标
+        const scrollTop = -rect.top;  // 已滚动距离（负值转正值）
+        const totalHeight = rect.height;  // 文章总高度
+        const viewableHeight = Math.min(windowHeight, totalHeight);  // 可视区域高度
+        const scrollableHeight = totalHeight - viewableHeight;  // 可滚动总距离
+
+        // 计算进度百分比
+        let progress = (scrollTop / scrollableHeight) * 100;
+        progress = Math.min(100, Math.max(0, progress));
+        const roundedProgress = Math.round(progress);
+
+        // 更新进度球文本
+        progressBall.textContent = `${roundedProgress}%`;
+
+        // 控制进度球显示状态
+        const shouldShow = progress > 0 && progress < 100 && scrollableHeight > 0;
+        progressBall.classList.toggle('translate-y-24', !shouldShow);
+        progressBall.classList.toggle('opacity-0', !shouldShow);
+    }
+
+    // 节流函数优化
+    function throttle(func, delay) {
+        let timeoutId;
+        let lastExecTime = 0;
+
+        return function (...args) {
+            const now = Date.now();
+            const context = this;
+
+            if (now - lastExecTime >= delay) {
+                // 时间间隔足够，直接执行
+                func.apply(context, args);
+                lastExecTime = now;
+            } else {
+                // 重置定时器，确保最后一次操作也能执行
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(context, args);
+                    lastExecTime = Date.now();
+                }, delay);
+            }
+        };
+    }
+
+    // 监听滚动事件，使用 passive 提升性能
+    window.addEventListener('scroll', throttle(updateReadingProgress, 100), { passive: true });
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', throttle(updateReadingProgress, 100), { passive: true });
+
+    // 初始化进度显示
+    updateReadingProgress();
+});
+</script>
+
+        </div>
     </div>
 </div>
 
@@ -546,7 +816,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="flex items-center gap-2">
     <div class="i-carbon-text-font w-4 h-4"></div>
     <span>
-        共 <span class="tabular-nums font-mono">47475</span> 字
+        共 <span class="tabular-nums font-mono">47471</span> 字
         <span class="mx-1">·</span>
         还在努力更新中..加油！加油啦
     </span>

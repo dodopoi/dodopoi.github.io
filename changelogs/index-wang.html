@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    <title>404 Page not found</title>
+    <title>日志</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +10,7 @@
 <meta name="referrer" content="no-referrer"><meta name="description"
     content="My personal blog, my secret garden, my cyber eutopia.">
 
-<meta name="keywords" content="Blog, 拯救世界去了, Open Source, Computer Science, Writing, 中文博客, dodopoi">
+<meta name="keywords" content="">
 
 
 
@@ -23,18 +23,36 @@
 <meta name="theme-color" content="#1a1b1e" media="(prefers-color-scheme: dark)">
 
 
-<meta property="og:title" content="404 Page not found - 果壳中的宇宙">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://guoke.co/404.html">
+<meta property="og:title" content="日志 - 果壳中的宇宙">
+<meta property="og:description" content="博客搭建记录
+2025.04.11
+更换新域名：guoke.co
+遇见重定向次数太多时，一般是将域名托管在cloudflare后SSL/TLS设置为灵活导致，将其更改为完全即可。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://guoke.co/changelogs/">
 <meta property="og:site_name" content="果壳中的宇宙">
 
 
 
+    
+
+    
+
+    
+    
+    <meta property="article:author" content="dodopoi">
+    
+
+    
+    
+
+    
+    
+
 
 <meta property="og:image" content="https://img.viento.cc/avatar/02.webp">
 
-<title>404 Page not found | 果壳中的宇宙</title>
+<title>日志 | 果壳中的宇宙</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
 
@@ -186,7 +204,7 @@
             max-w-[50%] sm:max-w-[60%]" id="nav-title">
             <h2 class="text-base font-medium truncate hover:text-primary transition-colors"
                 onclick="window.scrollTo({ top: 0, behavior: 'smooth'});" aria-label="返回顶部">
-                404 Page not found
+                日志
             </h2>
         </div>
         <div class="flex items-center gap-2">
@@ -319,39 +337,247 @@ document.addEventListener('DOMContentLoaded', function () {
 
         <main class="flex-grow">
             
-<div class="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
-    <h1 class="text-8xl font-bold bg-gradient-to-r from-primary to-muted bg-clip-text text-transparent 
-               animate-pulse">404</h1>
+<div class="container max-w-6xl mx-auto px-4 pt-24 pb-16">
+    <div class="flex gap-16">
+        <div class="relative">
+            <div class="flex gap-8 max-w-6xl mx-auto px-4 py-12 md:py-20">
+                <div class="w-full lg:max-w-3xl">
+                    <header class="mb-12">
+                        <h1 class="text-3xl font-bold mb-6">日志</h1>
+                    </header>
 
-    
-    <h2 class="mt-4 text-2xl font-medium text-foreground/80">页面未找到</h2>
+                    
+                    <article class="prose max-w-none">
+                        
+                            <p><strong>博客搭建记录</strong></p>
+<h3 id="20250411">2025.04.11</h3>
+<p>更换新域名：guoke.co</p>
+<p>遇见重定向次数太多时，一般是将域名托管在cloudflare后<strong>SSL/TLS</strong>设置为灵活导致，将其更改为完全即可。</p>
+<h3 id="20250224">2025.02.24</h3>
+<p>由于之前的博客主题太过繁重，博客迁移至hugo。</p>
+<h3 id="20241205">2024.12.05</h3>
+<p>提交更新后，网页端不能及时更新，可能是Cloudflare缓存的原因，清理后仍不能解决。加入又拍云联盟，把CDN加速更换为又拍云试试。</p>
+<p>淦！不备案无法加速！接着用Cloudflare吧。</p>
+<h3 id="20241204">2024.12.04</h3>
+<p>评论更改为twikoo。</p>
+<h3 id="20241203">2024.12.03</h3>
+<p>升级主题至1.6.14。</p>
+<h3 id="20241109">2024.11.09</h3>
+<p>通过插件<code>npm install hexo-douban --save</code>添加书籍、电影和游戏页面。</p>
+<pre><code class="language-sh">hexo douban
+</code></pre>
+<h3 id="20241029">2024.10.29</h3>
+<p>通过插件<code>npm install hexo-generator-search --save</code>将博客搜索改为本地搜索，符合现阶段使用需求（algolia全文索引申请已通过，配置还有些问题），本地搜索不能索引加密博客。</p>
+<p>最好运行<code>hexo cl</code>清理下缓存再部署博客。</p>
+<h3 id="20241013">2024.10.13</h3>
+<p>通过插件<code>npm install hexo-blog-encrypt --save</code>为博客添加加密功能。</p>
+<h3 id="20240927">2024.09.27</h3>
+<p>因为一个主题，博客从hugo迁移至hexo，目前来看静态网页生成速度还可以。</p>
+<h3 id="20240922">2024.09.22</h3>
+<p>blowfish升级至v2.76.0。</p>
+<p>Breaking change</p>
+<p>Hugo is deprecating .Site.Author refs in v0.124.0. @unacro submitted a PR to change to move the current login in language.X.toml config files from [author] to [params.author].</p>
+<h3 id="20240919">2024.09.19</h3>
+<p>测速功能</p>
+<p>Cloud flare完全性下自动程序里的自动程序攻击模式打开后会无法测速，阻止AI爬虫程序和爬网程序可以打开。</p>
+<h3 id="20240712">2024.07.12</h3>
+<p>bug修复。</p>
+<p>Cloud flare证书设置为灵活时会无法提交评论，显示错误，需要设置成完全。</p>
+<h3 id="20240701">2024.07.01</h3>
+<p>停用画廊功能。</p>
+<p>重装系统从云盘同步到本地后，在生成静态网页时会报错，需要重新生成画廊图片的地址，于是停用画廊功能，改为正常插入图片。</p>
+<h3 id="20240506">2024.05.06</h3>
+<p>变更图床cdn为Cloudflare，采用不绑定域名方案。</p>
+<p>变更迁移图床仓库至另一账号，直接fork仓库似乎不能完整取代原图床信息，原仓库删除后博客图片也会失效，需要将博客图片重新插入和上传至新仓库。</p>
+<p>现在博客里的图片不多，迁移起来还不算麻烦。同时幸好博客图片在云盘里存有备份，才顺利完成迁移工作，以后非必需不再动图床仓库。</p>
+<h3 id="20240418">2024.04.18</h3>
+<p>关闭文章背景虚化，在桌面端开了该功能还好，在移动端显示有类似穿模的效果。</p>
+<h3 id="20240416">2024.04.16</h3>
+<p>文章头图格式为featured.gif，大小超过2MB时，生成静态网页时会因超时而失败。另默认背景图不宜过大，会导致博客文件夹大小剧增，图片压缩确实很有必要。</p>
+<p>bug：</p>
+<p>文章<code>x级标题</code>不能只有一个单词waline，不然评论页面会加载不出来。</p>
+<h3 id="20240415">2024.04.15</h3>
+<p>添加归档页面，完善友链页面显示。</p>
+<h3 id="20240412">2024.04.12</h3>
+<p>创建Firebase数据库，用来存储点击数据。</p>
+<h3 id="20240410">2024.04.10</h3>
+<p>添加评论功能。</p>
+<h3 id="20240310">2024.03.10</h3>
+<p>博客blowfish主题的搜索功能失效，经定位问题出在GitHub Pages域名绑定上，解决办法：修改配置文件config&gt;_default&gt;hugo.toml或config.toml。</p>
+<p>“baseURL = &ldquo;域名&rdquo;”</p>
+<p>如果没有购买域名，上面域名处填写“https://githubusename.github.io”，只要配置文件里的域名地址与GitHub Pages域名地址保持一致，搜索功能就可以正常使用。</p>
+<h3 id="20240309">2024.03.09</h3>
+<p>github在国内访问时好时坏，这也导致自己在访问博客时，出现和访问github一样的问题。图床既然可以进行CDN加速，网站应该也有类似的方法。经过比对，选择将域名解析从阿里云迁移至cloudflare上，利用cloudflare对博客进行CDN加速。</p>
+<h3 id="20230829">2023.08.29</h3>
+<p>加入十年之约。</p>
+<h3 id="20230720">2023.07.20</h3>
+<p>主题更换为blowfish。</p>
+<p>新写完一篇文章，如果在生成静态网页时遇到错误，是默认生成的md文档格式不对，需将博客目录下archetypes/default.md替换为blowfish示例文件夹内的archetypes/default.md，以后新建.md文件就不会出错了。</p>
+<h3 id="20230618">2023.06.18</h3>
+<p>随着博客数量越来越多，hexo生成静态网页需要的时间越来越多，有了将博客从hexo迁移至hugo上的想法。</p>
+<p>博客迁移成功，同时有NexT爱好者将主题移植到hugo上，省去重新部署的时间，为作者点个👍。</p>
+<h3 id="20220927">2022.09.27</h3>
+<p>写博客时遇到了sm.ms图床上传图片失败的问题，免费的方案七牛云有10G空间，貌似不错，但是需要一个备案的域名。域名要想备案需要购买云服务器，与七牛云客服小姐姐沟通域名必须要备案才可以使用，绕不开。</p>
+<p>最后选择某一个GitHub公开仓库配合CDN加速作为图床，这肯定是违背GitHub本身作为代码托管的初衷的，不推荐这么做。同时，当这个仓库存放图片到一定阈值时可能会面临审查的风险。</p>
+<h3 id="20220723">2022.07.23</h3>
+<p>博客伊始。</p>
+<p>有了域名，就想把平时写的一点东西收集起来，搭建自己的博客，这样更自由一些。博客首次使用hexo框架搭建，博客主题为NexT，同时把博客部署到GitHub Pages上。</p>
+<h3 id="20220722">2022.07.22</h3>
+<p>在阿里云199购买了10年ziyue.tech域名。</p>
 
-    
-    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-        <a href="/" class="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-white dark:text-black hover:bg-primary/90 
-                          transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-            <div class="i-carbon-arrow-left w-4 h-4 mr-2"></div>
-            <span class="font-medium">返回首页</span>
-        </a>
-        <a href="/posts" class="inline-flex items-center px-6 py-3 rounded-lg border-2 border-primary text-primary hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl
-                               transform hover:-translate-y-0.5">
-            <div class="i-carbon-document w-4 h-4 mr-2"></div>
-            <span class="font-medium">浏览文章</span>
-        </a>
+                        
+                    </article>
+
+                    
+                    
+
+                </div>
+
+                
+                <aside class="hidden lg:block w-64 flex-shrink-0">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        
+
+<link rel="stylesheet" href="/css/components/article/toc.css">
+
+
+<div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">目录</h3>
+    <nav class="text-sm text-foreground/70">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#20250411">2025.04.11</a></li>
+        <li><a href="#20250224">2025.02.24</a></li>
+        <li><a href="#20241205">2024.12.05</a></li>
+        <li><a href="#20241204">2024.12.04</a></li>
+        <li><a href="#20241203">2024.12.03</a></li>
+        <li><a href="#20241109">2024.11.09</a></li>
+        <li><a href="#20241029">2024.10.29</a></li>
+        <li><a href="#20241013">2024.10.13</a></li>
+        <li><a href="#20240927">2024.09.27</a></li>
+        <li><a href="#20240922">2024.09.22</a></li>
+        <li><a href="#20240919">2024.09.19</a></li>
+        <li><a href="#20240712">2024.07.12</a></li>
+        <li><a href="#20240701">2024.07.01</a></li>
+        <li><a href="#20240506">2024.05.06</a></li>
+        <li><a href="#20240418">2024.04.18</a></li>
+        <li><a href="#20240416">2024.04.16</a></li>
+        <li><a href="#20240415">2024.04.15</a></li>
+        <li><a href="#20240412">2024.04.12</a></li>
+        <li><a href="#20240410">2024.04.10</a></li>
+        <li><a href="#20240310">2024.03.10</a></li>
+        <li><a href="#20240309">2024.03.09</a></li>
+        <li><a href="#20230829">2023.08.29</a></li>
+        <li><a href="#20230720">2023.07.20</a></li>
+        <li><a href="#20230618">2023.06.18</a></li>
+        <li><a href="#20220927">2022.09.27</a></li>
+        <li><a href="#20220723">2022.07.23</a></li>
+        <li><a href="#20220722">2022.07.22</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</div>
+
+
+                        <div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">阅读进度</h3>
+    <div class="relative h-1 bg-border/50 rounded-full overflow-hidden">
+        <div id="reading-progress" class="absolute inset-y-0 left-0 bg-primary/80 transition-all duration-150"
+            style="width: 0%"></div>
     </div>
+    <div class="text-sm text-muted-foreground text-center">
+        <span id="percent">0</span>% 已读
+    </div>
+</div>
 
-    
-    <div class="mt-12 max-w-lg">
-        
 
-  
-  
-  
-    <blockquote class="text-sm text-foreground/60 italic">
-      「我们必须拿我们所有的，去换我们所没有的。」 ——惠特曼
-    </blockquote>
-  
+<script src="/js/components/reading-progress.5f39156caf6576d6ce40fdecfcab492aeda6ea0932e102e04845c9361be5caa8.js" integrity="sha256-XzkVbK9ldtbOQP3s/KtJKu2m6gky4QLgSEXJNhvlyqg=" crossorigin="anonymous"  defer  ></script>
+                    </div>
+                </aside>
+            </div>
 
+            <div id="reading-progress-ball" class="lg:hidden fixed right-4 bottom-20 w-12 h-12 rounded-full 
+            backdrop-blur z-50
+            shadow-lg border border-border/20 dark:border-border-dark/20
+            flex items-center justify-center text-sm font-medium tabular-nums
+            transition-all duration-300 transform translate-y-24 opacity-0">
+    0%
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const progressBall = document.getElementById('reading-progress-ball');
+    if (!progressBall) return;
+
+    const article = document.querySelector('article');
+    if (!article) return;
+
+    function updateReadingProgress() {
+        // 获取实时位置和尺寸信息
+        const rect = article.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // 计算关键指标
+        const scrollTop = -rect.top;  // 已滚动距离（负值转正值）
+        const totalHeight = rect.height;  // 文章总高度
+        const viewableHeight = Math.min(windowHeight, totalHeight);  // 可视区域高度
+        const scrollableHeight = totalHeight - viewableHeight;  // 可滚动总距离
+
+        // 计算进度百分比
+        let progress = (scrollTop / scrollableHeight) * 100;
+        progress = Math.min(100, Math.max(0, progress));
+        const roundedProgress = Math.round(progress);
+
+        // 更新进度球文本
+        progressBall.textContent = `${roundedProgress}%`;
+
+        // 控制进度球显示状态
+        const shouldShow = progress > 0 && progress < 100 && scrollableHeight > 0;
+        progressBall.classList.toggle('translate-y-24', !shouldShow);
+        progressBall.classList.toggle('opacity-0', !shouldShow);
+    }
+
+    // 节流函数优化
+    function throttle(func, delay) {
+        let timeoutId;
+        let lastExecTime = 0;
+
+        return function (...args) {
+            const now = Date.now();
+            const context = this;
+
+            if (now - lastExecTime >= delay) {
+                // 时间间隔足够，直接执行
+                func.apply(context, args);
+                lastExecTime = now;
+            } else {
+                // 重置定时器，确保最后一次操作也能执行
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(context, args);
+                    lastExecTime = Date.now();
+                }, delay);
+            }
+        };
+    }
+
+    // 监听滚动事件，使用 passive 提升性能
+    window.addEventListener('scroll', throttle(updateReadingProgress, 100), { passive: true });
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', throttle(updateReadingProgress, 100), { passive: true });
+
+    // 初始化进度显示
+    updateReadingProgress();
+});
+</script>
+
+        </div>
     </div>
 </div>
 
@@ -546,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="flex items-center gap-2">
     <div class="i-carbon-text-font w-4 h-4"></div>
     <span>
-        共 <span class="tabular-nums font-mono">47475</span> 字
+        共 <span class="tabular-nums font-mono">47471</span> 字
         <span class="mx-1">·</span>
         还在努力更新中..加油！加油啦
     </span>
