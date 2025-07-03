@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Windows之间实现文件网络共享</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer">
+<meta name="description"
+    content="My personal blog, my secret garden, my cyber eutopia.">
+
+
+<meta name="keywords" content="Windows">
+
+
+
+<meta name="author" content="dodopoi">
+
+
+
+<meta name="application-name" content="果壳中的宇宙">
+<meta name="apple-mobile-web-app-title" content="果壳中的宇宙">
+
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1b1e" media="(prefers-color-scheme: dark)">
+
+
+
+<meta property="og:title" content="Windows之间实现文件网络共享 - 果壳中的宇宙">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/share/">
+<meta property="og:site_name" content="果壳中的宇宙">
+
+
+
+    
+    <meta property="article:published_time" content="2024-03-17T20:13:01&#43;08:00">
+    
+
+    
+    <meta property="article:modified_time" content="2024-03-17T20:13:01&#43;08:00">
+    
+
+    
+    
+    <meta property="article:author" content="dodopoi">
+    
+
+    
+    
+    
+    <meta property="article:tag" content="Windows">
+    
+    
+
+    
+    
+    
+    <meta property="article:section" content="折腾">
+    
+    
+
+
+
+
+    
+    <meta property="og:image" content="http://localhost:1313/img/avatar.png">
+    
+
+
+<title>Windows之间实现文件网络共享 | 果壳中的宇宙</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+
+<script>
+  (function () {
+    const theme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark' ||
+      (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+
+<link rel="preconnect" href="https://cdn.jsdmirror.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdmirror.com">
+
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/css/anime.css">
+
+<link rel="stylesheet" href="/css/uno.css">
+
+<link rel="stylesheet" href="/css/prose.css">
+
+<link rel="stylesheet" href="/css/lightbox.css">
+
+
+
+<link rel="stylesheet" href="/css/components/article/shiki.css">
+
+<link rel="stylesheet" href="/css/components/article/clickcopy.css">
+
+
+
+<link rel="stylesheet" href="/css/custom.css">
+
+      <script src="/js/components/lightbox.js" defer></script>
+
+      <script src="/js/components/clickcopy.js" defer></script>
+
+
+
+
+
+
+    
+</head>
+
+<body class="flex flex-col min-h-screen bg-background text-foreground transition-colors">
+
+    
+    <div id="loading-screen"
+    class="fixed inset-0 z-[100] bg-background flex items-center justify-center transition-opacity duration-500">
+    <div class="flex flex-col items-center gap-4">
+        
+        <div class="relative w-12 h-12">
+            <div class="absolute inset-0 border-t-2 border-primary/20 rounded-full"></div>
+            <div class="absolute inset-0 border-t-2 border-primary rounded-full animate-spin"></div>
+        </div>
+        
+        <div class="flex items-center gap-2">
+            
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-1"></div>
+            
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-2"></div>
+            
+            <div class="w-1.5 h-1.5 rounded-full bg-primary/80 animate-bounce-delay-3"></div>
+            
+        </div>
+        
+        <div class="text-lg text-muted-foreground/70 animate-pulse">
+            别着急，坐和放宽
+        </div>
+    </div>
+</div>
+
+    
+    <div class="flex flex-col flex-grow">
+        <nav class="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur z-50">
+    <div class="container max-w-6xl mx-auto px-4 flex items-center h-16">
+        
+        <a href="/" class="shrink-0">
+            <img src="/img/avatar.png" alt="avatar"
+                class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+        </a>
+        
+        <div class="flex mx-auto transition-all duration-300" id="nav-menu">
+            <div class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium">
+                
+                
+                    
+                        <div class="relative group">
+                            <a aria-label="归档" href="http://localhost:1313/"
+                                class="text-muted-foreground hover:text-primary transition-colors whitespace-nowrap">
+                                归档
+                            </a>
+                            
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible 
+                                    group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="w-32 py-1 rounded-lg border border-border/50 dark:border-border-dark/50 
+                                        backdrop-blur
+                                        shadow-lg shadow-muted/5 flex flex-col overflow-hidden">
+                                    
+                                        <a aria-label="时间" href="http://localhost:1313/posts/" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                            hover:text-primary hover:bg-muted/40 transition-colors whitespace-nowrap
+                                            ">
+                                            时间
+                                        </a>
+                                    
+                                        <a aria-label="分类" href="http://localhost:1313/categories/" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                            hover:text-primary hover:bg-muted/40 transition-colors whitespace-nowrap
+                                            ">
+                                            分类
+                                        </a>
+                                    
+                                        <a aria-label="标签" href="http://localhost:1313/tags/" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                            hover:text-primary hover:bg-muted/40 transition-colors whitespace-nowrap
+                                            ">
+                                            标签
+                                        </a>
+                                    
+                                        <a aria-label="系列" href="http://localhost:1313/series/" class="px-2 py-1.5 text-center text-muted-foreground/70 dark:text-muted-foreground-dark/70 
+                                            hover:text-primary hover:bg-muted/40 transition-colors whitespace-nowrap
+                                            ">
+                                            系列
+                                        </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <a aria-label="友链" href="http://localhost:1313/links/" class="text-muted-foreground dark:text-muted-foreground-dark hover:text-primary transition-colors whitespace-nowrap
+                            ">
+                            友链
+                        </a>
+                    
+                
+                    
+                        <a aria-label="关于" href="http://localhost:1313/about/" class="text-muted-foreground dark:text-muted-foreground-dark hover:text-primary transition-colors whitespace-nowrap
+                            ">
+                            关于
+                        </a>
+                    
+                
+            </div>
+        </div>
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 cursor-pointer transition-all duration-300 
+            max-w-[50%] sm:max-w-[60%]" id="nav-title">
+            <h2 class="text-base font-medium truncate hover:text-primary transition-colors"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth'});" aria-label="返回顶部">
+                Windows之间实现文件网络共享
+            </h2>
+        </div>
+        
+        <div class="flex items-center gap-2">
+            
+            
+            <button type="button" id="search-button" class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full
+            bg-background/80
+            ring-0 dark:ring-0 border-0 dark:border-0
+            text-muted-foreground/70
+            hover:bg-muted/50
+            transition-colors" aria-label="搜索" onclick="document.querySelector('.DocSearch-Button').click()">
+                <div class="i-carbon-search w-4 h-4"></div>
+            </button>
+            
+
+            
+            <button id="theme-toggle"
+                onclick="setTheme(currentTheme === 'dark' ? 'light' : 'dark')"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full
+                bg-background/80
+                ring-0 border-0
+                text-muted-foreground/70
+                hover:bg-muted/50
+                transition-colors"
+                aria-label="切换主题">
+                <div class="i-carbon-sun w-4 h-4" id="theme-icon"></div>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<link rel="preconnect" href="https://06NIVF4XFS-dsn.algolia.net" crossorigin />
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/@docsearch/css@3" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="/css/components/search/docsearch.css">
+
+<div id="docsearch"></div>
+
+<script src="https://cdn.jsdmirror.com/npm/@docsearch/js@3" crossorigin="anonymous" defer></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        docsearch({
+            appId: '06NIVF4XFS',
+            apiKey: '92da82daa248eac9dc44c2ae1619fb9a',
+            indexName: 'guoke',
+            container: '#docsearch',
+            placeholder: 'so一下~'
+        });
+    });
+</script>
+
+
+
+
+<script>
+    let currentTheme = null;
+
+function getTheme() {
+    if (currentTheme) {
+        return currentTheme;
+    }
+    // 首次加载时从 localStorage 获取
+    const savedTheme = localStorage.getItem('theme');
+    currentTheme = savedTheme || 'light';
+    return currentTheme;
+}
+
+function setTheme(theme) {
+    const htmlElement = document.documentElement;
+    // 先移除所有可能的主题类
+    htmlElement.classList.remove('light', 'dark');
+
+    if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+    } else {
+        htmlElement.classList.add('light');
+    }
+
+    currentTheme = theme;
+    localStorage.setItem('theme', theme);
+    updateThemeIcon(theme);
+}
+
+function updateThemeIcon(theme) {
+    const themeToggle = document.getElementById('theme-toggle');
+    const iconClass = theme === 'dark' ? 'i-carbon-moon' : 'i-carbon-sun';
+    themeToggle.innerHTML = `<div class="${iconClass} w-4 h-4 text-muted-foreground/70 dark:text-muted-foreground-dark/70"></div>`;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const theme = getTheme();
+    setTheme(theme);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navMenu = document.getElementById('nav-menu');
+    const navTitle = document.getElementById('nav-title');
+    let lastScrollY = window.scrollY;
+    const scrollThreshold = 100; // 滚动阈值
+
+    function updateNav() {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > scrollThreshold) {
+            navMenu.style.opacity = '0';
+            navMenu.style.pointerEvents = 'none';
+            navTitle.style.opacity = '1';
+            navTitle.style.pointerEvents = 'auto';
+        } else {
+            navMenu.style.opacity = '1';
+            navMenu.style.pointerEvents = 'auto';
+            navTitle.style.opacity = '0';
+            navTitle.style.pointerEvents = 'none';
+        }
+
+        lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+});
+</script>
+
+        <main class="flex-grow">
+            
+<div class="container max-w-6xl mx-auto px-4 pt-24 pb-16">
+    <div class="flex gap-16">
+        <div class="relative flex-1">
+            <div class="flex gap-8 max-w-6xl mx-auto px-4 py-12 md:py-20">
+                <div class="w-full lg:max-w-3xl">
+                    
+                    <header class="mb-12">
+                        <h1 class="text-3xl font-bold mb-6">Windows之间实现文件网络共享</h1>
+                    </header>
+
+                    
+                    
+<link rel="stylesheet" href="/css/components/article/ai-summary.css">
+
+<div class="ai-summary" data-component="ai-summary">
+    <input type="checkbox" id="ai-summary__checkbox" class="ai-summary__checkbox absolute opacity-0 peer" />
+    <label for="ai-summary__checkbox" class="cursor-pointer block select-none">
+        <div class="ai-summary__container relative my-8 p-6 rounded-xl border border-border/40 
+             backdrop-blur transition-all duration-300
+             hover:border-border/60">
+            
+            <div class="ai-summary__header flex items-center justify-between">
+                <div class="ai-summary__title flex items-center gap-3">
+                    <div class="i-carbon-ai-status w-5 h-5 text-primary"></div>
+                    <span class="text-base font-medium">AI 摘要</span>
+                </div>
+                <div class="ai-summary__controls flex items-center gap-3">
+                    <span class="ai-summary__badge px-2.5 py-0.5 text-xs rounded-md
+                          text-primary/80 dark:text-primary-dark/80
+                          ring-1 ring-primary/20 dark:ring-primary-dark/20">
+                        109酱
+                    </span>
+                    <div class="ai-summary__toggle group bg-inherit border-none ring-1 ring-gray-600 dark:ring-gray-400"
+                        aria-label="展开/收起摘要">
+                        <div class="ai-summary__icon i-carbon-chevron-down w-5 h-5
+                             text-muted-foreground/60
+                             transition-transform duration-200 ease-out
+                             peer-checked:rotate-180">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="ai-summary__divider my-4 border-t border-border/30"></div>
+
+            
+            <div class="ai-summary__content transition-all duration-300 ease-in-out
+                        max-h-0 overflow-hidden peer-checked:max-h-96">
+                <div class="ai-summary__text text-sm leading-relaxed text-muted-foreground">
+                    
+                </div>
+            </div>
+        </div>
+    </label>
+</div>
+
+                    
+                    <article class="prose max-w-none">
+                        
+                            <p>在同一局域网下的电脑，可以在某一台电脑上设置一个共享文件夹，使每一台电脑都可以进行访问、增删、修改和拷贝文件。设置共享文件夹的电脑称为目标电脑，用微软账号登陆，这样可以在后续访问这台电脑带来极大的便利，设置起来也很简单，共享选项里设置为everyone即可。</p>
+<p><figure class="my-8">
+  <img
+    src="https://picgo-1.pages.dev//Windows%E4%B9%8B%E9%97%B4%E5%85%B1%E4%BA%AB.webp"
+    alt="Windows之间共享"
+    
+    class="mx-auto rounded-lg block"
+    loading="lazy"
+    
+  />
+  
+</figure></p>
+<p>设置好共享文件夹后，打开Windows的资源管理器&gt;网络，初始化完成后就能在计算机一栏看见局域网内的电脑。找到目标电脑打开后，输入目标电脑登陆的微软账号和密码，就能访问到共享文件夹。</p>
+
+
+<blockquote class="my-6 border-l-4 border-border/60 pl-4">
+    <p>如果共享的是onedrive文件夹，在Windows7&amp;8中通过网络共享访问时会遇到一直加载的问题。</p>
+</blockquote>
+                        
+                    </article>
+
+                    
+                    
+
+                    
+                    <div class="mt-12 md:mt-16 p-6 rounded-xl border border-border/40 dark:border-border-dark/40 backdrop-blur">
+    <div class="flex flex-col sm:flex-row gap-6">
+        
+        <div class="hidden sm:block flex-shrink-0">
+            <div class="w-14 h-14 rounded-xl border border-border/40 dark:border-border-dark/40
+                bg-muted/30 dark:bg-muted-dark/30 flex items-center justify-center">
+                <div class="i-carbon-license w-7 h-7 text-primary/80"></div>
+            </div>
+        </div>
+
+        
+        <div class="flex-1 space-y-4">
+            
+            <div class="space-y-1">
+                <h3 class="text-base font-medium">版权声明</h3>
+                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground/70">
+                    <span>本文采用</span>
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1 text-primary/80 hover:text-primary transition-colors">
+                        <div class="i-carbon-link w-3.5 h-3.5"></div>
+                        <span>CC BY-NC-SA 4.0</span>
+                    </a>
+                    <span>许可协议。</span>
+                </div>
+            </div>
+
+            
+            <div class="text-sm space-y-2 text-muted-foreground/70">
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>转载请注明出处：<span class="select-all">http://localhost:1313/share/</span></span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>本文作者：dodopoi</span>
+                </div>
+                <div class="flex items-start gap-2">
+                    <div class="i-carbon-checkmark w-4 h-4 mt-0.5 text-primary/70"></div>
+                    <span>发布时间：<time class="tabular-nums">2024-03-17 20:13</time></span>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                    
+
+    
+    
+<link rel="stylesheet" href="/css/components/article/comments/twikoo.css">
+
+<div class="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-border/40 dark:border-border-dark/40">
+    
+    <div class="flex items-center gap-2 mb-8">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h3 class="text-lg font-medium">评论</h3>
+    </div>
+    
+    <div id="twikoo" class="plain-link"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.all.min.js" crossorigin="anonymous" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        
+        function initTwikoo() {
+            if (window.twikoo && typeof window.twikoo.init === 'function') {
+                twikoo.init({
+                    envId: 'https:\/\/twikoo.guoke.co',
+                    el: '#twikoo',
+                    lang: 'zh-CN'
+                    
+                });
+            } else {
+                setTimeout(initTwikoo, 50);
+            }
+        }
+        initTwikoo();
+    });
+</script>
+
+
+
+<script src="/js/components/twikoo-owo.js" defer></script>
+
+
+                </div>
+
+                
+                <aside class="hidden lg:block w-64 flex-shrink-0">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        
+  
+    <link rel="stylesheet" href="/css/components/article/toc.css">
+  
+
+  <div class="flex flex-col gap-4">
+      <h3 class="text-sm font-medium text-foreground/80">目录</h3>
+      <nav class="text-sm text-foreground/70" aria-label="目录">
+          <nav id="TableOfContents"></nav>
+      </nav>
+  </div>
+
+                        <div class="flex flex-col gap-4">
+    <h3 class="text-sm font-medium text-foreground/80">阅读进度</h3>
+    <div class="relative h-1 bg-border/50 rounded-full overflow-hidden">
+        <div id="reading-progress" class="absolute inset-y-0 left-0 bg-primary/80 transition-all duration-150"
+            style="width: 0%"></div>
+    </div>
+    <div class="text-sm text-muted-foreground text-center">
+        <span id="percent">0</span>% 已读
+    </div>
+</div>
+
+
+      <script src="/js/components/reading-progress.js" defer></script>
+                    </div>
+                </aside>
+            </div>
+
+            
+            <div id="reading-progress-ball" class="lg:hidden fixed right-4 bottom-20 w-12 h-12 rounded-full 
+    backdrop-blur z-50
+    shadow-lg border border-border/20 dark:border-border-dark/20
+    flex items-center justify-center text-sm font-medium tabular-nums
+    transition-all duration-300 transform translate-y-24 opacity-0"
+    aria-label="阅读进度球" role="status">
+    0%
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const progressBall = document.getElementById('reading-progress-ball');
+    if (!progressBall) return;
+
+    const article = document.querySelector('article');
+    if (!article) return;
+
+    // 计算并更新阅读进度
+    function updateReadingProgress() {
+        const rect = article.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        const scrollTop = -rect.top;
+        const totalHeight = rect.height;
+        const viewableHeight = Math.min(windowHeight, totalHeight);
+        const scrollableHeight = totalHeight - viewableHeight;
+
+        // 防止除零
+        let progress = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0;
+        progress = Math.min(100, Math.max(0, progress));
+        const roundedProgress = Math.round(progress);
+
+        progressBall.textContent = `${roundedProgress}%`;
+
+        // 只在有效区间显示
+        const shouldShow = progress > 0 && progress < 100 && scrollableHeight > 0;
+        progressBall.classList.toggle('translate-y-24', !shouldShow);
+        progressBall.classList.toggle('opacity-0', !shouldShow);
+    }
+
+    // 节流函数
+    function throttle(func, delay) {
+        let timeoutId = null;
+        let lastExecTime = 0;
+
+        return function (...args) {
+            const now = Date.now();
+            if (now - lastExecTime >= delay) {
+                func.apply(this, args);
+                lastExecTime = now;
+            } else {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func.apply(this, args);
+                    lastExecTime = Date.now();
+                }, delay);
+            }
+        };
+    }
+
+    // 监听滚动和窗口变化
+    const throttledUpdate = throttle(updateReadingProgress, 100);
+    window.addEventListener('scroll', throttledUpdate, { passive: true });
+    window.addEventListener('resize', throttledUpdate, { passive: true });
+
+    // 初始化
+    updateReadingProgress();
+});
+</script>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+
+    <footer class="plain-link-container mt-auto py-4 backdrop-blur border-t border-border/50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col gap-2">
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-muted-foreground/60">
+                <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+    
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-2"></span>
+        <span>
+            
+            
+            
+                2022-2025
+            
+            
+                言别离
+            
+        </span>
+    </div>
+    
+    <div class="flex items-center gap-4">
+        <span>
+            <a href="https://github.com/dodopoi" target="_blank" rel="noopener noreferrer"
+                class="hover:text-primary transition-colors">
+                时雨下天渐凉
+            </a>
+        </span>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv" class="hidden md:inline">
+            本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+        </span>
+        <span id="busuanzi_container_site_uv" class="hidden md:inline">
+            您是第 <span id="busuanzi_value_site_uv"></span> 位过客
+        </span>
+    </div>
+</div>
+                
+<div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+    
+    
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a>
+    
+
+    
+    
+    
+    <span class="hidden md:inline text-border/40">|</span>
+    
+    <a href="https://www.beian.gov.cn/portal/registerSystemInfo" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a>
+    
+
+    
+    
+    
+    <span class="hidden md:inline text-border/40">|</span>
+    
+    <a href="https://icp.gov.moe/?keyword=%e8%90%8cICP%e5%a4%8720240549%e5%8f%b7" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 hover:text-primary transition-colors group">
+        <img src="https://icp.gov.moe/images/ico64.png" alt="萌ICP备案"
+            class="h-4 w-4 transition-transform group-hover:rotate-12">
+        <span>萌ICP备20240549号</span>
+    </a>
+    
+</div>
+
+            </div>
+
+            
+            <div class="hidden md:visible h-px bg-border/10"></div>
+
+            
+            <div class="hidden md:flex items-center gap-2 text-sm text-muted-foreground/70">
+                <div class="flex items-center gap-2">
+    <div class="i-carbon-time w-4 h-4"></div>
+    <span class="tabular-nums font-mono tracking-wider">
+        <span>已被世界欠拟合</span>
+        <span id="runningtime" data-start-date="07/20/2022 12:00:00"></span>
+    </span>
+</div>
+
+
+      <script src="/js/components/runtime.js" defer></script>
+                <span class="w-1 h-1 rounded-full bg-muted-foreground/30"></span>
+                
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="flex items-center gap-2">
+    <div class="i-carbon-text-font w-4 h-4"></div>
+    <span>
+        共 <span class="tabular-nums font-mono">45806</span> 字
+        <span class="mx-1"></span>
+        还在努力更新中...加油！加油啦
+    </span>
+</div>
+            </div>
+            
+            
+            <div class="flex justify-start">
+                <img src="/img/guoke_logo.png" alt="Footer Logo" style="height:30px;">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+#back-to-top {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 999;
+  display: none;
+  background: #4A90E2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#back-to-top:hover {
+  background: #357ABD;
+}
+</style>
+<button id="back-to-top" title="返回顶部" aria-label="返回顶部">
+  
+  <svg width="22" height="22" viewBox="0 0 64 64" fill="none">
+    <g>
+      <path d="M32 4C32 4 44 20 44 32C44 44 32 60 32 60C32 60 20 44 20 32C20 20 32 4 32 4Z" fill="#fff"/>
+      <circle cx="32" cy="32" r="6" fill="#4A90E2" stroke="#fff" stroke-width="2"/>
+      <path d="M32 60L27 54H37L32 60Z" fill="#FFD700"/>
+      <path d="M20 32L10 28L18 38L20 32Z" fill="#fff"/>
+      <path d="M44 32L54 28L46 38L44 32Z" fill="#fff"/>
+      <ellipse cx="32" cy="12" rx="2" ry="4" fill="#FFD700"/>
+    </g>
+  </svg>
+</button>
+<script>
+(function() {
+  const btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.style.display = 'flex';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+    
+    <script>document.addEventListener('DOMContentLoaded', function () {
+    const loadingScreen = document.getElementById('loading-screen');
+    let loadingTimeout;
+
+    function hideLoading() {
+        if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 400);
+        }
+        if (loadingTimeout) {
+            clearTimeout(loadingTimeout);
+            loadingTimeout = null;
+        }
+    }
+
+    function showLoading() {
+        if (loadingScreen) {
+            loadingScreen.style.display = 'flex';
+            // 强制重排以确保过渡动画生效
+            loadingScreen.offsetHeight;
+            loadingScreen.style.opacity = '1';
+            loadingTimeout = setTimeout(hideLoading, 2000);
+        }
+    }
+
+    // 页面加载完成时隐藏
+    window.addEventListener('load', hideLoading);
+
+    // 处理浏览器返回按钮（bfcache）
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            hideLoading();
+        }
+    });
+
+    // 页面跳转时显示 loading
+    document.addEventListener('click', function (e) {
+        const link = e.target.closest('a');
+        if (
+            link &&
+            link.href &&
+            !link.href.startsWith('#') &&
+            !link.href.includes('#') &&
+            link.href !== window.location.href &&
+            !link.hasAttribute('download') &&
+            link.target !== '_blank' &&
+            link.hostname === window.location.hostname
+        ) {
+            e.preventDefault();
+            showLoading();
+            setTimeout(() => {
+                window.location.href = link.href;
+            }, 400);
+        }
+    });
+
+    // 初始隐藏加载动画（以防万一）
+    hideLoading();
+});</script>
+    
+</body>
+
+</html>
