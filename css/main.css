@@ -1,0 +1,126 @@
+/* =========================
+   字体加载
+   ========================= */
+/* 优先加载 CDN 字体，失败时回退本地，再到系统等宽字体 */
+@font-face {
+  font-family: 'LXGW WenKai Mono CDN';
+  /* CDN 加速字体，Cloudflare R2 优先 */
+  src: url('https://tuchuang.guoke.co/hermeneutics/static/fonts/LXGWWenKaiLite-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'LXGW WenKai Mono';
+  src: url('/fonts/LXGWWenKaiLite-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF, U+3000-303F, U+FF00-FFEF;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fira Code Ascii';
+  src: url('/fonts/FiraCode-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+  font-display: swap;
+}
+
+/* =========================
+   主题变量
+   ========================= */
+:root {
+    --herm-background: hsl(0 0% 100%);
+    --herm-foreground: hsl(222 20% 35%);
+    --herm-primary: hsl(222 35% 25%);
+    --herm-primary-foreground: hsl(210 25% 98%);
+    --herm-muted: hsl(210 25% 96%);
+    --herm-muted-foreground: hsl(215 12% 45%);
+    --herm-card: hsl(0 0% 100%);
+    --herm-card-foreground: hsl(222 25% 12%);
+    --herm-border: hsl(214 15% 94%);
+    --herm-accent: rgba(181, 206, 154, 0.8);
+}
+.dark {
+    --herm-background: hsl(222 25% 8%);
+    --herm-foreground: hsl(210 20% 85%);
+    --herm-primary: hsl(210 25% 92%);
+    --herm-primary-foreground: hsl(222 35% 12%);
+    --herm-muted: hsl(217 20% 15%);
+    --herm-muted-foreground: hsl(215 15% 65%);
+    --herm-card: hsl(222 25% 8%);
+    --herm-card-foreground: hsl(210 25% 92%);
+    --herm-border: hsl(217 20% 15%);
+    --herm-accent: rgba(143, 168, 116, 0.8);
+}
+
+/* =========================
+   基础样式
+   ========================= */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "LXGW WenKai Mono CDN", "LXGW WenKai Mono", monospace;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-feature-settings: "liga" 1, "dlig" 1;
+    font-variant-east-asian: simplified;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   代码块字体
+   ========================= */
+pre, code, kbd, samp, .highlight, pre code, .highlight code {
+    font-family: "Fira Code Ascii", "Fira Code", Consolas, monospace !important;
+    font-size: 1em !important;
+    font-variant-ligatures: none !important;
+}
+
+/* =========================
+   特殊等宽字体应用
+   ========================= */
+#runningtime,
+#runningtime *,
+.tabular-nums,
+.font-mono {
+    font-family: "LXGW WenKai Mono CDN", "LXGW WenKai Mono", monospace !important;
+}
+
+/* 全站英文优先使用 Fira Code 字体 */
+:lang(en), 
+*:lang(en), 
+html[lang="en"] body, 
+body:lang(en) {
+    font-family: "Fira Code Ascii", "Fira Code", Consolas, monospace !important;
+}
+
+/* 搜索框内英文用 Fira Code，中文用文楷 */
+.local-search-input {
+  font-family: "Fira Code Ascii", "LXGW WenKai Mono CDN", "LXGW WenKai Mono", "Fira Code", monospace;
+}
+
+/* 搜索结果内容英文用 Fira Code，中文用文楷 */
+#local-search-results,
+#local-search-results * {
+  font-family: "Fira Code Ascii", "LXGW WenKai Mono CDN", "LXGW WenKai Mono", "Fira Code", monospace !important;
+}
