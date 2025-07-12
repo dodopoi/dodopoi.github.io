@@ -20,14 +20,8 @@
     <loc>https://guoke.co/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/</loc>
     <lastmod>2025-06-27T20:19:12+08:00</lastmod>
   </url><url>
-    <loc>https://guoke.co/baidu/</loc>
-    <lastmod>2025-05-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://guoke.co/now/</loc>
     <lastmod>2025-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://guoke.co/about/</loc>
-    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://guoke.co/tags/git/</loc>
     <lastmod>2025-03-14T20:09:50+08:00</lastmod>
@@ -128,9 +122,6 @@
     <loc>https://guoke.co/categories/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2024-03-17T20:13:01+08:00</lastmod>
   </url><url>
-    <loc>https://guoke.co/links/</loc>
-    <lastmod>2023-12-05T12:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://guoke.co/4.0lenovo-xiaoxini2000-hackintosh-monterey/</loc>
     <lastmod>2023-06-30T23:59:59+08:00</lastmod>
   </url><url>
@@ -206,12 +197,23 @@
     <loc>https://guoke.co/learngit/</loc>
     <lastmod>2022-07-23T21:18:13+08:00</lastmod>
   </url><url>
-    <loc>https://guoke.co/announcement/</loc>
-  </url><url>
     <loc>https://guoke.co/copyright/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://guoke.co/series/</loc>
+    <loc>https://guoke.co/about/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://guoke.co/links/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://guoke.co/changelogs/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://guoke.co/baidu/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://guoke.co/announcement/</loc>
+  </url><url>
+    <loc>https://guoke.co/series/</loc>
   </url>
 </urlset>
