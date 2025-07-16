@@ -8,7 +8,7 @@
     <link href="https://guoke.co/feed.atom" rel="self" type="application/atom&#43;xml" />
   
   <id>https://guoke.co/</id>
-  <updated>2025-07-12T22:33:01&#43;08:00</updated>
+  <updated>2025-07-16T22:55:04&#43;08:00</updated>
   <author>
     <name>dodopoi</name>
   </author>
@@ -484,7 +484,7 @@ turtle.circle(160)
     <content type="html">
       <![CDATA[
       <figure>
-        <img src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
+        <img src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp" alt="静态博客工作流" />
       </figure>
       <h2 id="前言">前言</h2>
 <p>静态博客工作流程：</p>
@@ -509,7 +509,7 @@ turtle.circle(160)
 </code></pre>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8108.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8108.webp"
     alt="静态博客工作流08"
     
     class="mx-auto rounded-lg block"
@@ -522,7 +522,7 @@ turtle.circle(160)
 <p>一款 Markdown 编辑器和阅读器。</p>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8101.webp"
     alt="静态博客工作流01"
     
     class="mx-auto rounded-lg block"
@@ -536,7 +536,7 @@ turtle.circle(160)
 目录大纲 / 文件管理 / 导入与导出 ……</p>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8102.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8102.webp"
     alt="静态博客工作流02"
     
     class="mx-auto rounded-lg block"
@@ -565,7 +565,7 @@ turtle.circle(160)
 </table>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8103.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8103.webp"
     alt="静态博客工作流03"
     
     class="mx-auto rounded-lg block"
@@ -574,11 +574,10 @@ turtle.circle(160)
   />
   
 </figure></p>
-<h2 id="hexo">Hexo</h2>
-<p>易用性、博客生成速度上hugo其实都优于hexo，只是因为一个主题不得不又重新选择hexo。</p>
+<h2 id="hugo">Hugo</h2>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8104.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8104.webp"
     alt="静态博客工作流04"
     
     class="mx-auto rounded-lg block"
@@ -595,7 +594,7 @@ git pull origin main
 <p>弹出窗口</p>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8109.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8109.webp"
     alt="静态博客工作流09"
     
     class="mx-auto rounded-lg block"
@@ -609,7 +608,7 @@ git pull origin main
 <p>强大无需多言。</p>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8105.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8105.webp"
     alt="静态博客工作流05"
     
     class="mx-auto rounded-lg block"
@@ -623,19 +622,8 @@ git pull origin main
 <p>推送至github后若网页内容没有更新，可去cloud flare里清理下缓存即可。</p>
 <p><figure class="my-8">
   <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8106.webp"
+    src="https://tuchuang.guoke.co/guoke/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%81/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8106.webp"
     alt="静态博客工作流06"
-    
-    class="mx-auto rounded-lg block"
-    loading="lazy"
-    
-  />
-  
-</figure></p>
-<p><figure class="my-8">
-  <img
-    src="https://picgo-1.pages.dev//%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B7%A5%E4%BD%9C%E6%B5%8107.webp"
-    alt="静态博客工作流07"
     
     class="mx-auto rounded-lg block"
     loading="lazy"
