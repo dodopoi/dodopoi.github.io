@@ -33,6 +33,7 @@
       });
     }
     open(img) {
+      this.image.removeAttribute("src");
       this.image.src = img.dataset.src || img.src;
       this.image.alt = img.alt || "";
       this.image.title = img.title || "";
@@ -43,7 +44,7 @@
       this._keydownHandler = (e) => {
         if (e.key === "Escape") this.close();
       };
-      document.addEventListener("keydown", this._keydownHandler);
+      document.addEventListener("keydown", this._keydownHandler, { once: true });
     }
     close() {
       this.overlay.classList.remove("active");
@@ -51,7 +52,6 @@
         this.overlay.style.display = "none";
         document.body.style.overflow = "";
       }, 300);
-      document.removeEventListener("keydown", this._keydownHandler);
     }
   };
   document.addEventListener("DOMContentLoaded", () => new Lightbox());

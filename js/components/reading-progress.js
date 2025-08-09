@@ -1,10 +1,11 @@
 (() => {
   // <stdin>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", () => {
     const article = document.querySelector("article");
     const progress = document.getElementById("reading-progress");
     const percent = document.getElementById("percent");
     if (!article || !progress || !percent) return;
+    let ticking = false;
     function updateReadingProgress() {
       const rect = article.getBoundingClientRect();
       const articleTop = rect.top;
@@ -24,27 +25,16 @@
       }
       progress.style.width = `${percentage}%`;
       percent.textContent = percentage;
+      ticking = false;
     }
-    function throttle(func, delay) {
-      let timeoutId;
-      let lastExecTime = 0;
-      return function(...args) {
-        const now = Date.now();
-        if (now - lastExecTime >= delay) {
-          func.apply(this, args);
-          lastExecTime = now;
-        } else {
-          clearTimeout(timeoutId);
-          timeoutId = setTimeout(() => {
-            func.apply(this, args);
-            lastExecTime = Date.now();
-          }, delay);
-        }
-      };
+    function onScrollOrResize() {
+      if (!ticking) {
+        window.requestAnimationFrame(updateReadingProgress);
+        ticking = true;
+      }
     }
-    const throttledUpdate = throttle(updateReadingProgress, 100);
-    window.addEventListener("scroll", throttledUpdate, { passive: true });
-    window.addEventListener("resize", throttledUpdate, { passive: true });
+    window.addEventListener("scroll", onScrollOrResize, { passive: true });
+    window.addEventListener("resize", onScrollOrResize, { passive: true });
     updateReadingProgress();
   });
 })();

@@ -8,7 +8,7 @@
     --tk-border-color: #e3e8f7;
     --tk-action-bg: #fff;
     --tk-card-border: #e3e8f7;
-    --tk-owo-body-bg-color: rgba(255, 255, 255, 0.7);
+    --tk-owo-body-bg-color: rgba(255,255,255,0.7);
     --tk-text: #222;
     --style-border-always: 1px solid var(--tk-card-border);
     --tk-comment-border: 0.5px solid var(--tk-card-border);
@@ -18,70 +18,41 @@ html.dark .twikoo {
     --tk-border-color: #42444a;
     --tk-action-bg: #2c2c2c;
     --tk-card-border: #42444a;
-    --tk-owo-body-bg-color: rgba(0, 0, 0, 0.7);
-    --tk-text: #ccb !important;
-    --style-border-always: 1px solid var(--tk-card-border);
-    --tk-comment-border: 0.5px solid var(--tk-card-border);
+    --tk-owo-body-bg-color: rgba(0,0,0,0.7);
+    --tk-text: #ccb;
 }
 
 /* =========================
    动画
    ========================= */
-@keyframes owoIn {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, -45%) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
 @keyframes modal_effect {
-    0% {
-        opacity: 0;
-        transform: translate(-50%, -60%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
+    0% { opacity: 0; transform: translate(-50%, -60%);}
+    100% { opacity: 1; transform: translate(-50%, -50%);}
 }
 
 /* =========================
    编辑器与个人信息
    ========================= */
-.tk-submit .tk-avatar {
-    display: none;
-}
-.tk-row .tk-col {
-    flex-direction: column-reverse;
-}
+.tk-submit .tk-avatar { display: none; }
+.tk-row .tk-col { flex-direction: column-reverse; }
 .tk-meta-input {
     min-height: 40px;
     position: relative;
     margin-top: 10px;
 }
-.tk-meta-input input {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    min-height: inherit;
-}
-.tk-meta-input .el-input__inner:focus {
-    border-color: rgba(144, 147, 153, 0.7);
-}
-.tk-meta-input .el-input-group__prepend {
-    background: inherit;
-}
+.tk-meta-input input,
 .tk-meta-input div {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
     min-height: inherit;
+    border-radius: 8px;
 }
+.tk-meta-input input { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+.tk-meta-input div { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+.tk-meta-input .el-input__inner:focus { border-color: rgba(144,147,153,0.7);}
+.tk-meta-input .el-input-group__prepend { background: inherit; }
 .tk-input.el-textarea textarea {
     padding-top: 16px;
     border-radius: 12px;
-    min-height: 150px !important;
+    min-height: 150px;
     height: auto;
     line-height: 1.5;
 }
@@ -95,15 +66,9 @@ html.dark .twikoo {
     margin-top: 5px;
     margin-left: auto;
 }
-.tk-row.actions button.el-button {
-    border-radius: 12px !important;
-}
-.tk-row.actions .__markdown {
-    display: none;
-}
-.tk-row.actions .tk-send {
-    background-color: var(--herm-accent);
-}
+.tk-row.actions button.el-button { border-radius: 12px; }
+.tk-row.actions .__markdown { display: none; }
+.tk-row.actions .tk-send { background-color: var(--herm-accent); }
 
 /* =========================
    表情面板
@@ -118,70 +83,36 @@ html.dark .twikoo {
     border: var(--style-border-always);
     opacity: 0;
     visibility: hidden;
-    border-radius: 8px !important;
+    border-radius: 8px;
     background-color: var(--tk-owo-body-bg-color);
-    backdrop-filter: saturate(150%) blur(15px) !important;
+    backdrop-filter: saturate(150%) blur(15px);
     animation: .3s ease .1s 1 normal both running modal_effect;
     color: var(--tk-text);
 }
-.OwO .OwO-body.active {
-    opacity: 1;
-    visibility: visible;
-}
+.OwO .OwO-body.active { opacity: 1; visibility: visible; }
 .OwO .OwO-items {
     height: min(60vh, 420px);
     overflow: auto;
     padding: 1rem;
-    position: relative;
-    z-index: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, 30px);
     gap: 0.5rem;
 }
-.OwO .OwO-items::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-.OwO .OwO-items::-webkit-scrollbar-track {
-    background: transparent;
-}
+.OwO .OwO-items::-webkit-scrollbar { width: 8px; height: 8px; }
 .OwO .OwO-items::-webkit-scrollbar-thumb {
-    background: rgba(144, 147, 153, 0.2);
+    background: rgba(144,147,153,0.2);
     border-radius: 4px;
 }
-.OwO .OwO-items::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(144, 147, 153, 0.3);
-}
-.OwO .OwO-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    font-size: 1.1em;
-    aspect-ratio: auto;
-}
-.OwO .OwO-item:hover {
-    background-color: rgba(144, 147, 153, 0.1);
-    transform: translateY(-2px);
-}
-.OwO .OwO-item:active {
-    transform: translateY(0) scale(0.95);
-}
+.OwO .OwO-items::-webkit-scrollbar-thumb:hover { background-color: rgba(144,147,153,0.3);}
 .OwO .OwO-bar {
-    position: relative;
     padding: 0.5rem;
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
 }
-.OwO .OwO-bar::-webkit-scrollbar {
-    height: 4px;
-}
+.OwO .OwO-bar::-webkit-scrollbar { height: 4px; }
 .OwO .OwO-bar::-webkit-scrollbar-thumb {
-    background: rgba(144, 147, 153, 0.2);
+    background: rgba(144,147,153,0.2);
     border-radius: 2px;
 }
 .OwO .OwO-bar .OwO-packages {
@@ -190,23 +121,30 @@ html.dark .twikoo {
     font-size: 0.9rem;
     cursor: pointer;
     white-space: nowrap;
-    transition: background 0.2s ease;
+    transition: background 0.2s;
 }
-.OwO .OwO-bar .OwO-packages.active {
-    background: rgba(144, 147, 153, 0.15);
+.OwO .OwO-bar .OwO-packages.active { background: rgba(144,147,153,0.15);}
+.OwO .OwO-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+    font-size: 1.1em;
 }
-
-/* 禁止页面滚动（表情面板打开时） */
-body.owo-active {
-    overflow: hidden;
+.OwO .OwO-item:hover {
+    background-color: rgba(144,147,153,0.1);
+    transform: translateY(-2px);
 }
+.OwO .OwO-item:active { transform: scale(0.95);}
+body.owo-active { overflow: hidden; }
 
 /* =========================
    评论区主体
    ========================= */
-.tk-comments-container {
-    margin-top: 1.5rem;
-}
+.tk-comments-container { margin-top: 1.5rem; }
 .tk-comments-title {
     font-size: 1.25rem;
     font-weight: 600;
@@ -215,66 +153,56 @@ body.owo-active {
     display: flex;
     justify-content: space-between;
 }
-.tk-comments-title .__comments {
-    color: inherit;
-}
+.tk-comments-title .__comments { color: inherit; }
 .tk-comment {
-    margin: 0.5rem 0 !important;
+    margin: 0.5rem 0;
     padding: 1rem;
     font-size: inherit;
-    line-height: 1.75 !important;
+    line-height: 1.75;
     display: flex;
     flex-direction: row;
     word-break: break-all;
     background: var(--herm-card);
     border: var(--tk-comment-border);
     border-radius: 1rem;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s, box-shadow 0.3s;
     position: relative;
     z-index: 1;
 }
 .tk-comment:hover {
-    border-color: rgba(144, 147, 153, 0.5);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    border-color: rgba(144,147,153,0.5);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
 }
-.tk-comment .OwO {
-    position: relative;
-}
+.tk-comment .OwO { position: relative; }
 .tk-comment .tk-avatar.tk-has-avatar {
     border-radius: 50%;
     flex-shrink: 0;
-    margin-right: 16px !important;
+    margin-right: 16px;
     object-fit: cover;
 }
 @media (max-width: 768px) {
-    .tk-comment {
-        font-size: 0.875rem !important;
-    }
+    .tk-comment { font-size: 0.875rem; }
     .tk-comment .tk-avatar.tk-has-avatar,
     .tk-comment .tk-avatar-img {
-        width: 2rem !important;
-        height: 2rem !important;
+        width: 2rem;
+        height: 2rem;
     }
 }
 
 /* =========================
    评论内容与操作
    ========================= */
-.tk-main {
-    flex: 1;
-}
+.tk-main { flex: 1; }
 .tk-main .tk-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.tk-main .tk-row .tk-action .tk-action-icon {
-    color: var(--herm-accent);
-}
+.tk-main .tk-row .tk-action .tk-action-icon { color: var(--herm-accent);}
 .tk-main .tk-row a {
-    text-decoration: none !important;
-    background-image: none !important;
+    text-decoration: none;
+    background-image: none;
 }
 .tk-main .tk-meta {
     display: flex;
@@ -283,18 +211,14 @@ body.owo-active {
     gap: 0.5rem;
 }
 .tk-main .tk-meta .tk-nick {
-    font-size: 1rem !important;
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: color 0.2s;
 }
-.tk-main .tk-meta .tk-nick:hover {
-    color: var(--herm-accent);
-}
+.tk-main .tk-meta .tk-nick:hover { color: var(--herm-accent);}
 @media (max-width: 768px) {
-    .tk-main .tk-meta .tk-nick {
-        font-size: 0.875rem !important;
-    }
+    .tk-main .tk-meta .tk-nick { font-size: 0.875rem; }
 }
 .tk-main .tk-meta .tk-time {
     font-size: 0.8rem;
@@ -306,27 +230,19 @@ body.owo-active {
     border-radius: var(--tk-second-radius);
     padding: 2px 6px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background 0.3s, box-shadow 0.3s;
     text-align: center;
 }
 .tk-main .tk-action:hover {
     background-color: var(--tk-action-bg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.tk-main .tk-action .tk-action-link:first-child {
-    display: none;
-}
-.tk-main .tk-action .tk-action-count {
-    color: var(--herm-accent);
-}
+.tk-main .tk-action .tk-action-link:first-child { display: none; }
+.tk-main .tk-action .tk-action-count { color: var(--herm-accent);}
 @media (max-width: 768px) {
-    .tk-main .tk-action {
-        display: none;
-    }
+    .tk-main .tk-action { display: none; }
 }
-.tk-main .tk-content {
-    margin-top: 0.2rem;
-}
+.tk-main .tk-content { margin-top: 0.2rem; }
 .tk-main .tk-content img {
     max-width: 100%;
     height: auto;
@@ -343,22 +259,19 @@ body.owo-active {
    回复卡片
    ========================= */
 .tk-replies {
-    max-height: 10rem !important;
+    max-height: 10rem;
 }
-.tk-replies.tk-replies-expand {
-    max-height: none !important;
-}
+.tk-replies.tk-replies-expand { max-height: none; }
 .tk-replies .tk-comment {
     padding: 1rem;
-    margin: 0.5rem 0 !important;
+    margin: 0.5rem 0;
     background: var(--herm-muted);
     border: var(--tk-comment-border);
     opacity: 0.9;
 }
 .tk-replies .tk-comment:hover {
-    transform: none;
     border-color: var(--herm-accent);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 .tk-replies .tk-content span:first-child:not(.token) {
     font-size: .75rem;
@@ -369,16 +282,12 @@ body.owo-active {
    其它标签与辅助
    ========================= */
 .tk-ruser {
-    color: var(--herm-accent) !important;
-    text-decoration: none !important;
-    background-image: none !important;
+    color: var(--herm-accent);
+    text-decoration: none;
+    background-image: none;
 }
-.twikoo svg {
-    color: var(--tk-text);
-}
-.twikoo .tk-expand {
-    border-radius: var(--tk-radius);
-}
+.twikoo svg { color: var(--tk-text);}
+.twikoo .tk-expand { border-radius: var(--tk-radius);}
 .tk-tag {
     display: inline-flex;
     align-items: center;
@@ -391,17 +300,10 @@ body.owo-active {
     margin: 0;
     line-height: 1.2;
 }
-.tk-tag-green {
-    background: var(--herm-accent);
-}
+.tk-tag-green { background: var(--herm-accent);}
 @media (max-width: 768px) {
-    .tk-tag {
-        padding: 0.125rem 0.375rem;
-        font-size: 0.75rem;
-    }
-    .tk-meta {
-        gap: 0.375rem !important;
-    }
+    .tk-tag { padding: 0.125rem 0.375rem; font-size: 0.75rem;}
+    .tk-meta { gap: 0.375rem;}
 }
 .tk-admin {
     backdrop-filter: blur(5px);
@@ -416,13 +318,9 @@ body.owo-active {
 /* =========================
    隐藏 Powered By Twikoo
    ========================= */
-.tk-footer {
-    display: none;
-}
+.tk-footer { display: none; }
 
 /* =========================
    评论区整体字号调整
    ========================= */
-#twikoo {
-    font-size: 0.9em;
-}
+#twikoo { font-size: 0.9em; }
