@@ -1,0 +1,22 @@
+/* =========================
+   Shiki 代码高亮基础样式
+   ========================= */
+.shiki,
+.shiki span {
+    font-size: 0.85rem;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+/* =========================
+   深色模式适配
+   ========================= */
+html.dark .shiki,
+html.dark .shiki span {
+    color: var(--shiki-dark, #ccc);
+    background-color: var(--shiki-dark-bg, #222);
+    font-style: var(--shiki-dark-font-style, normal);
+    font-weight: var(--shiki-dark-font-weight, normal);
+    text-decoration: var(--shiki-dark-text-decoration, none);
+}

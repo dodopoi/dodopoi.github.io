@@ -1,0 +1,57 @@
+/* =========================
+   AI Summary 组件样式
+   ========================= */
+[data-component="ai-summary"] {
+    --ai-summary-duration: 0.3s;
+    --ai-summary-easing: cubic-bezier(0.16, 1, 0.3, 1);
+    --ai-summary-transition: var(--ai-summary-duration) var(--ai-summary-easing);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ai-summary label {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.ai-summary__container {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform;
+}
+
+.ai-summary__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+        grid-template-rows var(--ai-summary-transition),
+        opacity calc(var(--ai-summary-duration) * 0.8) var(--ai-summary-easing);
+    will-change: grid-template-rows, opacity;
+}
+.ai-summary__content > div {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.ai-summary__icon {
+    transition: transform var(--ai-summary-transition);
+    will-change: transform;
+}
+
+/* 展开状态 */
+#ai-summary__checkbox:checked ~ label .ai-summary__content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+#ai-summary__checkbox:checked ~ label .ai-summary__icon {
+    transform: rotate(180deg);
+}
+
+/* =========================
+   移动设备优化
+   ========================= */
+@media (pointer: coarse) {
+    .ai-summary__container { touch-action: manipulation; }
+    .ai-summary__toggle:active { background-color: transparent !important; }
+    .ai-summary label:active { opacity: 0.99; }
+}
