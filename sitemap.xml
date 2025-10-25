@@ -199,12 +199,12 @@
   </url><url>
     <loc>https://guoke.co/announcement/</loc>
   </url><url>
-    <loc>https://guoke.co/baidu/</loc>
-  </url><url>
     <loc>https://guoke.co/pagefind/</loc>
   </url><url>
     <loc>https://guoke.co/search/</loc>
   </url><url>
     <loc>https://guoke.co/series/</loc>
+  </url><url>
+    <loc>https://guoke.co/baidu/</loc>
   </url>
 </urlset>
