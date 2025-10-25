@@ -1,7 +1,7 @@
 <?xml version= "1.0" encoding= "utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><title>果壳中的宇宙</title>
-  <link href="http://localhost:1313/" rel="alternate" />
-  <link href="http://localhost:1313/feed.atom" rel="self" type="application/atom&#43;xml" /> <id>http://localhost:1313/</id>
+  <link href="https://guoke.co/" rel="alternate" />
+  <link href="https://guoke.co/feed.atom" rel="self" type="application/atom&#43;xml" /> <id>https://guoke.co/</id>
   <updated>2024-11-11T11:11:00&#43;08:00</updated>
   <author><name>dodopoi</name></author>
   <rights></rights>
@@ -9,8 +9,8 @@
   
   <entry>
     <title>暂停营业</title>
-    <link href="http://localhost:1313/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/" />
-    <id>http://localhost:1313/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</id>
+    <link href="https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/" />
+    <id>https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/</id>
     <updated>2024-11-11T11:11:00&#43;08:00</updated>
     <author><name>dodopoi</name></author>
     
@@ -26,8 +26,8 @@
   </entry>
   <entry>
     <title>时光</title>
-    <link href="http://localhost:1313/%E6%97%B6%E5%85%89/" />
-    <id>http://localhost:1313/%E6%97%B6%E5%85%89/</id>
+    <link href="https://guoke.co/%E6%97%B6%E5%85%89/" />
+    <id>https://guoke.co/%E6%97%B6%E5%85%89/</id>
     <updated>2025-04-23T23:23:22&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -44,8 +44,8 @@
   </entry>
   <entry>
     <title>成都</title>
-    <link href="http://localhost:1313/chengdu/" />
-    <id>http://localhost:1313/chengdu/</id>
+    <link href="https://guoke.co/chengdu/" />
+    <id>https://guoke.co/chengdu/</id>
     <updated>2025-03-09T19:00:00&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -62,8 +62,8 @@
   </entry>
   <entry>
     <title>题目待定</title>
-    <link href="http://localhost:1313/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/" />
-    <id>http://localhost:1313/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/</id>
+    <link href="https://guoke.co/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/" />
+    <id>https://guoke.co/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/</id>
     <updated>2025-06-27T20:19:12&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -77,8 +77,8 @@
   </entry>
   <entry>
     <title>一个github账号下创建多个github pages页面的方法</title>
-    <link href="http://localhost:1313/github-pages/" />
-    <id>http://localhost:1313/github-pages/</id>
+    <link href="https://guoke.co/github-pages/" />
+    <id>https://guoke.co/github-pages/</id>
     <updated>2025-03-14T20:09:50&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -92,8 +92,8 @@
   </entry>
   <entry>
     <title>原来我们一直都没有好好说再见</title>
-    <link href="http://localhost:1313/say-goodbye/" />
-    <id>http://localhost:1313/say-goodbye/</id>
+    <link href="https://guoke.co/say-goodbye/" />
+    <id>https://guoke.co/say-goodbye/</id>
     <updated>2024-10-22T22:23:07&#43;08:00</updated>
     <author><name>dodopoi</name></author>
     
@@ -106,8 +106,8 @@
   </entry>
   <entry>
     <title>静态博客工作流</title>
-    <link href="http://localhost:1313/blog/" />
-    <id>http://localhost:1313/blog/</id>
+    <link href="https://guoke.co/blog/" />
+    <id>https://guoke.co/blog/</id>
     <updated>2024-10-10T13:51:59&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -124,8 +124,8 @@
   </entry>
   <entry>
     <title>猫头鹰Noctua HOME系列产品平替</title>
-    <link href="http://localhost:1313/noctua-home/" />
-    <id>http://localhost:1313/noctua-home/</id>
+    <link href="https://guoke.co/noctua-home/" />
+    <id>https://guoke.co/noctua-home/</id>
     <updated>2024-07-24T18:42:05&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      
@@ -139,8 +139,8 @@
   </entry>
   <entry>
     <title>是bug么？Windows 10家庭版可以通过商店免费升级到专业版</title>
-    <link href="http://localhost:1313/windows10/" />
-    <id>http://localhost:1313/windows10/</id>
+    <link href="https://guoke.co/windows10/" />
+    <id>https://guoke.co/windows10/</id>
     <updated>2024-07-24T14:11:58&#43;08:00</updated>
     <author><name>dodopoi</name></author>
     
@@ -153,8 +153,8 @@
   </entry>
   <entry>
     <title>暗黑破坏神4裸连方法</title>
-    <link href="http://localhost:1313/diablo-iv/" />
-    <id>http://localhost:1313/diablo-iv/</id>
+    <link href="https://guoke.co/diablo-iv/" />
+    <id>https://guoke.co/diablo-iv/</id>
     <updated>2024-06-05T18:41:27&#43;08:00</updated>
     <author><name>dodopoi</name></author>
      

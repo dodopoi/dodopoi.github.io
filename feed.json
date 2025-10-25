@@ -1,20 +1,20 @@
 {
     "version": "https://jsonfeed.org/version/1.1",
     "title": "果壳中的宇宙",
-    "home_page_url": "http://localhost:1313/",
-    "feed_url": "http://localhost:1313/feed.json",
+    "home_page_url": "https://guoke.co/",
+    "feed_url": "https://guoke.co/feed.json",
     "description": "The Secret Garden of some dumb Element-chan.",
-    "icon": "http://localhost:1313//favicon.svg",
+    "icon": "https://guoke.co//favicon.svg",
     "author": {
         "name": "dodopoi",
-        "avatar": "http://localhost:1313/img/avatar.webp"
+        "avatar": "https://guoke.co/img/avatar.webp"
     },
     "language": "zh",
     
     "items": [
         {
-            "id": "http://localhost:1313/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/",
-            "url": "http://localhost:1313/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/",
+            "id": "https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/",
+            "url": "https://guoke.co/%E6%9A%82%E5%81%9C%E8%90%A5%E4%B8%9A/",
             "title": "暂停营业",
             "summary": "博主的轻松公告，带着可爱的猫咪颜文字表情宣布博客将进入不定期更新模式，展现了写博客时的随性与生活气息。",
             "content_text": "不定期更新ฅ/ᐠ｡ᆽ｡ᐟ \\\n",
@@ -26,8 +26,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/%E6%97%B6%E5%85%89/",
-            "url": "http://localhost:1313/%E6%97%B6%E5%85%89/",
+            "id": "https://guoke.co/%E6%97%B6%E5%85%89/",
+            "url": "https://guoke.co/%E6%97%B6%E5%85%89/",
             "title": "时光",
             "summary": "治愈系博文，以一张温暖的图片分享生活中的美好时光与幸福时刻，让人感受到平静与温馨。",
             "content_text": "",
@@ -40,8 +40,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/chengdu/",
-            "url": "http://localhost:1313/chengdu/",
+            "id": "https://guoke.co/chengdu/",
+            "url": "https://guoke.co/chengdu/",
             "title": "成都",
             "summary": "2025年3月成都之行的图文记录，通过一系列城市街景与生活瞬间的照片，展现了这座城市独特的魅力与风貌。",
             "content_text": "",
@@ -54,8 +54,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/",
-            "url": "http://localhost:1313/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/",
+            "id": "https://guoke.co/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/",
+            "url": "https://guoke.co/%E9%A2%98%E7%9B%AE%E5%BE%85%E5%AE%9A/",
             "title": "题目待定",
             "summary": "",
             "content_text": "",
@@ -67,8 +67,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/github-pages/",
-            "url": "http://localhost:1313/github-pages/",
+            "id": "https://guoke.co/github-pages/",
+            "url": "https://guoke.co/github-pages/",
             "title": "一个github账号下创建多个github pages页面的方法",
             "summary": "准备一个域名方便一些。\n",
             "content_text": "准备一个域名方便一些。\n",
@@ -80,8 +80,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/say-goodbye/",
-            "url": "http://localhost:1313/say-goodbye/",
+            "id": "https://guoke.co/say-goodbye/",
+            "url": "https://guoke.co/say-goodbye/",
             "title": "原来我们一直都没有好好说再见",
             "summary": "",
             "content_text": "",
@@ -92,8 +92,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/blog/",
-            "url": "http://localhost:1313/blog/",
+            "id": "https://guoke.co/blog/",
+            "url": "https://guoke.co/blog/",
             "title": "静态博客工作流",
             "summary": "",
             "content_text": "",
@@ -106,8 +106,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/noctua-home/",
-            "url": "http://localhost:1313/noctua-home/",
+            "id": "https://guoke.co/noctua-home/",
+            "url": "https://guoke.co/noctua-home/",
             "title": "猫头鹰Noctua HOME系列产品平替",
             "summary": "🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。\n",
             "content_text": "🦉Noctua推出家庭、办公室和多种用途通风的HOME系列产品线，家庭套装价格99美元。这一套既能清凉一夏又可以当桌面摆件，除了贵没有缺点。\n",
@@ -119,8 +119,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/windows10/",
-            "url": "http://localhost:1313/windows10/",
+            "id": "https://guoke.co/windows10/",
+            "url": "https://guoke.co/windows10/",
             "title": "是bug么？Windows 10家庭版可以通过商店免费升级到专业版",
             "summary": "意外发现 Windows 10 家庭版可通过微软商店直接升级到专业版并完成激活的经历，文中复现了升级流程与激活信息，适合想了解此类非典型升级流程的用户。",
             "content_text": "不知道是不是bug，在搜索office时，偶然顺手搜了下Windows，没有购买过Windows专业版，登录微软账户，点开后页面后没有购买页面，而是安装页面。升级完成以后查看激活信息，部分产品密钥是3V66T。\n",
@@ -131,8 +131,8 @@
             }
         },
         {
-            "id": "http://localhost:1313/diablo-iv/",
-            "url": "http://localhost:1313/diablo-iv/",
+            "id": "https://guoke.co/diablo-iv/",
+            "url": "https://guoke.co/diablo-iv/",
             "title": "暗黑破坏神4裸连方法",
             "summary": "适逢英伟达推出活动，可以免费兑换3个xgp会员，暗黑4也加入到xgp里，正好可以进行体验。国内游玩暗黑4需要开加速器，这里可以通过修改hosts文件实现裸连，但是要稳定游玩还是建议购买加速器相关服务。\n",
             "content_text": "适逢英伟达推出活动，可以免费兑换3个xgp会员，暗黑4也加入到xgp里，正好可以进行体验。国内游玩暗黑4需要开加速器，这里可以通过修改hosts文件实现裸连，但是要稳定游玩还是建议购买加速器相关服务。\n",
