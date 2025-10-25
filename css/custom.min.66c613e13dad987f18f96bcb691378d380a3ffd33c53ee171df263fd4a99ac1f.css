@@ -1,0 +1,1 @@
+.tk-license-link,.license-card a,section[aria-labelledby=license-heading] a{display:inline-block;max-width:60ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle}@media(max-width:640px){section[aria-labelledby=license-heading] a{max-width:100%;white-space:normal;overflow-wrap:anywhere}}section[aria-labelledby=license-heading]{word-break:break-word}

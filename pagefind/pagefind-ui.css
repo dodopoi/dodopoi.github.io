@@ -1,0 +1,14 @@
+/* Minimal styles for replacement Pagefind UI */
+.pagefind-ui { max-width: 800px; margin: 0 auto; }
+.pagefind-ui__search-input { width: 100%; padding: .5rem .75rem; border: 1px solid #ddd; border-radius: 6px; }
+.pagefind-ui__results { margin-top: 1rem; }
+.pagefind-ui__result { padding: .75rem; border-bottom: 1px solid #eee; }
+.pagefind-ui__title { font-weight: 600; }
+
+/* Highlight for matched query terms */
+.pagefind-highlight {
+	background-color: rgba(250, 229, 153, 0.9);
+	color: inherit;
+	padding: 0 .12rem;
+	border-radius: 3px;
+}

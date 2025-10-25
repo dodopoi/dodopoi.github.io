@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>3.1 配置ACPI | 果壳中的宇宙</title><meta name="description" content="The Secret Garden of some dumb Element-chan."><meta name="keywords" content="Blog ,dodopoi ,Open Source ,Writing ,中文博客"><link rel="alternate" hreflang="zh" href="http://localhost:1313/3.1lenovo-xiaoxini2000-hackintosh-monterey/" /><link rel="alternate" hreflang="x-default" href="http://localhost:1313/3.1lenovo-xiaoxini2000-hackintosh-monterey/" /><meta property="og:url" content="http://localhost:1313/3.1lenovo-xiaoxini2000-hackintosh-monterey/">
+  <meta property="og:site_name" content="果壳中的宇宙">
+  <meta property="og:title" content="3.1 配置ACPI">
+  <meta property="og:description" content="The Secret Garden of some dumb Element-chan.">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-23T08:26:11+08:00">
+    <meta property="article:modified_time" content="2023-06-23T08:26:11+08:00">
+    <meta property="article:tag" content="黑苹果">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="3.1 配置ACPI">
+  <meta name="twitter:description" content="The Secret Garden of some dumb Element-chan.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/global/anim.min.a4d9e5d2be84089189de579293bca96752415ba7ef2edc5db0faf25901d53ed7.css" integrity="sha256-pNnl0r6ECJGJ3leSk7ypZ1JBW6fvLtxdsPryWQHVPtc=" crossorigin="anonymous"><link rel="stylesheet" href="/css/global/header.min.4378df24d232a91bca43167c7e38e4f27cf0f7598816ed1e2663f7c951b1e9c3.css" integrity="sha256-Q3jfJNIyqRvKQxZ8fjjk8nzw91mIFu0eJmP3yVGx6cM=" crossorigin="anonymous"><link rel="stylesheet" href="/css/global/main.min.efade0a37b666a701a71cda14e5cc642dfeea0af1c831de06c6eb9869f420b07.css" integrity="sha256-763go3tmanAacc2hTlzGQt/uoK8cgx3gbG65hp9CCwc=" crossorigin="anonymous"><link rel="stylesheet" href="/css/uno.min.aad321669273ca8becde095d06a10adabadd03960a97880ada195a09aebd1f89.css" integrity="sha256-qtMhZpJzyovs3gldBqEK2rrdA5YKl4gK2hlaCa69H4k=" crossorigin="anonymous"><link rel="stylesheet" href="/css/custom.min.66c613e13dad987f18f96bcb691378d380a3ffd33c53ee171df263fd4a99ac1f.css" integrity="sha256-ZsYT4T2tmH8Y&#43;WvLaRN404Cj/9M8U&#43;4XHfJj/UqZrB8=" crossorigin="anonymous"><script>(function () {
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+        (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();</script><link rel="stylesheet" href="/css/article/abstract.min.a5ca7a45b5e9d9f7ed4afbfb17844e59d586e02de3824f95d53b9f2968ebec48.css" integrity="sha256-pcp6RbXp2fftSvv7F4ROWdWG4C3jgk&#43;V1TufKWjr7Eg=" crossorigin="anonymous"><link rel="stylesheet" href="/css/article/clickcopy.min.4f67e2fb2075dfae26ba99e9ba750c2eee0c904c8dcffb8981c45ead9157fd99.css" integrity="sha256-T2fi&#43;yB1364mupnpunUMLu4MkEyNz/uJgcRerZFX/Zk=" crossorigin="anonymous"><link rel="stylesheet" href="/css/article/lightbox.min.b3ff90a8594b82cc17eba45f861591f1bce2fe67c3eda33203ae876736cf89fa.css" integrity="sha256-s/&#43;QqFlLgswX66RfhhWR8bzi/mfD7aMyA66HZzbPifo=" crossorigin="anonymous"><link rel="stylesheet" href="/css/article/prose.min.10fcb275a77d81fdab6235e684333b1d9ffc3b1d333a6cba6f1c54f16d53dd69.css" integrity="sha256-EPyydad9gf2rYjXmhDM7HZ/8Ox0zOmy6bxxU8W1T3Wk=" crossorigin="anonymous"><link rel="stylesheet" href="/css/article/shiki.min.c0e6db88b257cd1eb6333abe1275a053124ebdc0c8e7c930a89591f44c43c577.css" integrity="sha256-wObbiLJXzR62Mzq&#43;EnWgUxJOvcDI58kwqJWR9ExDxXc=" crossorigin="anonymous"><link rel="stylesheet" href="/css/article/toc.min.32497b095175e97e931be8d5cd03da64a7fbcbc706e1faadf76094daa3240522.css" integrity="sha256-Mkl7CVF16X6TG&#43;jVzQPaZKf7y8cG4fqt92CU2qMkBSI=" crossorigin="anonymous"><script src="/js/article/lightbox.js"defer></script><script src="/js/article/clickcopy.js"defer></script></head>
+
+<body class="min-h-screen flex flex-col gap-y-4 bg-background text-foreground transition-colors"><div class="h-card p-author hidden">
+    <span class="p-name">dodopoi</span>
+
+    <img class="u-photo" src="http://localhost:1313/img/avatar.webp" alt="dodopoi"><p class="p-note">夕晴照雪霁无瑕.</p><a class="u-url u-uid" href="http://localhost:1313/">http://localhost:1313/</a><span class="p-category">金克斯的含义就是金克斯</span><span class="p-category">如无必要勿增实体</span></div><header class="sticky top-0 left-0 right-0 bg-background/80 backdrop-blur z-[var(--herm-zidx-header)]">
+    <div class="container mx-auto px-4 flex items-center justify-between h-[var(--herm-header-height)] relative">
+        
+        <div class="flex-1 flex justify-start">
+            <a rel="me" href="/" class="shrink-0">
+                <img src="/img/avatar.webp" alt="avatar"
+                    class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+            </a>
+        </div>
+
+        
+        <nav class="hidden md:flex flex-shrink-0" id="header-menu" aria-label="Main navigation">
+            <ul
+                class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium text-muted-foreground"><li class="relative group">
+                    <a aria-label="Menu 归档" href="http://localhost:1313/"
+                        class="hover:text-primary transition-colors">
+                        归档
+                    </a><ul class="flex flex-col overflow-hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible 
+                       group-hover:opacity-100 group-hover:visible transition-all duration-200
+                       w-32 py-1 rounded-lg border border-border/50 backdrop-blur
+                       shadow-lg shadow-muted/5"><li>
+                            <a aria-label="标签" href="http://localhost:1313/tags" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">标签</a>
+                        </li><li>
+                            <a aria-label="分类" href="http://localhost:1313/categories" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">分类</a>
+                        </li><li>
+                            <a aria-label="系列" href="http://localhost:1313/series" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">系列</a>
+                        </li><li>
+                            <a aria-label="时间" href="http://localhost:1313/posts" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">时间</a>
+                        </li></ul></li><li class="relative group">
+                    <a aria-label="Menu 友链" href="http://localhost:1313/links"
+                        class="hover:text-primary transition-colors">
+                        友链
+                    </a></li><li class="relative group">
+                    <a aria-label="Menu 关于" href="http://localhost:1313/about"
+                        class="hover:text-primary transition-colors">
+                        关于
+                    </a></li></ul>
+        </nav>
+
+        
+        <div class="md:hidden" id="header-mobilemenu">
+            
+            <input type="checkbox" id="header-mobilemenu__check" class="hidden" tabindex="-1">
+
+            
+            <label for="header-mobilemenu__check" id="header-mobilemenu__toggle" aria-label="Toggle menu"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-background/80 text-muted-foreground/70 hover:bg-muted/50 transition-colors cursor-pointer z-[var(--herm-zidx-header)] relative"
+                role="button">
+                <span class="header-mobilemenu__toggle--open i-carbon-menu w-4 h-4" aria-hidden="true"></span>
+                <span class="header-mobilemenu__toggle--close i-carbon-close w-4 h-4" aria-hidden="true"></span>
+            </label>
+
+            
+            <nav id="header-mobilemenu__panel"
+                class="fixed top-[var(--herm-header-height)] left-0 right-0 bg-background/95 backdrop-blur border-b border-border/50 z-[var(--herm-zidx-dropdown)]">
+                <div class="container max-w-container-content mx-auto px-4 py-4">
+                    <ul class="px-4 space-y-4"><li>
+                            <a aria-label="归档" href="http://localhost:1313/" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">归档</a><ul class="mt-2 ml-4 space-y-3"><li>
+                                    <a aria-label="标签" href="http://localhost:1313/tags" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">标签</a>
+                                </li><li>
+                                    <a aria-label="分类" href="http://localhost:1313/categories" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">分类</a>
+                                </li><li>
+                                    <a aria-label="系列" href="http://localhost:1313/series" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">系列</a>
+                                </li><li>
+                                    <a aria-label="时间" href="http://localhost:1313/posts" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">时间</a>
+                                </li></ul></li><li>
+                            <a aria-label="友链" href="http://localhost:1313/links" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">友链</a></li><li>
+                            <a aria-label="关于" href="http://localhost:1313/about" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">关于</a></li></ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 max-w-[50%] sm:max-w-[60%]"
+            id="header-title">
+            <button class="text-base font-medium truncate" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});"
+                aria-label="返回顶部">3.1 配置ACPI</button>
+        </div>
+
+        
+        <div class="flex-1 flex justify-end">
+            <div class="flex items-center gap-2"><label for="toc-toggle" class="header-button hidden md:inline-flex" aria-label="切换目录显示" role="button">
+                    <i class="i-carbon-table-of-contents w-4 h-4"></i>
+                </label><a href="/search" class="header-button" aria-label="搜索">
+                    <i class="i-carbon-search w-4 h-4" aria-hidden="true"></i>
+                </a><button id="header-btns__theme" class="header-button" aria-label="切换主题">
+                    <i class="i-carbon-sun w-4 h-4 block dark:hidden" aria-hidden="true"></i>
+                    <i class="i-carbon-moon w-4 h-4 hidden dark:block" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header><script>const THEME_KEY = 'theme';
+const THEMES = ['light', 'dark'];
+let currentTheme = null;
+
+const getTheme = () => {
+    if (currentTheme) return currentTheme;
+    const saved = localStorage.getItem(THEME_KEY);
+    return (THEMES.includes(saved)) ? saved : 'light';
+};
+
+const setTheme = (theme) => {
+    const html = document.documentElement;
+    THEMES.forEach(t => html.classList.remove(t));
+    html.classList.add(theme);
+    currentTheme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+};
+
+const bindThemeToggle = () => {
+    const btn = document.getElementById('header-btns__theme');
+    btn?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+};
+
+const handleNavScroll = () => {
+    const headerMenu = document.getElementById('header-menu');
+    const headerTitle = document.getElementById('header-title');
+    const mobileMenu = document.getElementById('header-mobilemenu');
+    const threshold = 100;
+
+    const updateNav = () => {
+        const y = window.scrollY;
+        if (!headerMenu || !headerTitle) return;
+
+        const isScrolled = y > threshold;
+        headerMenu.style.opacity = isScrolled ? '0' : '1';
+        headerMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        mobileMenu.style.opacity = isScrolled ? '0' : '1';
+        mobileMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        headerTitle.style.opacity = isScrolled ? '1' : '0';
+        headerTitle.style.pointerEvents = isScrolled ? 'auto' : 'none';
+    };
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTheme(getTheme());
+    bindThemeToggle();
+    handleNavScroll();
+});
+</script><main class="flex-grow anim-fadein">
+        <span class="sr-only">主要内容区域</span>
+<div class="container relative max-w-[var(--herm-main-width-wd)] mx-auto px-4 pt-[var(--herm-content-offset)]"><link rel="stylesheet" href="/css/article/toc.css"><input type="checkbox" id="toc-toggle" class="toc-toggle__checkbox hidden" tabindex="-1" aria-hidden="true">
+
+<aside class="toc-sidebar hidden lg:block left-4 h-full">
+    <div class="sticky top-[var(--herm-toc-offset)]">
+        <div class="text-base flex flex-col gap-4 ">
+            <h2 class="font-medium text-foreground/80">目录</h2>
+            <nav id="toc-main" class="toc-main text-foreground/70"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#完整的-quiks-怪癖">完整的 Quiks 怪癖</a></li>
+    <li><a href="#intel-桌面平台">Intel 桌面平台</a>
+      <ul>
+        <li><a href="#yonahconroepenrynlynnfieldclarkdale">Yonah、Conroe、Penryn、Lynnfield、Clarkdale</a></li>
+        <li><a href="#sandy-bridgeivy-bridge">Sandy Bridge、Ivy Bridge</a></li>
+        <li><a href="#haswellbroadwellskylakekaby-lakecoffee-lakecomet-lake">Haswell、Broadwell、Skylake、Kaby Lake、Coffee Lake、Comet Lake</a></li>
+      </ul>
+    </li>
+    <li><a href="#intel-笔记本平台">Intel 笔记本平台</a>
+      <ul>
+        <li><a href="#clarksfieldarrandale">Clarksfield、Arrandale</a></li>
+        <li><a href="#sandy-bridgeivy-bridge-1">Sandy Bridge、Ivy Bridge</a></li>
+        <li><a href="#haswellbroadwellskylakekaby-lakecoffee-lake-whiskey-lakecoffee-lake-pluscomet-lakeicelake">Haswell、Broadwell、Skylake、Kaby Lake、Coffee Lake 、Whiskey Lake、Coffee Lake Plus、Comet Lake、Icelake</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav>
+        </div>
+    </div>
+</aside><div class="max-w-[var(--herm-main-width-nr)] mx-auto flex flex-col gap-y-8 h-entry">
+        <header class="space-y-6">
+            <h1 data-pagefind-meta="title" class="text-2xl md:text-3xl font-bold p-name">3.1 配置ACPI</h1><aside class="text-sm text-muted-foreground ml-2 space-y-6">
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-calendar w-4 h-4"></i>
+            <time class="dt-published" datetime=" 2023-06-23T08:26:11&#43;08:00">2023-06-23</time>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-time w-4 h-4"></i>
+            <span>3 分钟阅读</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-text-font w-4 h-4"></i>
+            <span>1175 字</span>
+        </li><li class="flex items-center gap-2">
+            <i class="i-carbon-folder w-4 h-4"></i>
+            <span>折腾</span>
+        </li></ul><ul class="flex flex-wrap gap-2"><li class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
+            <i class="i-carbon-tag w-4 h-4" aria-hidden="true"></i>
+            <span>黑苹果</span>
+        </li></ul></aside></header><article data-pagefind-body class="prose e-content"><h1 id="配置acpi">配置ACPI</h1>
+<p>通过上一节准备工作的配置，我们的 SSDT 应该都已经加载进来了，此时一般调整下 Quiks（怪癖）即可，少数的 SSDT 需要打对应的补丁才可以生效。</p>
+<h2 id="完整的-quiks-怪癖">完整的 Quiks 怪癖</h2>
+<p>因为各个平台的版本不太一样，在详细说明之前写来一个 OC 0.7.3 完整的 Quiks 怪癖说明，这样心里大家设置的时候心里一般就有个底了。</p>
+<ul>
+<li>FadtEnableReset
+<ul>
+<li>在旧硬件上修复重启和关机, 除非需要, 否则不推荐开启</li>
+<li>一些较新的笔记本可能也需要这个选项来修复重启和关机</li>
+</ul>
+</li>
+<li>NormalizeHeaders
+<ul>
+<li>清除 ACPI 头字段, 只有 macOS 10.13 需要</li>
+<li>10.14 后面的版本已经修复这个问题了</li>
+</ul>
+</li>
+<li>RebaseRegions
+<ul>
+<li>尝试试探性地重新定位 ACPI 内存区域, 使用自定义 DSDT 则必须开启</li>
+</ul>
+</li>
+<li>ResetHwSig
+<ul>
+<li>适用于无法在重新启动期间维护硬件签名并导致从休眠中唤醒问题的硬件</li>
+</ul>
+</li>
+<li>ResetLogoStatus
+<ul>
+<li>无法在有 BGRT 表的系统上显示 OEM Windows 标志的硬件需要开启</li>
+</ul>
+</li>
+<li>SyncTableIds
+<ul>
+<li>这可以解决修补表与 SLIC 表不兼容导致旧 Windows 操作系统中的许可问题。</li>
+</ul>
+</li>
+</ul>
+<h2 id="intel-桌面平台">Intel 桌面平台</h2>
+<h3 id="yonahconroepenrynlynnfieldclarkdale">Yonah、Conroe、Penryn、Lynnfield、Clarkdale</h3>
+<p>最初支持的版本为 OS X 10.4.10，最后支持的操作系统版本为 macOS 10.13.6</p>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p>
+<h3 id="sandy-bridgeivy-bridge">Sandy Bridge、Ivy Bridge</h3>
+<p>Sandy Bridge 的 iGPU 核显仅在 macOS 10.13 之前得到官方支持，大多数 Sandy 桥接的主板不支持 UEFI</p>
+<p>Sandy Bridge 和 Ivy Bridge 的 ACPI 往往需要配合「删除」使用：删除 CpuPm、删除 Cpu0Ist</p>
+<p>幸运的是，默认示例文件自带了这些，我们只需要勾选「启用」就 OK 了：</p>
+<p><figure class="my-8">
+    <img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEACPI/3.1%E9%85%8D%E7%BD%AEACPI01.webp" alt="3.1配置ACPI01" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p>
+<h3 id="haswellbroadwellskylakekaby-lakecoffee-lakecomet-lake">Haswell、Broadwell、Skylake、Kaby Lake、Coffee Lake、Comet Lake</h3>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p>
+<h2 id="intel-笔记本平台">Intel 笔记本平台</h2>
+<h3 id="clarksfieldarrandale">Clarksfield、Arrandale</h3>
+<p>因为使用了 SSDT-XOSI 的原因，所以还需要配合 <strong>Change _OSI to XOSI</strong> 补丁来使用：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Comment</th>
+          <th>String</th>
+          <th>Change _OSI to XOSI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Enabled</td>
+          <td>Boolean</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Count</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Limit</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Find</td>
+          <td>Data</td>
+          <td><code>5f4f5349</code></td>
+      </tr>
+      <tr>
+          <td>Replace</td>
+          <td>Data</td>
+          <td><code>584f5349</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>OCC 里面也集成了这个 XOSI 补丁，只需要一键就可以补丁并启用：</p>
+<p><figure class="my-8">
+    <img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEACPI/3.1%E9%85%8D%E7%BD%AEACPI02.webp" alt="3.1配置ACPI02" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p>
+<h3 id="sandy-bridgeivy-bridge-1">Sandy Bridge、Ivy Bridge</h3>
+<p>Sandy Bridge 的 iGPU 核显仅在 macOS 10.13 之前得到官方支持，大多数 Sandy 桥接的主板不支持 UEFI</p>
+<p>Sandy Bridge 和 Ivy Bridge 的 ACPI 往往需要配合「删除」使用：删除 CpuPm、删除 Cpu0Ist</p>
+<p>幸运的是，默认示例文件自带了这些，我们只需要勾选「启用」就 OK 了：</p>
+<p><figure class="my-8">
+    <img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEACPI/3.1%E9%85%8D%E7%BD%AEACPI03.webp" alt="3.1配置ACPI03" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>因为使用了 SSDT-XOSI 的原因，所以还需要配合 <strong>Change _OSI to XOSI</strong> 补丁来使用：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Comment</th>
+          <th>String</th>
+          <th>Change _OSI to XOSI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Enabled</td>
+          <td>Boolean</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Count</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Limit</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Find</td>
+          <td>Data</td>
+          <td><code>5f4f5349</code></td>
+      </tr>
+      <tr>
+          <td>Replace</td>
+          <td>Data</td>
+          <td><code>584f5349</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>OCC 里面也集成了这个 XOSI 补丁，只需要一键就可以补丁并启用：</p>
+<p><figure class="my-8">
+    <img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEACPI/3.1%E9%85%8D%E7%BD%AEACPI04.webp" alt="3.1配置ACPI04" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p>
+<h3 id="haswellbroadwellskylakekaby-lakecoffee-lake-whiskey-lakecoffee-lake-pluscomet-lakeicelake">Haswell、Broadwell、Skylake、Kaby Lake、Coffee Lake 、Whiskey Lake、Coffee Lake Plus、Comet Lake、Icelake</h3>
+<p>因为使用了 SSDT-XOSI 的原因，所以还需要配合 <strong>Change _OSI to XOSI</strong> 补丁来使用：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Comment</th>
+          <th>String</th>
+          <th>Change _OSI to XOSI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Enabled</td>
+          <td>Boolean</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Count</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Limit</td>
+          <td>Number</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Find</td>
+          <td>Data</td>
+          <td><code>5f4f5349</code></td>
+      </tr>
+      <tr>
+          <td>Replace</td>
+          <td>Data</td>
+          <td><code>584f5349</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>OCC 里面也集成了这个 XOSI 补丁，只需要一键就可以补丁并启用：</p>
+<p><figure class="my-8">
+    <img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.1%E9%85%8D%E7%BD%AEACPI/3.1%E9%85%8D%E7%BD%AEACPI05.webp" alt="3.1配置ACPI05" 
+        class="mx-auto rounded-lg block" loading="lazy"  />
+    
+</figure></p>
+<p>这些版本<strong>不需要调整 Quiks 怪癖</strong>，全部保持示例配置中默认的即可。</p></article><section aria-labelledby="license-heading" class="p-6 md:p-8 rounded-xl border border-border/40 backdrop-blur bg-muted/20 flex items-center gap-x-8">
+
+    <i class="i-carbon-scales w-2rem h-2rem text-primary/70 shrink-0" aria-hidden="true"></i>
+
+    <div class="space-y-2">
+        <h2 id="license-heading" class="font-medium">License</h2>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>许可协议</span>
+            <a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh-Hans
+                target="_blank" rel="noopener noreferrer license"
+                class="font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">CC BY-SA 4.0</a>
+        </p>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>原文链接</span>
+            <a href="http://localhost:1313/3.1lenovo-xiaoxini2000-hackintosh-monterey/"
+                class="license-link font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">http://localhost:1313/3.1lenovo-xiaoxini2000-hackintosh-monterey/</a>
+        </p>
+    </div>
+</section>
+
+
+<div class="mt-8 md:mt-12 pt-4 md:pt-8 border-t border-border/40">
+    <div class="flex items-center gap-2 mb-8 mx-2">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h2 class="text-lg font-medium">评论</h3>
+    </div>
+    <link rel="stylesheet" href="/css/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous"><div id="twikoo"></div>
+
+
+<script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        try {
+            console.log('Twikoo: envId=', 'https:\/\/twikoo.guoke.co');
+            if (typeof twikoo === 'undefined') {
+                console.error('Twikoo script not loaded. Check network/CDN and the script URL.');
+                return;
+            }
+
+            twikoo.init({
+                envId: 'https:\/\/twikoo.guoke.co',
+                el: '#twikoo',
+                lang: 'zh-CN',
+                
+                path: location.pathname
+            });
+            console.log('Twikoo: init called');
+        } catch (e) {
+            console.error('Twikoo init error:', e);
+        }
+    });
+</script><script src="/js/article/twikoo-owo.js"defer></script>
+</div>
+</div><div id="article-readprog" class="
+        fixed right-4 bottom-20 md:right-8 w-12 h-12 rounded-full 
+        backdrop-blur z-50 shadow-lg border border-border/20
+        flex items-center justify-center text-sm font-medium tabular-nums
+        transition-all duration-300 opacity-0 translate-y-24
+        data-visible:opacity-100 data-visible:translate-y-0
+    " aria-label="阅读进度">
+    0%
+</div><script src="/js/article/reading-progress.js"defer></script></div></main><footer border="t border/50" class="mt-auto py-4 backdrop-blur">
+    <div m="x-auto" p="x-4" flex="~ col" gap="6" class="container">
+        <div text="sm muted-foreground/70" gap="3" m="t-3" class="hidden md:flex items-center"><div class="flex items-center gap-2">
+    <i class="i-carbon-time w-4 h-4"></i>
+    <span>已被世界欠拟合</span>
+    <span class="tabular-nums font-mono tracking-wider" id="runningtime" data-start-date="2022/07/12 00:00:00"></span>
+</div><script src="/js/global/runtime.js"defer></script><span w="1" h="1" rounded="full" bg="muted-foreground/30"></span><div class="flex items-center gap-2">
+    <i class="i-carbon-text-font w-4 h-4"></i>
+    <span>
+        共 <span class="tabular-nums font-mono">43409</span> 字，</span>
+</div></div>
+
+        <div text="sm muted-foreground/60" flex="~ col md:row" gap="3" class="items-center justify-between"><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2">
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-1.5"></span>
+        <span>
+            2025 dodopoi
+        </span>
+    </div>
+
+    <span> <a href="https://guoke.co" target="_blank" rel="noopener noreferrer"
+            class="hover:text-primary transition-colors">时雨下天渐凉</a></span>
+
+    
+    <div class="hidden md:inline-flex items-center gap-3">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
+        <span id="busuanzi_container_site_uv">您是第 <span id="busuanzi_value_site_uv"></span> 位过客</span>
+    </div>
+
+    </div>
+<div class="flex flex-col md:flex-row items-center gap-y-2
+            md:divide-x md:divide-gray-300/60 md:dark:divide-gray-600/60"><a href="/changelogs/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a><a href="/copyright/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a><a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+            <img src="https://tuchuang.guoke.co/hermeneutics/static/img/ico64.png" alt="" class="w-4 h-4 mr-2 inline-block" />
+        <span>萌ICP备20240549号</span>
+    </a></div></div>
+    </div>
+</footer><script src="/vendor/instantpage.min.js"></script></body>
+
+</html>

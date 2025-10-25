@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clash on 果壳中的宇宙</title>
+    <link>http://localhost:1313/tags/clash/</link>
+    <description>Recent content in Clash on 果壳中的宇宙</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 27 Jun 2023 09:42:46 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/clash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac下通过ClashX实现全局透明代理</title>
+      <link>http://localhost:1313/clash/</link>
+      <pubDate>Tue, 27 Jun 2023 09:42:46 +0800</pubDate>
+      <guid>http://localhost:1313/clash/</guid>
+      <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
