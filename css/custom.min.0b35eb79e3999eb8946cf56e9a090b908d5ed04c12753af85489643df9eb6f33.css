@@ -1,0 +1,1 @@
+.prose a{color:inherit;background-color:rgba(255,235,59,.12);padding:0 .16em;border-radius:.18rem;text-decoration:none;transition:background-color .18s ease,color .18s ease}html.dark .prose a{background-color:rgba(255,235,59,6%)}.prose a:hover,.prose a:focus{background-color:rgba(255,235,59,.2)}
