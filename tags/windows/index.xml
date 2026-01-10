@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on 果壳中的宇宙</title>
+    <link>https://guoke.co/tags/windows/</link>
+    <description>Recent content in Windows on 果壳中的宇宙</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 17 Mar 2024 20:13:01 +0800</lastBuildDate>
+    <atom:link href="https://guoke.co/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows之间实现文件网络共享</title>
+      <link>https://guoke.co/windows%E4%B9%8B%E9%97%B4%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB/</link>
+      <pubDate>Sun, 17 Mar 2024 20:13:01 +0800</pubDate>
+      <guid>https://guoke.co/windows%E4%B9%8B%E9%97%B4%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

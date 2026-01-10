@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件 on 果壳中的宇宙</title>
+    <link>https://guoke.co/categories/%E8%BD%AF%E4%BB%B6/</link>
+    <description>Recent content in 软件 on 果壳中的宇宙</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 05 Jun 2024 17:30:36 +0800</lastBuildDate>
+    <atom:link href="https://guoke.co/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA低版本驱动下载方法</title>
+      <link>https://guoke.co/nvidia%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 05 Jun 2024 17:30:36 +0800</pubDate>
+      <guid>https://guoke.co/nvidia%E4%BD%8E%E7%89%88%E6%9C%AC%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;进入英伟达显卡驱动官网，选择自己显卡对应的型号，点击任意版本驱动进入下载页面，可以通过更改下载链接的版本号，来实现下载旧版本的显卡驱动。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac下通过ClashX实现全局透明代理</title>
+      <link>https://guoke.co/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Tue, 27 Jun 2023 09:42:46 +0800</pubDate>
+      <guid>https://guoke.co/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/</guid>
+      <description>&lt;p&gt;通过ClashX将一台闲置设备设置成网关，实现多设备的科学上网。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
