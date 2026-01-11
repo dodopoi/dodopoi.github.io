@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>git教程 | 果壳中的宇宙</title><meta name="description" content="追求源于热爱."><meta name="keywords" content="Blog ,dodopoi ,Writing ,中文博客"><link rel="alternate" hreflang="zh" href="https://guoke.co/git%E6%95%99%E7%A8%8B/" /><link rel="alternate" hreflang="x-default" href="https://guoke.co/git%E6%95%99%E7%A8%8B/" /><meta property="og:url" content="https://guoke.co/git%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="果壳中的宇宙">
+  <meta property="og:title" content="git教程">
+  <meta property="og:description" content="追求源于热爱.">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-07-23T21:18:13+08:00">
+    <meta property="article:modified_time" content="2022-07-23T21:18:13+08:00">
+    <meta property="article:tag" content="Git">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="git教程">
+  <meta name="twitter:description" content="追求源于热爱.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/global.bundle.min.1c793d7a16d60faa1d6fd36e529e61333ce85741ee3ba6f386a21b4f42ec5724.css" integrity="sha256-HHk9ehbWD6odb9NuUp5hMzzoV0HuO6bzhqIbT0LsVyQ=" crossorigin="anonymous"><script>(function () {
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+        (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();</script><link rel="stylesheet" href="/css/article.bundle.min.fa1e43adce600254b06a21d71b8ae98bbba6cfb8fffd43897fc05b24cf96a472.css" integrity="sha256-&#43;h5Drc5gAlSwaiHXG4rpi7umz7j//UOJf8BbJM&#43;WpHI=" crossorigin="anonymous"><script src="/js/article/lightbox.2fcfd676a80d4d7d991baf85af3506429c7951b00ce1804940eb144269e007f1.js" integrity="sha256-L8/WdqgNTX2ZG6&#43;FrzUGQpx5UbAM4YBJQOsUQmngB/E=" crossorigin="anonymous"defer></script><script src="/js/article/clickcopy.5bbf4d054a73a21043f7d84298fc4772b74b329b7609640ee165a537d054c93c.js" integrity="sha256-W79NBUpzohBD99hCmPxHcrdLMpt2CWQO4WWlN9BUyTw=" crossorigin="anonymous"defer></script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3OfTfbpwqM5xf8dD",ck:"3OfTfbpwqM5xf8dD"})</script></head>
+
+<body class="min-h-screen flex flex-col gap-y-4 bg-background text-foreground transition-colors"><div class="h-card p-author hidden">
+    <span class="p-name">dodopoi</span>
+
+    <img class="u-photo" src="https://guoke.co/img/avatar.webp" alt="dodopoi"><p class="p-note">夕晴照雪霁无瑕.</p><a class="u-url u-uid" href="https://guoke.co/">https://guoke.co/</a><span class="p-category">金克斯的含义就是金克斯</span><span class="p-category">如无必要勿增实体</span></div><header class="sticky top-0 left-0 right-0 bg-background/80 backdrop-blur z-[var(--herm-zidx-header)]">
+    <div class="container mx-auto px-4 flex items-center justify-between h-[var(--herm-header-height)] relative">
+        
+        <div class="flex-1 flex justify-start">
+            <a rel="me" href="/" class="shrink-0">
+                <img src="/img/avatar.webp" alt="avatar"
+                    class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+            </a>
+        </div>
+
+        
+        <nav class="hidden md:flex flex-shrink-0" id="header-menu" aria-label="Main navigation">
+            <ul
+                class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium text-muted-foreground"><li class="relative group">
+                    <a aria-label="Menu 归档" href="https://guoke.co/"
+                        class="hover:text-primary transition-colors">
+                        归档
+                    </a><ul class="flex flex-col overflow-hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible 
+                       group-hover:opacity-100 group-hover:visible transition-all duration-200
+                       w-32 py-1 rounded-lg border border-border/50 backdrop-blur
+                       shadow-lg shadow-muted/5"><li>
+                            <a aria-label="时间" href="https://guoke.co/posts" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">时间</a>
+                        </li><li>
+                            <a aria-label="分类" href="https://guoke.co/categories" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">分类</a>
+                        </li><li>
+                            <a aria-label="标签" href="https://guoke.co/tags" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">标签</a>
+                        </li></ul></li><li class="relative group">
+                    <a aria-label="Menu 友链" href="https://guoke.co/links"
+                        class="hover:text-primary transition-colors">
+                        友链
+                    </a></li><li class="relative group">
+                    <a aria-label="Menu 关于" href="https://guoke.co/about"
+                        class="hover:text-primary transition-colors">
+                        关于
+                    </a></li></ul>
+        </nav>
+
+        
+        <div class="md:hidden" id="header-mobilemenu">
+            
+            <input type="checkbox" id="header-mobilemenu__check" class="hidden" tabindex="-1">
+
+            
+            <label for="header-mobilemenu__check" id="header-mobilemenu__toggle" aria-label="Toggle menu"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-background/80 text-muted-foreground/70 hover:bg-muted/50 transition-colors cursor-pointer z-[var(--herm-zidx-header)] relative"
+                role="button">
+                <span class="header-mobilemenu__toggle--open i-carbon-menu w-4 h-4" aria-hidden="true"></span>
+                <span class="header-mobilemenu__toggle--close i-carbon-close w-4 h-4" aria-hidden="true"></span>
+            </label>
+
+            
+            <nav id="header-mobilemenu__panel"
+                class="fixed top-[var(--herm-header-height)] left-0 right-0 bg-background/95 backdrop-blur border-b border-border/50 z-[var(--herm-zidx-dropdown)]">
+                <div class="container max-w-container-content mx-auto px-4 py-4">
+                    <ul class="px-4 space-y-4"><li>
+                            <a aria-label="归档" href="https://guoke.co/" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">归档</a><ul class="mt-2 ml-4 space-y-3"><li>
+                                    <a aria-label="时间" href="https://guoke.co/posts" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">时间</a>
+                                </li><li>
+                                    <a aria-label="分类" href="https://guoke.co/categories" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">分类</a>
+                                </li><li>
+                                    <a aria-label="标签" href="https://guoke.co/tags" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">标签</a>
+                                </li></ul></li><li>
+                            <a aria-label="友链" href="https://guoke.co/links" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">友链</a></li><li>
+                            <a aria-label="关于" href="https://guoke.co/about" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">关于</a></li></ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 max-w-[50%] sm:max-w-[60%]"
+            id="header-title">
+            <button class="text-base font-medium truncate" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});"
+                aria-label="返回顶部">git教程</button>
+        </div>
+
+        
+        <div class="flex-1 flex justify-end">
+            <div class="flex items-center gap-2"><label for="toc-toggle" class="header-button hidden md:inline-flex" aria-label="切换目录显示" role="button">
+                    <i class="i-carbon-table-of-contents w-4 h-4"></i>
+                </label><a href="/search" class="header-button" aria-label="搜索">
+                    <i class="i-carbon-search w-4 h-4" aria-hidden="true"></i>
+                </a>
+
+                <button id="header-btns__theme" class="header-button" aria-label="切换主题">
+                    <i class="i-carbon-sun w-4 h-4 block dark:hidden" aria-hidden="true"></i>
+                    <i class="i-carbon-moon w-4 h-4 hidden dark:block" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header><script>const THEME_KEY = 'theme';
+const THEMES = ['light', 'dark'];
+let currentTheme = null;
+
+const getTheme = () => {
+    if (currentTheme) return currentTheme;
+    const saved = localStorage.getItem(THEME_KEY);
+    return (THEMES.includes(saved)) ? saved : 'light';
+};
+
+const setTheme = (theme) => {
+    const html = document.documentElement;
+    THEMES.forEach(t => html.classList.remove(t));
+    html.classList.add(theme);
+    currentTheme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+};
+
+const bindThemeToggle = () => {
+    const btn = document.getElementById('header-btns__theme');
+    btn?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+};
+
+const handleNavScroll = () => {
+    const headerMenu = document.getElementById('header-menu');
+    const headerTitle = document.getElementById('header-title');
+    const mobileMenu = document.getElementById('header-mobilemenu');
+    const threshold = 100;
+
+    const updateNav = () => {
+        const y = window.scrollY;
+        if (!headerMenu || !headerTitle) return;
+
+        const isScrolled = y > threshold;
+        headerMenu.style.opacity = isScrolled ? '0' : '1';
+        headerMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        mobileMenu.style.opacity = isScrolled ? '0' : '1';
+        mobileMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        headerTitle.style.opacity = isScrolled ? '1' : '0';
+        headerTitle.style.pointerEvents = isScrolled ? 'auto' : 'none';
+    };
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTheme(getTheme());
+    bindThemeToggle();
+    handleNavScroll();
+});
+</script><main class="flex-grow anim-fadein">
+        <span class="sr-only">主要内容区域</span>
+<div class="container relative max-w-[var(--herm-main-width-wd)] mx-auto px-4 pt-[var(--herm-content-offset)]"><link rel="stylesheet" href="/css/article/toc.css"><input type="checkbox" id="toc-toggle" class="toc-toggle__checkbox hidden" tabindex="-1" aria-hidden="true">
+
+<aside class="toc-sidebar hidden lg:block left-4 h-full">
+    <div class="sticky top-[var(--herm-toc-offset)]">
+        <div class="text-base flex flex-col gap-4 ">
+            <h2 class="font-medium text-foreground/80">目录</h2>
+            <nav id="toc-main" class="toc-main text-foreground/70"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#git是什么">Git是什么？</a></li>
+    <li><a href="#git安装">Git安装</a></li>
+    <li><a href="#创建版本库">创建版本库</a>
+      <ul>
+        <li><a href="#把文件添加到版本库">把文件添加到版本库</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav><script src="/js/article/toc-sync.js" defer></script></div>
+    </div>
+</aside><div class="max-w-[var(--herm-main-width-nr)] mx-auto flex flex-col gap-y-8 h-entry">
+        <header class="space-y-6">
+            <h1 data-pagefind-meta="title" class="text-2xl md:text-3xl font-bold p-name">git教程</h1><aside class="text-sm text-muted-foreground ml-2 space-y-6">
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-calendar w-4 h-4"></i>
+            <time class="dt-published" datetime=" 2022-07-23T21:18:13&#43;08:00">2022-07-23</time>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-time w-4 h-4"></i>
+            <span>5 分钟阅读</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-text-font w-4 h-4"></i>
+            <span>2372 字</span>
+        </li></ul><ul class="flex flex-wrap gap-2"><li class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
+            <i class="i-carbon-tag w-4 h-4" aria-hidden="true"></i>
+            <span>git</span>
+        </li></ul>
+</aside></header><article data-pagefind-body class="prose e-content"><h2 id="git是什么">Git是什么？</h2>
+<p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
+<p>什么是版本控制系统？</p>
+<p>如果你用Microsoft Word写过长篇大论，那你一定有这样的经历：</p>
+<p>想删除一个段落，又怕将来想恢复找不回来怎么办？有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，改到一定程度，再“另存为……”一个新文件，这样一直改下去。</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/git/git%E6%95%99%E7%A8%8B/1.1git%E7%AE%80%E4%BB%8B01.webp" alt="1.1git简介01" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>过了一周，你想找回被删除的文字，但是已经记不清删除前保存在哪个文件里了，只好一个一个文件去找，真麻烦。</p>
+<p>看着一堆乱七八糟的文件，想保留最新的一个，然后把其他的删掉，又怕哪天会用上，还不敢删，真郁闷。</p>
+<p>更要命的是，有些部分需要你的财务同事帮助填写，于是你把文件copy到U盘里给她（也可能通过Email发送一份给她），然后，你继续修改Word文件。一天后，同事再把Word文件传给你，此时，你必须想想，发给她之后到你收到她的文件期间，你做了哪些改动，得把你的改动和她的部分合并，真困难。</p>
+<p>于是你想，如果有一个软件，不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。如果想查看某次改动，只需要在软件里瞄一眼就可以，岂不是很方便？</p>
+<p>这个软件用起来就应该像这个样子，能记录每次文件的改动：</p>
+<table>
+  <thead>
+      <tr>
+          <th>文件名</th>
+          <th>文件名</th>
+          <th>说明</th>
+          <th>说明</th>
+          <th>日期</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>service.doc</td>
+          <td>张三</td>
+          <td>删除了软件服务条款5</td>
+          <td>7/12 10:38</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>service.doc</td>
+          <td>张三</td>
+          <td>增加了License人数限制</td>
+          <td>7/12 18:09</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>service.doc</td>
+          <td>李四</td>
+          <td>财务部门调整了合同金额</td>
+          <td>7/13 9:51</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>service.doc</td>
+          <td>张三</td>
+          <td>延长了免费升级周期</td>
+          <td>7/14 15:17</td>
+      </tr>
+  </tbody>
+</table>
+<p>这样，你就结束了手动管理多个“版本”的史前时代，进入到版本控制的20世纪。</p>
+<blockquote class="border-l-2 border-border pl-4">
+    <p>注：</p>
+<p>word为二进制文件，因此，版本控制系统是没法跟踪word文件的改动的。</p>
+<p>上述例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。</p>
+</blockquote><h2 id="git安装">Git安装</h2>
+<p>安装完成后，还需要最后一步设置，在命令行输入：</p>
+<pre><code class="language-sh">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;email@example.com&quot;
+</code></pre>
+<p>因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。</p>
+<p>注意<code>git config</code>命令的<code>--global</code>参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+<h2 id="创建版本库">创建版本库</h2>
+<p>什么是版本库呢？版本库又名仓库（Repository），你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+<p>所以，创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：</p>
+<pre><code>mkdir learngit
+cd learngit
+pwd #显示当前目录
+</code></pre>
+<p>第二步，通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+<pre><code>$ git init
+Initialized empty Git repository in C:/Users/kai/Desktop/learngit/.git/
+</code></pre>
+<p>瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个<code>.git</code>的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。</p>
+<p>如果你没有看到<code>.git</code>目录，那是因为这个目录默认是隐藏的，用<code>ls -ah</code>命令就可以看见。</p>
+<h3 id="把文件添加到版本库">把文件添加到版本库</h3>
+<p>首先这里再明确一下，所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。</p>
+<p>不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面我们举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。</p>
+<p>因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。</p>
+<p>使用Windows的童鞋要特别注意：千万不要使用Windows自带的<strong>记事本</strong>编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载<a href="https://code.visualstudio.com/">Visual Studio Code</a>代替记事本，不但功能强大，而且免费！</p>
+<pre><code>git is a version control system.
+git is a free software.
+</code></pre>
+<p>一定要放到<code>learngit</code>目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。</p>
+<p>和把大象放到冰箱需要3步相比，把一个文件放到Git仓库只需要两步。</p>
+<p>第一步，用命令<code>git add</code>告诉Git，把文件添加到仓库：</p>
+<pre><code>git add readme.txt
+</code></pre>
+<p>第二步，用命令<code>git commit</code>告诉Git，把文件提交到仓库：</p>
+<pre><code>git commit -m &quot;wrote a readme file&quot;
+</code></pre>
+<pre><code>$ git commit -m &quot;wrote a readme file&quot;
+[master (root-commit) e6b5d93] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+</code></pre>
+<p>简单解释一下<code>git commit</code>命令，<code>-m</code>后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。</p>
+<p><code>git commit</code>命令执行成功后会告诉你，<code>1 file changed</code>：1个文件被改动（我们新添加的readme.txt文件）；<code>2 insertions</code>：插入了两行内容（readme.txt有两行内容）。</p>
+<pre><code>dir #显示文件里的文件
+</code></pre>
+<p>为什么Git添加文件需要<code>add</code>，<code>commit</code>一共两步呢？因为<code>commit</code>可以一次提交很多文件，所以你可以多次<code>add</code>不同的文件，比如：</p>
+<pre><code>git add file1.txt
+git add file2.txt file3.txt
+git commit -m &quot;add 3 files.&quot;
+</code></pre></article><section aria-labelledby="license-heading" class="p-6 md:p-8 rounded-xl border border-border/40 backdrop-blur bg-muted/20 flex items-center gap-x-8">
+
+    <i class="i-carbon-scales w-2rem h-2rem text-primary/70 shrink-0" aria-hidden="true"></i>
+
+    <div class="space-y-2">
+        <h2 id="license-heading" class="font-medium">License</h2>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>许可协议</span>
+            <a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh-Hans
+                target="_blank" rel="noopener noreferrer license"
+                class="font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">CC BY-SA 4.0</a>
+        </p>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>原文链接</span>
+            <a href="https://guoke.co/git%E6%95%99%E7%A8%8B/"
+                class="license-link font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">https://guoke.co/git%E6%95%99%E7%A8%8B/</a>
+        </p>
+    </div>
+</section>
+        <nav class="w-full mt-4" aria-label="文章导航">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-between gap-4"><a href="/copyright/" aria-label="上一篇: Copyright" class="post-nav__link post-nav__prev inline-flex w-full sm:w-auto justify-start items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors max-w-full">
+                    <i class="i-carbon-chevron-left w-4 h-4" aria-hidden="true"></i>
+                    <div class="truncate text-sm text-left">
+                        <div class="text-xs text-muted-foreground">上一篇</div>
+                        <div class="font-medium">Copyright</div>
+                    </div>
+                </a><a href="/1.1-%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%95oc%E5%88%86%E5%8C%BA%E5%BC%95%E5%AF%BC%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/" aria-label="下一篇: 1.1 黑苹果单OC分区引导镜像制作" class="post-nav__link post-nav__next inline-flex w-full sm:w-auto justify-end items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors sm:ml-auto max-w-full">
+                    <div class="truncate text-sm text-right sm:text-right">
+                        <div class="text-xs text-muted-foreground">下一篇</div>
+                        <div class="font-medium">1.1 黑苹果单OC分区引导镜像制作</div>
+                    </div>
+                    <i class="i-carbon-chevron-right w-4 h-4" aria-hidden="true"></i>
+                </a></div>
+        </nav>
+
+
+<div class="mt-8 md:mt-12 pt-4 md:pt-8 border-t border-border/40">
+    <div class="flex items-center gap-2 mb-8 mx-2">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h2 class="text-lg font-medium">评论</h3>
+    </div>
+    <link rel="stylesheet" href="/css/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous"><div id="twikoo"></div>
+
+
+<script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        try {
+            console.log('Twikoo: envId=', 'https:\/\/twikoo.guoke.co');
+            if (typeof twikoo === 'undefined') {
+                console.error('Twikoo script not loaded. Check network/CDN and the script URL.');
+                return;
+            }
+
+            twikoo.init({
+                envId: 'https:\/\/twikoo.guoke.co',
+                el: '#twikoo',
+                lang: 'zh-CN',
+                
+                path: location.pathname
+            });
+            console.log('Twikoo: init called');
+        } catch (e) {
+            console.error('Twikoo init error:', e);
+        }
+    });
+</script><script src="/js/article/twikoo-owo.5554ee7aca5ca1c54a073a87d0fa5c9ad8f1d7c8115add1f9a9d11f74e89bb45.js" integrity="sha256-VVTuespcocVKBzqH0Ppcmtjx18gRWt0fmp0R906Ju0U=" crossorigin="anonymous"defer></script>
+</div>
+</div><div id="article-readprog" class="
+        fixed right-4 bottom-20 md:right-8 w-12 h-12 rounded-full 
+        backdrop-blur z-50 shadow-lg border border-border/20
+        flex items-center justify-center text-sm font-medium tabular-nums
+        transition-all duration-300 opacity-0 translate-y-24
+        data-visible:opacity-100 data-visible:translate-y-0
+    " aria-label="阅读进度">
+    0%
+</div><script src="/js/article/reading-progress.c3851b928ecafc8c70fa59e73d708523d48d3cab685b1cfe9bdf3398cd72524e.js" integrity="sha256-w4Ubko7K/Ixw&#43;lnnPXCFI9SNPKtoWxz&#43;m98zmM1yUk4=" crossorigin="anonymous"defer></script></div></main><footer border="t border/50" class="mt-auto py-4 backdrop-blur">
+    <div m="x-auto" p="x-4" flex="~ col" gap="6" class="container">
+        <div text="sm muted-foreground/70" gap="3" m="t-3" class="hidden md:flex items-center"><div class="flex items-center gap-2">
+    <i class="i-carbon-time w-4 h-4"></i>
+    <span>已被世界欠拟合</span>
+    <span class="tabular-nums font-mono tracking-wider" id="runningtime" data-start-date="2022/07/12 00:00:00"></span>
+</div><script src="/js/global/runtime.9e9d6de2edbc0c1fd1e49fe58f78438aec2e85362f4d69d1494d517bdd32611b.js" integrity="sha256-np1t4u28DB/R5J/lj3hDiuwuhTYvTWnRSU1Re90yYRs=" crossorigin="anonymous"defer></script><span w="1" h="1" rounded="full" bg="muted-foreground/30"></span><div class="flex items-center gap-2">
+    <i class="i-carbon-text-font w-4 h-4"></i>
+    <span>
+        共 <span class="tabular-nums font-mono">238389</span> 字，写完一本简·奥斯汀的《傲慢与偏见》了!</span>
+</div>
+</div>
+
+        <div text="sm muted-foreground/60" flex="~ col md:row" gap="3" class="items-center justify-between"><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2">
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-1.5"></span>
+        <span>
+            2026 dodopoi
+        </span>
+    </div>
+
+    <span> <a href="https://guoke.co" target="_blank" rel="noopener noreferrer"
+            class="hover:text-primary transition-colors">言别离·时雨下天渐凉</a></span>
+    <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/3OfTfbpwqM5xf8dD/quote.js?theme=#1690FF,#333333,#999999,#333333,#FFFFFF,#1690FF,14&f=14&display=0,0,1,1,0,0,0,1"></script>
+
+    
+    
+    <div class="hidden md:inline-flex items-center gap-3">
+        
+        
+    </div>
+    
+
+    
+</div>
+<div class="flex flex-col md:flex-row items-center gap-y-2
+            md:divide-x md:divide-gray-300/60 md:dark:divide-gray-600/60"><a href="/changelogs/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a><a href="/copyright/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a><a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+            <img src="https://tuchuang.guoke.co/hermeneutics/static/img/ico64.png" alt="" class="w-4 h-4 mr-2 inline-block" />
+        <span>萌ICP备20240549号</span>
+    </a></div></div>
+    </div>
+</footer><script src="/vendor/instantpage.min.c1abca35430b525f9334c62bc065ace80a98c6ca2b9f180fdb969934b71fd254.js" integrity="sha256-wavKNUMLUl&#43;TNMYrwGWs6AqYxsornxgP25aZNLcf0lQ=" crossorigin="anonymous"></script></body>
+
+</html>

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>3.2 配置Booter | 果壳中的宇宙</title><meta name="description" content="追求源于热爱."><meta name="keywords" content="Blog ,dodopoi ,Writing ,中文博客"><link rel="alternate" hreflang="zh" href="https://guoke.co/3.2-%E9%85%8D%E7%BD%AEbooter/" /><link rel="alternate" hreflang="x-default" href="https://guoke.co/3.2-%E9%85%8D%E7%BD%AEbooter/" /><meta property="og:url" content="https://guoke.co/3.2-%E9%85%8D%E7%BD%AEbooter/">
+  <meta property="og:site_name" content="果壳中的宇宙">
+  <meta property="og:title" content="3.2 配置Booter">
+  <meta property="og:description" content="追求源于热爱.">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-23T08:41:31+08:00">
+    <meta property="article:modified_time" content="2023-06-23T08:41:31+08:00">
+    <meta property="article:tag" content="黑苹果">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="3.2 配置Booter">
+  <meta name="twitter:description" content="追求源于热爱.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/global.bundle.min.1c793d7a16d60faa1d6fd36e529e61333ce85741ee3ba6f386a21b4f42ec5724.css" integrity="sha256-HHk9ehbWD6odb9NuUp5hMzzoV0HuO6bzhqIbT0LsVyQ=" crossorigin="anonymous"><script>(function () {
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+        (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();</script><link rel="stylesheet" href="/css/article.bundle.min.fa1e43adce600254b06a21d71b8ae98bbba6cfb8fffd43897fc05b24cf96a472.css" integrity="sha256-&#43;h5Drc5gAlSwaiHXG4rpi7umz7j//UOJf8BbJM&#43;WpHI=" crossorigin="anonymous"><script src="/js/article/lightbox.2fcfd676a80d4d7d991baf85af3506429c7951b00ce1804940eb144269e007f1.js" integrity="sha256-L8/WdqgNTX2ZG6&#43;FrzUGQpx5UbAM4YBJQOsUQmngB/E=" crossorigin="anonymous"defer></script><script src="/js/article/clickcopy.5bbf4d054a73a21043f7d84298fc4772b74b329b7609640ee165a537d054c93c.js" integrity="sha256-W79NBUpzohBD99hCmPxHcrdLMpt2CWQO4WWlN9BUyTw=" crossorigin="anonymous"defer></script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3OfTfbpwqM5xf8dD",ck:"3OfTfbpwqM5xf8dD"})</script></head>
+
+<body class="min-h-screen flex flex-col gap-y-4 bg-background text-foreground transition-colors"><div class="h-card p-author hidden">
+    <span class="p-name">dodopoi</span>
+
+    <img class="u-photo" src="https://guoke.co/img/avatar.webp" alt="dodopoi"><p class="p-note">夕晴照雪霁无瑕.</p><a class="u-url u-uid" href="https://guoke.co/">https://guoke.co/</a><span class="p-category">金克斯的含义就是金克斯</span><span class="p-category">如无必要勿增实体</span></div><header class="sticky top-0 left-0 right-0 bg-background/80 backdrop-blur z-[var(--herm-zidx-header)]">
+    <div class="container mx-auto px-4 flex items-center justify-between h-[var(--herm-header-height)] relative">
+        
+        <div class="flex-1 flex justify-start">
+            <a rel="me" href="/" class="shrink-0">
+                <img src="/img/avatar.webp" alt="avatar"
+                    class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+            </a>
+        </div>
+
+        
+        <nav class="hidden md:flex flex-shrink-0" id="header-menu" aria-label="Main navigation">
+            <ul
+                class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium text-muted-foreground"><li class="relative group">
+                    <a aria-label="Menu 归档" href="https://guoke.co/"
+                        class="hover:text-primary transition-colors">
+                        归档
+                    </a><ul class="flex flex-col overflow-hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible 
+                       group-hover:opacity-100 group-hover:visible transition-all duration-200
+                       w-32 py-1 rounded-lg border border-border/50 backdrop-blur
+                       shadow-lg shadow-muted/5"><li>
+                            <a aria-label="时间" href="https://guoke.co/posts" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">时间</a>
+                        </li><li>
+                            <a aria-label="分类" href="https://guoke.co/categories" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">分类</a>
+                        </li><li>
+                            <a aria-label="标签" href="https://guoke.co/tags" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">标签</a>
+                        </li></ul></li><li class="relative group">
+                    <a aria-label="Menu 友链" href="https://guoke.co/links"
+                        class="hover:text-primary transition-colors">
+                        友链
+                    </a></li><li class="relative group">
+                    <a aria-label="Menu 关于" href="https://guoke.co/about"
+                        class="hover:text-primary transition-colors">
+                        关于
+                    </a></li></ul>
+        </nav>
+
+        
+        <div class="md:hidden" id="header-mobilemenu">
+            
+            <input type="checkbox" id="header-mobilemenu__check" class="hidden" tabindex="-1">
+
+            
+            <label for="header-mobilemenu__check" id="header-mobilemenu__toggle" aria-label="Toggle menu"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-background/80 text-muted-foreground/70 hover:bg-muted/50 transition-colors cursor-pointer z-[var(--herm-zidx-header)] relative"
+                role="button">
+                <span class="header-mobilemenu__toggle--open i-carbon-menu w-4 h-4" aria-hidden="true"></span>
+                <span class="header-mobilemenu__toggle--close i-carbon-close w-4 h-4" aria-hidden="true"></span>
+            </label>
+
+            
+            <nav id="header-mobilemenu__panel"
+                class="fixed top-[var(--herm-header-height)] left-0 right-0 bg-background/95 backdrop-blur border-b border-border/50 z-[var(--herm-zidx-dropdown)]">
+                <div class="container max-w-container-content mx-auto px-4 py-4">
+                    <ul class="px-4 space-y-4"><li>
+                            <a aria-label="归档" href="https://guoke.co/" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">归档</a><ul class="mt-2 ml-4 space-y-3"><li>
+                                    <a aria-label="时间" href="https://guoke.co/posts" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">时间</a>
+                                </li><li>
+                                    <a aria-label="分类" href="https://guoke.co/categories" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">分类</a>
+                                </li><li>
+                                    <a aria-label="标签" href="https://guoke.co/tags" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">标签</a>
+                                </li></ul></li><li>
+                            <a aria-label="友链" href="https://guoke.co/links" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">友链</a></li><li>
+                            <a aria-label="关于" href="https://guoke.co/about" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">关于</a></li></ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 max-w-[50%] sm:max-w-[60%]"
+            id="header-title">
+            <button class="text-base font-medium truncate" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});"
+                aria-label="返回顶部">3.2 配置Booter</button>
+        </div>
+
+        
+        <div class="flex-1 flex justify-end">
+            <div class="flex items-center gap-2"><label for="toc-toggle" class="header-button hidden md:inline-flex" aria-label="切换目录显示" role="button">
+                    <i class="i-carbon-table-of-contents w-4 h-4"></i>
+                </label><a href="/search" class="header-button" aria-label="搜索">
+                    <i class="i-carbon-search w-4 h-4" aria-hidden="true"></i>
+                </a>
+
+                <button id="header-btns__theme" class="header-button" aria-label="切换主题">
+                    <i class="i-carbon-sun w-4 h-4 block dark:hidden" aria-hidden="true"></i>
+                    <i class="i-carbon-moon w-4 h-4 hidden dark:block" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header><script>const THEME_KEY = 'theme';
+const THEMES = ['light', 'dark'];
+let currentTheme = null;
+
+const getTheme = () => {
+    if (currentTheme) return currentTheme;
+    const saved = localStorage.getItem(THEME_KEY);
+    return (THEMES.includes(saved)) ? saved : 'light';
+};
+
+const setTheme = (theme) => {
+    const html = document.documentElement;
+    THEMES.forEach(t => html.classList.remove(t));
+    html.classList.add(theme);
+    currentTheme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+};
+
+const bindThemeToggle = () => {
+    const btn = document.getElementById('header-btns__theme');
+    btn?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+};
+
+const handleNavScroll = () => {
+    const headerMenu = document.getElementById('header-menu');
+    const headerTitle = document.getElementById('header-title');
+    const mobileMenu = document.getElementById('header-mobilemenu');
+    const threshold = 100;
+
+    const updateNav = () => {
+        const y = window.scrollY;
+        if (!headerMenu || !headerTitle) return;
+
+        const isScrolled = y > threshold;
+        headerMenu.style.opacity = isScrolled ? '0' : '1';
+        headerMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        mobileMenu.style.opacity = isScrolled ? '0' : '1';
+        mobileMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        headerTitle.style.opacity = isScrolled ? '1' : '0';
+        headerTitle.style.pointerEvents = isScrolled ? 'auto' : 'none';
+    };
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTheme(getTheme());
+    bindThemeToggle();
+    handleNavScroll();
+});
+</script><main class="flex-grow anim-fadein">
+        <span class="sr-only">主要内容区域</span>
+<div class="container relative max-w-[var(--herm-main-width-wd)] mx-auto px-4 pt-[var(--herm-content-offset)]"><link rel="stylesheet" href="/css/article/toc.css"><input type="checkbox" id="toc-toggle" class="toc-toggle__checkbox hidden" tabindex="-1" aria-hidden="true">
+
+<aside class="toc-sidebar hidden lg:block left-4 h-full">
+    <div class="sticky top-[var(--herm-toc-offset)]">
+        <div class="text-base flex flex-col gap-4 ">
+            <h2 class="font-medium text-foreground/80">目录</h2>
+            <nav id="toc-main" class="toc-main text-foreground/70"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#完整的-quiks-怪癖">完整的 Quiks 怪癖</a></li>
+    <li><a href="#intel-桌面平台">Intel 桌面平台</a>
+      <ul>
+        <li><a href="#yonahconroepenryn">Yonah、Conroe、Penryn</a></li>
+        <li><a href="#lynnfieldclarkdale">Lynnfield、Clarkdale</a></li>
+        <li><a href="#sandy-bridgeivy-bridgehaswellbroadwellskylakekaby-lake">Sandy Bridge、Ivy Bridge、Haswell、Broadwell、Skylake、Kaby Lake</a></li>
+        <li><a href="#coffee-lakecomet-lake">Coffee Lake、Comet Lake</a></li>
+      </ul>
+    </li>
+    <li><a href="#intel-笔记本平台">Intel 笔记本平台</a>
+      <ul>
+        <li><a href="#clarksfieldarrandale">Clarksfield、Arrandale</a></li>
+        <li><a href="#sandy-bridgeivy-bridgehaswellbroadwellskylakekaby-lake-1">Sandy Bridge、Ivy Bridge、Haswell、Broadwell、Skylake、Kaby Lake</a></li>
+        <li><a href="#coffee-lakewhiskey-lake">Coffee Lake、Whiskey Lake</a></li>
+        <li><a href="#coffee-lake-pluscomet-lake">Coffee Lake Plus、Comet Lake</a></li>
+        <li><a href="#icelake">Icelake</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav><script src="/js/article/toc-sync.js" defer></script></div>
+    </div>
+</aside><div class="max-w-[var(--herm-main-width-nr)] mx-auto flex flex-col gap-y-8 h-entry">
+        <header class="space-y-6">
+            <h1 data-pagefind-meta="title" class="text-2xl md:text-3xl font-bold p-name">3.2 配置Booter</h1><aside class="text-sm text-muted-foreground ml-2 space-y-6">
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-calendar w-4 h-4"></i>
+            <time class="dt-published" datetime=" 2023-06-23T08:41:31&#43;08:00">2023-06-23</time>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-time w-4 h-4"></i>
+            <span>4 分钟阅读</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-text-font w-4 h-4"></i>
+            <span>1614 字</span>
+        </li><li class="flex items-center gap-2">
+            <i class="i-carbon-folder w-4 h-4"></i>
+            <span>折腾</span>
+        </li></ul><ul class="flex flex-wrap gap-2"><li class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
+            <i class="i-carbon-tag w-4 h-4" aria-hidden="true"></i>
+            <span>黑苹果</span>
+        </li></ul>
+</aside></header><article data-pagefind-body class="prose e-content"><h1 id="配置booter">配置Booter</h1>
+<p>本节允许对操作系统引导加载程序应用不同类型的UEFI修改，主要是Apple引导加载程序（boot.efi）。这些修改目前为不同的固件类型提供了各种修补程序和环境更改。其中一些功能最初是作为 AptioeMoryFix.efi （不再维护）的一部分实现的。</p>
+<h2 id="完整的-quiks-怪癖">完整的 Quiks 怪癖</h2>
+<p>因为各个平台的版本不太一样，在详细说明之前写来一个 OC 0.7.3 完整的 Quiks 怪癖 说明，这样心里大家设置的时候心里一般就有个底了。</p>
+<ul>
+<li>AllowRelocationBlock
+<ul>
+<li>允许通过重新定位块引导 macOS</li>
+<li>此怪癖需要启用 ProvideCustomSlide，通常还需要启用 AvoidRuntimeDefrag 才能正常工作</li>
+<li>虽然在使用较低内存的平台上运行旧 macOS 版本需要这种怪癖</li>
+<li>但它与某些硬件和 Mac OS 11 不兼容，在这种情况下，应考虑使用 EnableSafeModeSlide</li>
+</ul>
+</li>
+<li>AvoidRuntimeDefrag
+<ul>
+<li>防止 boot.efi 运行时内存碎片整理</li>
+<li>开启后会修复 UEFI 的运行服务, 例如日期、时间、NVRAM、电源控制</li>
+<li>除了苹果和 VMware 之外，大多数类型的固件都需要这种怪癖</li>
+</ul>
+</li>
+<li>DevirtualiseMmio
+<ul>
+<li>从某些 MMIO 区域删除运行时属性</li>
+<li>删除已知内存区域的运行时位来减少内存映射中被盗的内存占用</li>
+<li>一般情况下，采用 slide=1 的方式进行连续性内存注入，故一般不勾选，除非你的机器用了 KASLR 方式。</li>
+</ul>
+</li>
+<li>DisableSingleUser
+<ul>
+<li>禁用单用户模式</li>
+<li>开启后会禁止 <code>Cmd + S</code> 和 <code>-s</code> 的使用，使设备更加接近于 T2 白苹果</li>
+</ul>
+</li>
+<li>DisableVariableWrite
+<ul>
+<li>防止 macOS NVRAM 写入访问</li>
+<li>开启后会禁止 NVRAM 写入, 在 Z390/HM370 等没有原生 macOS 支持 NVRAM 的主板上需要开启</li>
+</ul>
+</li>
+<li>DiscardHibernateMap
+<ul>
+<li>开启后会重用原始休眠内存映射，仅某些旧硬件需要</li>
+</ul>
+</li>
+<li>EnableSafeModeSlide
+<ul>
+<li>开启后会允许在安全模式下使用 Slide 值</li>
+<li>安全模式下（-x）是否用连续性的内存注入方式</li>
+</ul>
+</li>
+<li>EnableWriteUnprotector
+<ul>
+<li>允许对 UEFI 运行时服务代码进行写访问</li>
+<li>开启后会在执行期间删除 CR0 寄存器中的写入保护</li>
+</ul>
+</li>
+<li>ForceExitBootServices
+<ul>
+<li>失败时使用新内存映射重试 ExitBootServices</li>
+<li>开启后会确保 ExitBootServices 即使在 MemoryMap 发生更改时也能调用成功</li>
+<li>一般很老很旧的主板可能需要使用，新主板一般不需要使用</li>
+</ul>
+</li>
+<li>ProtectMemoryRegions
+<ul>
+<li>保护内存区域不被错误访问</li>
+<li>确保 CSM 内存区域标记为 ACPI NVS，以防止 boot.efi 或 XNU 重新定位或使用它们</li>
+<li>AvoidRuntimeDefrag 解决了类似的问题。默认不勾选</li>
+<li>一些老旧的主板可能需要勾选</li>
+</ul>
+</li>
+<li>ProtectSecureBoot
+<ul>
+<li>保护 UEFI 安全引导变量不被写入</li>
+<li>避免操作系统对 UEFI 安全启动变量 (<code>db</code>, <code>dbx</code>, <code>PX</code>, <code>KEK</code>) 进行写入</li>
+<li>这个选项主要用于避免 Insyde 主板和 MacPro5,1 的 NVRAM 问题</li>
+</ul>
+</li>
+<li>ProtectUefiServices
+<ul>
+<li>保护 UEFI 服务不被固件覆盖</li>
+<li>用于修复 Z390 在 DevirtualiseMmio、ProtectCsmRegion 或 ShrinkMemoryMap 上的问题</li>
+<li>非 Z390 主板一般默认不勾选</li>
+</ul>
+</li>
+<li>ProvideCustomSlide
+<ul>
+<li>在内存不足时提供自定义 KASLR 幻灯片</li>
+<li>此选项时强制 macOS 在可用的 slide 值中使用一个随机的、不产生冲突的 slide 值</li>
+<li>如果 Slide 值存在冲突, 此选项将强制 macOS 执行以下操作，使用一个伪随机值</li>
+<li>只有在遇到 <code>Only N/256 slide values are usable!</code> 时需要</li>
+</ul>
+</li>
+<li>RebuildAppleMemoryMap
+<ul>
+<li>重建 macOS 兼容的内存映射</li>
+<li>一般在启动 macOS 10.6 及更早版本时可能需要这个选项</li>
+</ul>
+</li>
+<li>SetupVirtualMap
+<ul>
+<li>在 SetVirtualAddresses 上设置虚拟内存</li>
+<li>开启后会将 SetVirtualAddresses 调用修复为虚拟地址</li>
+<li>通过虚拟内存建立连续性内存供 OC 使用，并映射到分散的物理内存中</li>
+</ul>
+</li>
+<li>SignalAppleOS
+<ul>
+<li>通过任何操作系统的操作系统信息报告正在加载的 macOS</li>
+<li>将其他操作系统的信息报告给正在加载的 macOS</li>
+<li>用于在 Windows 中为 MacBook 启用 iGPU</li>
+</ul>
+</li>
+<li>SyncRuntimePermissions
+<ul>
+<li>更新运行时环境的内存权限</li>
+<li>主要用于早期的 macOS 或 Linux/Windows</li>
+</ul>
+</li>
+</ul>
+<h2 id="intel-桌面平台">Intel 桌面平台</h2>
+<h3 id="yonahconroepenryn">Yonah、Conroe、Penryn</h3>
+<ul>
+<li>传统引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AvoidRuntimeDefrag</td>
+          <td>No</td>
+          <td>Big Sur 可能需要启用此怪癖</td>
+      </tr>
+      <tr>
+          <td>EnableSafeModeSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>EnableWriteUnprotector</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>ProvideCustomSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+      <tr>
+          <td>SetupVirtualMap</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter01.webp" alt="3.2配置Booter01" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>UEFI 引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter02.webp" alt="3.2配置Booter02" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="lynnfieldclarkdale">Lynnfield、Clarkdale</h3>
+<ul>
+<li>传统引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AvoidRuntimeDefrag</td>
+          <td>No</td>
+          <td>Big Sur 可能需要启用此怪癖</td>
+      </tr>
+      <tr>
+          <td>EnableSafeModeSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>EnableWriteUnprotector</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>ProvideCustomSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+      <tr>
+          <td>SetupVirtualMap</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter03.webp" alt="3.2配置Booter03" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>UEFI 引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter04.webp" alt="3.2配置Booter04" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="sandy-bridgeivy-bridgehaswellbroadwellskylakekaby-lake">Sandy Bridge、Ivy Bridge、Haswell、Broadwell、Skylake、Kaby Lake</h3>
+<h4 id="propertree">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter05.webp" alt="3.2配置Booter05" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter06.webp" alt="3.2配置Booter06" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter07.webp" alt="3.2配置Booter07" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="coffee-lakecomet-lake">Coffee Lake、Comet Lake</h3>
+<h4 id="propertree-1">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter08.webp" alt="3.2配置Booter08" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator-1">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter09.webp" alt="3.2配置Booter09" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools-1">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter10.webp" alt="3.2配置Booter10" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h2 id="intel-笔记本平台">Intel 笔记本平台</h2>
+<h3 id="clarksfieldarrandale">Clarksfield、Arrandale</h3>
+<p>Arrandale 的 iGPU 核显仅在 macOS 10.13 之前得到官方支持，大多数 Clarksfield 和 Arrandale 主板不支持 UEFI</p>
+<ul>
+<li>传统引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AvoidRuntimeDefrag</td>
+          <td>No</td>
+          <td>Big Sur 可能需要启用此怪癖</td>
+      </tr>
+      <tr>
+          <td>EnableSafeModeSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>EnableWriteUnprotector</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>ProvideCustomSlide</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+      <tr>
+          <td>SetupVirtualMap</td>
+          <td>No</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter19.webp" alt="3.2配置Booter19" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>UEFI 引导设置</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Quirk</th>
+          <th>Enabled</th>
+          <th>Comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RebuildAppleMemoryMap</td>
+          <td>Yes</td>
+          <td>这是引导 OS X 10.4 到 10.6 所必需的</td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter20.webp" alt="3.2配置Booter20" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="sandy-bridgeivy-bridgehaswellbroadwellskylakekaby-lake-1">Sandy Bridge、Ivy Bridge、Haswell、Broadwell、Skylake、Kaby Lake</h3>
+<p>Sandy Bridge 的 iGPU 仅在 macOS 10.13 之前得到官方支持、大多数 Sandy 主板不支持 UEFI</p>
+<h4 id="propertree-2">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter21.webp" alt="3.2配置Booter21" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator-2">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter22.webp" alt="3.2配置Booter22" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools-2">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter23.webp" alt="3.2配置Booter23" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="coffee-lakewhiskey-lake">Coffee Lake、Whiskey Lake</h3>
+<h4 id="propertree-3">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter24.webp" alt="3.2配置Booter24" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator-3">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter25.webp" alt="3.2配置Booter25" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools-3">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter26.webp" alt="3.2配置Booter26" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="coffee-lake-pluscomet-lake">Coffee Lake Plus、Comet Lake</h3>
+<h4 id="propertree-4">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter27.webp" alt="3.2配置Booter27" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator-4">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter28.webp" alt="3.2配置Booter28" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools-4">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter29.webp" alt="3.2配置Booter29" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="icelake">Icelake</h3>
+<h4 id="propertree-5">ProperTree</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter30.webp" alt="3.2配置Booter30" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="opencore-configurator-5">OpenCore Configurator</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter31.webp" alt="3.2配置Booter31" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h4 id="ocauxiliarytools-5">OCAuxiliaryTools</h4>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.2%E9%85%8D%E7%BD%AEBooter/3.2%E9%85%8D%E7%BD%AEBooter32.webp" alt="3.2配置Booter32" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p></article><section aria-labelledby="license-heading" class="p-6 md:p-8 rounded-xl border border-border/40 backdrop-blur bg-muted/20 flex items-center gap-x-8">
+
+    <i class="i-carbon-scales w-2rem h-2rem text-primary/70 shrink-0" aria-hidden="true"></i>
+
+    <div class="space-y-2">
+        <h2 id="license-heading" class="font-medium">License</h2>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>许可协议</span>
+            <a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh-Hans
+                target="_blank" rel="noopener noreferrer license"
+                class="font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">CC BY-SA 4.0</a>
+        </p>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>原文链接</span>
+            <a href="https://guoke.co/3.2-%E9%85%8D%E7%BD%AEbooter/"
+                class="license-link font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">https://guoke.co/3.2-%E9%85%8D%E7%BD%AEbooter/</a>
+        </p>
+    </div>
+</section>
+        <nav class="w-full mt-4" aria-label="文章导航">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-between gap-4"><a href="/3.1-%E9%85%8D%E7%BD%AEacpi/" aria-label="上一篇: 3.1 配置ACPI" class="post-nav__link post-nav__prev inline-flex w-full sm:w-auto justify-start items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors max-w-full">
+                    <i class="i-carbon-chevron-left w-4 h-4" aria-hidden="true"></i>
+                    <div class="truncate text-sm text-left">
+                        <div class="text-xs text-muted-foreground">上一篇</div>
+                        <div class="font-medium">3.1 配置ACPI</div>
+                    </div>
+                </a><a href="/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/" aria-label="下一篇: Mac下通过ClashX实现全局透明代理" class="post-nav__link post-nav__next inline-flex w-full sm:w-auto justify-end items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors sm:ml-auto max-w-full">
+                    <div class="truncate text-sm text-right sm:text-right">
+                        <div class="text-xs text-muted-foreground">下一篇</div>
+                        <div class="font-medium">Mac下通过ClashX实现全局透明代理</div>
+                    </div>
+                    <i class="i-carbon-chevron-right w-4 h-4" aria-hidden="true"></i>
+                </a></div>
+        </nav>
+
+
+<div class="mt-8 md:mt-12 pt-4 md:pt-8 border-t border-border/40">
+    <div class="flex items-center gap-2 mb-8 mx-2">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h2 class="text-lg font-medium">评论</h3>
+    </div>
+    <link rel="stylesheet" href="/css/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous"><div id="twikoo"></div>
+
+
+<script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        try {
+            console.log('Twikoo: envId=', 'https:\/\/twikoo.guoke.co');
+            if (typeof twikoo === 'undefined') {
+                console.error('Twikoo script not loaded. Check network/CDN and the script URL.');
+                return;
+            }
+
+            twikoo.init({
+                envId: 'https:\/\/twikoo.guoke.co',
+                el: '#twikoo',
+                lang: 'zh-CN',
+                
+                path: location.pathname
+            });
+            console.log('Twikoo: init called');
+        } catch (e) {
+            console.error('Twikoo init error:', e);
+        }
+    });
+</script><script src="/js/article/twikoo-owo.5554ee7aca5ca1c54a073a87d0fa5c9ad8f1d7c8115add1f9a9d11f74e89bb45.js" integrity="sha256-VVTuespcocVKBzqH0Ppcmtjx18gRWt0fmp0R906Ju0U=" crossorigin="anonymous"defer></script>
+</div>
+</div><div id="article-readprog" class="
+        fixed right-4 bottom-20 md:right-8 w-12 h-12 rounded-full 
+        backdrop-blur z-50 shadow-lg border border-border/20
+        flex items-center justify-center text-sm font-medium tabular-nums
+        transition-all duration-300 opacity-0 translate-y-24
+        data-visible:opacity-100 data-visible:translate-y-0
+    " aria-label="阅读进度">
+    0%
+</div><script src="/js/article/reading-progress.c3851b928ecafc8c70fa59e73d708523d48d3cab685b1cfe9bdf3398cd72524e.js" integrity="sha256-w4Ubko7K/Ixw&#43;lnnPXCFI9SNPKtoWxz&#43;m98zmM1yUk4=" crossorigin="anonymous"defer></script></div></main><footer border="t border/50" class="mt-auto py-4 backdrop-blur">
+    <div m="x-auto" p="x-4" flex="~ col" gap="6" class="container">
+        <div text="sm muted-foreground/70" gap="3" m="t-3" class="hidden md:flex items-center"><div class="flex items-center gap-2">
+    <i class="i-carbon-time w-4 h-4"></i>
+    <span>已被世界欠拟合</span>
+    <span class="tabular-nums font-mono tracking-wider" id="runningtime" data-start-date="2022/07/12 00:00:00"></span>
+</div><script src="/js/global/runtime.9e9d6de2edbc0c1fd1e49fe58f78438aec2e85362f4d69d1494d517bdd32611b.js" integrity="sha256-np1t4u28DB/R5J/lj3hDiuwuhTYvTWnRSU1Re90yYRs=" crossorigin="anonymous"defer></script><span w="1" h="1" rounded="full" bg="muted-foreground/30"></span><div class="flex items-center gap-2">
+    <i class="i-carbon-text-font w-4 h-4"></i>
+    <span>
+        共 <span class="tabular-nums font-mono">238389</span> 字，写完一本简·奥斯汀的《傲慢与偏见》了!</span>
+</div>
+</div>
+
+        <div text="sm muted-foreground/60" flex="~ col md:row" gap="3" class="items-center justify-between"><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2">
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-1.5"></span>
+        <span>
+            2026 dodopoi
+        </span>
+    </div>
+
+    <span> <a href="https://guoke.co" target="_blank" rel="noopener noreferrer"
+            class="hover:text-primary transition-colors">言别离·时雨下天渐凉</a></span>
+    <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/3OfTfbpwqM5xf8dD/quote.js?theme=#1690FF,#333333,#999999,#333333,#FFFFFF,#1690FF,14&f=14&display=0,0,1,1,0,0,0,1"></script>
+
+    
+    
+    <div class="hidden md:inline-flex items-center gap-3">
+        
+        
+    </div>
+    
+
+    
+</div>
+<div class="flex flex-col md:flex-row items-center gap-y-2
+            md:divide-x md:divide-gray-300/60 md:dark:divide-gray-600/60"><a href="/changelogs/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a><a href="/copyright/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a><a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+            <img src="https://tuchuang.guoke.co/hermeneutics/static/img/ico64.png" alt="" class="w-4 h-4 mr-2 inline-block" />
+        <span>萌ICP备20240549号</span>
+    </a></div></div>
+    </div>
+</footer><script src="/vendor/instantpage.min.c1abca35430b525f9334c62bc065ace80a98c6ca2b9f180fdb969934b71fd254.js" integrity="sha256-wavKNUMLUl&#43;TNMYrwGWs6AqYxsornxgP25aZNLcf0lQ=" crossorigin="anonymous"></script></body>
+
+</html>

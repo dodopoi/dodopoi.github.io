@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>3.3 配置DeviceProperties | 果壳中的宇宙</title><meta name="description" content="追求源于热爱."><meta name="keywords" content="Blog ,dodopoi ,Writing ,中文博客"><link rel="alternate" hreflang="zh" href="https://guoke.co/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/" /><link rel="alternate" hreflang="x-default" href="https://guoke.co/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/" /><meta property="og:url" content="https://guoke.co/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/">
+  <meta property="og:site_name" content="果壳中的宇宙">
+  <meta property="og:title" content="3.3 配置DeviceProperties">
+  <meta property="og:description" content="追求源于热爱.">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-28T20:20:39+08:00">
+    <meta property="article:modified_time" content="2023-06-28T20:20:39+08:00">
+    <meta property="article:tag" content="黑苹果">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="3.3 配置DeviceProperties">
+  <meta name="twitter:description" content="追求源于热爱.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/global.bundle.min.1c793d7a16d60faa1d6fd36e529e61333ce85741ee3ba6f386a21b4f42ec5724.css" integrity="sha256-HHk9ehbWD6odb9NuUp5hMzzoV0HuO6bzhqIbT0LsVyQ=" crossorigin="anonymous"><script>(function () {
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+        (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();</script><link rel="stylesheet" href="/css/article.bundle.min.fa1e43adce600254b06a21d71b8ae98bbba6cfb8fffd43897fc05b24cf96a472.css" integrity="sha256-&#43;h5Drc5gAlSwaiHXG4rpi7umz7j//UOJf8BbJM&#43;WpHI=" crossorigin="anonymous"><script src="/js/article/lightbox.2fcfd676a80d4d7d991baf85af3506429c7951b00ce1804940eb144269e007f1.js" integrity="sha256-L8/WdqgNTX2ZG6&#43;FrzUGQpx5UbAM4YBJQOsUQmngB/E=" crossorigin="anonymous"defer></script><script src="/js/article/clickcopy.5bbf4d054a73a21043f7d84298fc4772b74b329b7609640ee165a537d054c93c.js" integrity="sha256-W79NBUpzohBD99hCmPxHcrdLMpt2CWQO4WWlN9BUyTw=" crossorigin="anonymous"defer></script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3OfTfbpwqM5xf8dD",ck:"3OfTfbpwqM5xf8dD"})</script></head>
+
+<body class="min-h-screen flex flex-col gap-y-4 bg-background text-foreground transition-colors"><div class="h-card p-author hidden">
+    <span class="p-name">dodopoi</span>
+
+    <img class="u-photo" src="https://guoke.co/img/avatar.webp" alt="dodopoi"><p class="p-note">夕晴照雪霁无瑕.</p><a class="u-url u-uid" href="https://guoke.co/">https://guoke.co/</a><span class="p-category">金克斯的含义就是金克斯</span><span class="p-category">如无必要勿增实体</span></div><header class="sticky top-0 left-0 right-0 bg-background/80 backdrop-blur z-[var(--herm-zidx-header)]">
+    <div class="container mx-auto px-4 flex items-center justify-between h-[var(--herm-header-height)] relative">
+        
+        <div class="flex-1 flex justify-start">
+            <a rel="me" href="/" class="shrink-0">
+                <img src="/img/avatar.webp" alt="avatar"
+                    class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+            </a>
+        </div>
+
+        
+        <nav class="hidden md:flex flex-shrink-0" id="header-menu" aria-label="Main navigation">
+            <ul
+                class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium text-muted-foreground"><li class="relative group">
+                    <a aria-label="Menu 归档" href="https://guoke.co/"
+                        class="hover:text-primary transition-colors">
+                        归档
+                    </a><ul class="flex flex-col overflow-hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible 
+                       group-hover:opacity-100 group-hover:visible transition-all duration-200
+                       w-32 py-1 rounded-lg border border-border/50 backdrop-blur
+                       shadow-lg shadow-muted/5"><li>
+                            <a aria-label="时间" href="https://guoke.co/posts" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">时间</a>
+                        </li><li>
+                            <a aria-label="分类" href="https://guoke.co/categories" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">分类</a>
+                        </li><li>
+                            <a aria-label="标签" href="https://guoke.co/tags" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">标签</a>
+                        </li></ul></li><li class="relative group">
+                    <a aria-label="Menu 友链" href="https://guoke.co/links"
+                        class="hover:text-primary transition-colors">
+                        友链
+                    </a></li><li class="relative group">
+                    <a aria-label="Menu 关于" href="https://guoke.co/about"
+                        class="hover:text-primary transition-colors">
+                        关于
+                    </a></li></ul>
+        </nav>
+
+        
+        <div class="md:hidden" id="header-mobilemenu">
+            
+            <input type="checkbox" id="header-mobilemenu__check" class="hidden" tabindex="-1">
+
+            
+            <label for="header-mobilemenu__check" id="header-mobilemenu__toggle" aria-label="Toggle menu"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-background/80 text-muted-foreground/70 hover:bg-muted/50 transition-colors cursor-pointer z-[var(--herm-zidx-header)] relative"
+                role="button">
+                <span class="header-mobilemenu__toggle--open i-carbon-menu w-4 h-4" aria-hidden="true"></span>
+                <span class="header-mobilemenu__toggle--close i-carbon-close w-4 h-4" aria-hidden="true"></span>
+            </label>
+
+            
+            <nav id="header-mobilemenu__panel"
+                class="fixed top-[var(--herm-header-height)] left-0 right-0 bg-background/95 backdrop-blur border-b border-border/50 z-[var(--herm-zidx-dropdown)]">
+                <div class="container max-w-container-content mx-auto px-4 py-4">
+                    <ul class="px-4 space-y-4"><li>
+                            <a aria-label="归档" href="https://guoke.co/" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">归档</a><ul class="mt-2 ml-4 space-y-3"><li>
+                                    <a aria-label="时间" href="https://guoke.co/posts" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">时间</a>
+                                </li><li>
+                                    <a aria-label="分类" href="https://guoke.co/categories" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">分类</a>
+                                </li><li>
+                                    <a aria-label="标签" href="https://guoke.co/tags" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">标签</a>
+                                </li></ul></li><li>
+                            <a aria-label="友链" href="https://guoke.co/links" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">友链</a></li><li>
+                            <a aria-label="关于" href="https://guoke.co/about" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">关于</a></li></ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 max-w-[50%] sm:max-w-[60%]"
+            id="header-title">
+            <button class="text-base font-medium truncate" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});"
+                aria-label="返回顶部">3.3 配置DeviceProperties</button>
+        </div>
+
+        
+        <div class="flex-1 flex justify-end">
+            <div class="flex items-center gap-2"><label for="toc-toggle" class="header-button hidden md:inline-flex" aria-label="切换目录显示" role="button">
+                    <i class="i-carbon-table-of-contents w-4 h-4"></i>
+                </label><a href="/search" class="header-button" aria-label="搜索">
+                    <i class="i-carbon-search w-4 h-4" aria-hidden="true"></i>
+                </a>
+
+                <button id="header-btns__theme" class="header-button" aria-label="切换主题">
+                    <i class="i-carbon-sun w-4 h-4 block dark:hidden" aria-hidden="true"></i>
+                    <i class="i-carbon-moon w-4 h-4 hidden dark:block" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header><script>const THEME_KEY = 'theme';
+const THEMES = ['light', 'dark'];
+let currentTheme = null;
+
+const getTheme = () => {
+    if (currentTheme) return currentTheme;
+    const saved = localStorage.getItem(THEME_KEY);
+    return (THEMES.includes(saved)) ? saved : 'light';
+};
+
+const setTheme = (theme) => {
+    const html = document.documentElement;
+    THEMES.forEach(t => html.classList.remove(t));
+    html.classList.add(theme);
+    currentTheme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+};
+
+const bindThemeToggle = () => {
+    const btn = document.getElementById('header-btns__theme');
+    btn?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+};
+
+const handleNavScroll = () => {
+    const headerMenu = document.getElementById('header-menu');
+    const headerTitle = document.getElementById('header-title');
+    const mobileMenu = document.getElementById('header-mobilemenu');
+    const threshold = 100;
+
+    const updateNav = () => {
+        const y = window.scrollY;
+        if (!headerMenu || !headerTitle) return;
+
+        const isScrolled = y > threshold;
+        headerMenu.style.opacity = isScrolled ? '0' : '1';
+        headerMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        mobileMenu.style.opacity = isScrolled ? '0' : '1';
+        mobileMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        headerTitle.style.opacity = isScrolled ? '1' : '0';
+        headerTitle.style.pointerEvents = isScrolled ? 'auto' : 'none';
+    };
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTheme(getTheme());
+    bindThemeToggle();
+    handleNavScroll();
+});
+</script><main class="flex-grow anim-fadein">
+        <span class="sr-only">主要内容区域</span>
+<div class="container relative max-w-[var(--herm-main-width-wd)] mx-auto px-4 pt-[var(--herm-content-offset)]"><link rel="stylesheet" href="/css/article/toc.css"><input type="checkbox" id="toc-toggle" class="toc-toggle__checkbox hidden" tabindex="-1" aria-hidden="true">
+
+<aside class="toc-sidebar hidden lg:block left-4 h-full">
+    <div class="sticky top-[var(--herm-toc-offset)]">
+        <div class="text-base flex flex-col gap-4 ">
+            <h2 class="font-medium text-foreground/80">目录</h2>
+            <nav id="toc-main" class="toc-main text-foreground/70"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#寻找设备地址">寻找设备地址</a></li>
+    <li><a href="#intel-桌面平台">Intel 桌面平台</a>
+      <ul>
+        <li><a href="#yonahconroe-penrynlynnfieldclarkdale">Yonah、Conroe 、Penryn、Lynnfield、Clarkdale</a></li>
+        <li><a href="#sandy-bridge">Sandy Bridge</a></li>
+        <li><a href="#ivy-bridge">Ivy Bridge</a></li>
+        <li><a href="#haswellbroadwell">Haswell、Broadwell</a></li>
+        <li><a href="#skylake">Skylake</a></li>
+        <li><a href="#kaby-lake">Kaby Lake</a></li>
+        <li><a href="#coffee-lake">Coffee Lake</a></li>
+        <li><a href="#comet-lake">Comet Lake</a></li>
+      </ul>
+    </li>
+    <li><a href="#intel-笔记本平台">Intel 笔记本平台</a>
+      <ul>
+        <li><a href="#skylake-xwcascade-lake-xw">Skylake-X/W、Cascade Lake-X/W</a></li>
+        <li><a href="#sandy-bridge-1">Sandy Bridge</a></li>
+        <li><a href="#ivy-bridge-1">Ivy Bridge</a></li>
+        <li><a href="#haswell">Haswell</a></li>
+        <li><a href="#broadwell">Broadwell</a></li>
+        <li><a href="#skylake-1">Skylake</a></li>
+        <li><a href="#kaby-lake-1">Kaby Lake</a></li>
+        <li><a href="#coffee-lakewhiskey-lake">Coffee Lake、Whiskey Lake</a></li>
+        <li><a href="#coffee-lake-plus-and-comet-lake">Coffee Lake Plus and Comet Lake</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav><script src="/js/article/toc-sync.js" defer></script></div>
+    </div>
+</aside><div class="max-w-[var(--herm-main-width-nr)] mx-auto flex flex-col gap-y-8 h-entry">
+        <header class="space-y-6">
+            <h1 data-pagefind-meta="title" class="text-2xl md:text-3xl font-bold p-name">3.3 配置DeviceProperties</h1><aside class="text-sm text-muted-foreground ml-2 space-y-6">
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-calendar w-4 h-4"></i>
+            <time class="dt-published" datetime=" 2023-06-28T20:20:39&#43;08:00">2023-06-28</time>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-time w-4 h-4"></i>
+            <span>13 分钟阅读</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-text-font w-4 h-4"></i>
+            <span>6467 字</span>
+        </li><li class="flex items-center gap-2">
+            <i class="i-carbon-folder w-4 h-4"></i>
+            <span>折腾</span>
+        </li></ul><ul class="flex flex-wrap gap-2"><li class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
+            <i class="i-carbon-tag w-4 h-4" aria-hidden="true"></i>
+            <span>黑苹果</span>
+        </li></ul>
+</aside></header><article data-pagefind-body class="prose e-content"><h1 id="配置deviceproperties">配置DeviceProperties</h1>
+<p>设备配置通过专用缓冲区提供给 macOS，用于设置 PCI 设备属性，如英特尔缓冲帧补丁，声卡 Layout ID 等。当然声卡的 ID 也可以直接通过启动项添加 <code>alcid=xx</code> 这种形式来添加也是 OK 的。</p>
+<h2 id="寻找设备地址">寻找设备地址</h2>
+<p>不同的设备的硬件地址是不一样的，可以使用 Hackintool 查看具体的地址信息：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties01.webp" alt="3.3DeviceProperties01" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>或者直接使用 OCC 也是可以识别添加设备地址信息的：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties02.webp" alt="3.3DeviceProperties02" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>添加好的效果如下：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties03.webp" alt="3.3DeviceProperties03" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>当然设备属性这里还是有一些缺失的，这就需要我们来手动来补充了。</p>
+<h2 id="intel-桌面平台">Intel 桌面平台</h2>
+<h3 id="yonahconroe-penrynlynnfieldclarkdale">Yonah、Conroe 、Penryn、Lynnfield、Clarkdale</h3>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+</ul>
+<p>这些平台无需特殊设置，只需要添加完善声卡信息即可，当然也可以直接通过启动项添加，前期调试的过程中，建议大家是通过启动项添加 <code>alcid=xx</code> 这种形式。</p>
+<h3 id="sandy-bridge">Sandy Bridge</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties04.webp" alt="3.3DeviceProperties04" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>
+<p><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong></p>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>
+<p><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong></p>
+<ul>
+<li>
+<p>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</p>
+</li>
+<li>
+<p>配置 iGPU 核显</p>
+</li>
+<li>
+<p>AAPL,snb-platform-id</p>
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>
+<p>device-id</p>
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,snb-platform-id</th>
+          <th>说明解释</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>10000300</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>00000500</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>device-id</th>
+          <th>说明解释</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>26010000</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>02010000</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是桌面 HD 3000 核显的最终配置的示例：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties05.webp" alt="3.3DeviceProperties05" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="ivy-bridge">Ivy Bridge</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties06.webp" alt="3.3DeviceProperties06" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提供兼容度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>说明解释</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>0A006601</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>07006201</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<p>台式机 HD 4000 核显的 AAPL,ig-platform-id 为 <code>0A006601</code></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x16,0x0)</strong></li>
+<li>Ivy Bridge CPU 与 6 系列主板（即 H61、B65、Q65、P67、H67、Q67、Z68）配合使用需要</li>
+<li>欺骗 IMEI 设备以获得支持</li>
+<li>无论是否使用 SSDT-IMEI，此属性仍然是必需的</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>3A1E0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<blockquote class="border-l-2 border-border pl-4">
+    <p>如果是 7 系列主板（即 B75、Q75、Z75、H77、Q77、Z77），则不需要此项</p>
+</blockquote><h3 id="haswellbroadwell">Haswell、Broadwell</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties07.webp" alt="3.3DeviceProperties07" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>0300220D</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>04001204</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用</td>
+      </tr>
+      <tr>
+          <td><strong><code>07002216</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号的另一个可选 ID</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>device-id</th>
+          <th>说明解释</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>12040000</code></td>
+          <td>HD 4600 核显的设备 ID</td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是 HD 4400 核显的最终配置的示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>0300220D</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>12040000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties08.webp" alt="3.3DeviceProperties08" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>下面是 lris Pro 6200 核显的最终配置示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>07002216</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties09.webp" alt="3.3DeviceProperties09" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="skylake">Skylake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties10.webp" alt="3.3DeviceProperties10" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>00001219</code></strong></td>
+          <td>当桌面 iGPU 用于驱动显示器时使用</td>
+      </tr>
+      <tr>
+          <td><strong><code>01001219</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<p>HD P530 核显用户需要注意的是，您的 iGPU 核显不受本机支持，因此您需要添加以下属性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>1B190000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是 HD P530 核显的最终配置示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>00001219</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>1B190000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties11.webp" alt="3.3DeviceProperties11" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="kaby-lake">Kaby Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties12.webp" alt="3.3DeviceProperties12" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>通过 WhateverGreen.kext 进行修补</li>
+<li>是独显输出的话可以不需要这个属性</li>
+<li>OS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>00001259</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>03001259</code></strong></td>
+          <td>当桌面 iGPU 仅用于计算任务且不驱动显示器时使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是 HD630 核显的最终配置示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>00001259</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties13.webp" alt="3.3DeviceProperties13" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="coffee-lake">Coffee Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties14.webp" alt="3.3DeviceProperties14" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>07009B3E</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>00009B3E</code></strong></td>
+          <td>如果<code>07009B3E</code> 不起作用的话，可以考虑使用这个 ID 看看</td>
+      </tr>
+      <tr>
+          <td><strong><code>0300913E</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是 HD630 核显的最终配置示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>07009B3E</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties15.webp" alt="3.3DeviceProperties15" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="comet-lake">Comet Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties16.webp" alt="3.3DeviceProperties16" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>AAPL,ig-platform-id</th>
+          <th>解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong><code>07009B3E</code></strong></td>
+          <td>当桌面 iGPU 用于驱动输出显示信号</td>
+      </tr>
+      <tr>
+          <td><strong><code>00009B3E</code></strong></td>
+          <td>如果<code>07009B3E</code> 不起作用的话，可以考虑使用这个 ID 看看</td>
+      </tr>
+      <tr>
+          <td><strong><code>0300C89B</code></strong></td>
+          <td>核显仅计算使用而不驱动输出显示信号（有独显的时候建议使用）</td>
+      </tr>
+  </tbody>
+</table>
+<p>下面是 HD630 核显的最终配置示例：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AAPL,ig-platform-id</td>
+          <td>Data</td>
+          <td><code>07009B3E</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties17.webp" alt="3.3DeviceProperties17" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h2 id="intel-笔记本平台">Intel 笔记本平台</h2>
+<h3 id="skylake-xwcascade-lake-xw">Skylake-X/W、Cascade Lake-X/W</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties18.webp" alt="3.3DeviceProperties18" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-singlelink
+<ul>
+<li>帧缓冲区单链接</li>
+<li>一些老的笔记本需要配置这个选项</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-singlelink</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="sandy-bridge-1">Sandy Bridge</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties19.webp" alt="3.3DeviceProperties19" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>
+<p><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong></p>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>
+<p><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong></p>
+<ul>
+<li>
+<p>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</p>
+</li>
+<li>
+<p>配置 iGPU 核显</p>
+</li>
+<li>
+<p>AAPL,snb-platform-id</p>
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,snb-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>00000100</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">笔记本电脑使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>10000300</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">Intel NUC 使用</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>PciRoot(0x0)/Pci(0x16,0x0)
+<ul>
+<li>使用 Sandy Bridge CPU 和 Ivy Bridge 芯片组常用的配置</li>
+<li>欺骗 IMEI 设备以获得支持</li>
+<li>无论是否使用 SSDT-IMEI，此属性仍然是必需的</li>
+<li>芯片组为 Hx6x 的机型需要配置，可以室友 AIDA64 查看下，比如 Core i3-3110M 的芯片组为 HM67</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>3A1C0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ivy-bridge-1">Ivy Bridge</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties20.webp" alt="3.3DeviceProperties20" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li>PciRoot(0x0)/Pci(0x1b,0x0)
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li>PciRoot(0x0)/Pci(0x2,0x0)
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-memorycount
+<ul>
+<li>匹配 FBMemoryCount</li>
+</ul>
+</li>
+<li>framebuffer-pipecount
+<ul>
+<li>匹配 PipeCount</li>
+</ul>
+</li>
+<li>framebuffer-portcount
+<ul>
+<li>匹配 PortCount</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-con1-enable
+<ul>
+<li>启用外接显示器 1 的修补</li>
+</ul>
+</li>
+<li>framebuffer-con1-alldata
+<ul>
+<li>显示器 1 的连接信息（接口信息等）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>03006601</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">1366*768 或者更低分辨率的显示器推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>04006601</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">1600*900 或者更高分辨率的显示器推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>09006601</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">如果上面两个 ID 不行的话，可以试试看，主要是与某些 eDP 显示器配合使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0B006601</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">Intel NUC 推荐使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>缓冲区的设置如下：</p>
+<ul>
+<li>framebuffer-patch-enable
+<ul>
+<li>Number</li>
+<li>1</li>
+</ul>
+</li>
+<li>framebuffer-memorycount
+<ul>
+<li>Number</li>
+<li>2</li>
+</ul>
+</li>
+<li>framebuffer-pipecount
+<ul>
+<li>Number</li>
+<li>2</li>
+</ul>
+</li>
+<li>framebuffer-portcount
+<ul>
+<li>Number</li>
+<li>4</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>Data</li>
+<li><code>00000004</code></li>
+</ul>
+</li>
+<li>framebuffer-con1-enable
+<ul>
+<li>Number</li>
+<li>1</li>
+</ul>
+</li>
+<li>framebuffer-con1-alldata
+<ul>
+<li>Data</li>
+<li><code>02050000 00040000 07040000 03040000 00040000 81000000 04060000 00040000 81000000</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="haswell">Haswell</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties21.webp" alt="3.3DeviceProperties21" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id</li>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>0500260A</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">HD 5000、HD 5100 和 HD 5200 核显推荐的 ID 值</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0600260A</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">HD 4200、HD 4400 和 HD 4600 核显推荐的 ID 值，需要配合 Device-id</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0300220D</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">推荐所有的 Hasewell 架构的 NUC 使用，核显推荐的 ID 值。需要配合 Device-id</td>
+      </tr>
+  </tbody>
+</table>
+<p>缓冲区的设置如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-cursormem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>针对 HD 4200, HD 4400 and HD 4600 核显配套使用的 Device-id 值：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>12040000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="broadwell">Broadwell</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties22.webp" alt="3.3DeviceProperties22" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id</li>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem</li>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>06002616</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">推荐大多数的笔记本使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>02001616</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">推荐 Broadwell 架构的 NUC 使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>如果你的显卡是 HD 5600 的话，一般还需要伪造一下 device-id 值：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>data</td>
+          <td>26160000</td>
+      </tr>
+  </tbody>
+</table>
+<p>缓冲区的设置如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="skylake-1">Skylake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties23.webp" alt="3.3DeviceProperties23" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>00001619</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">HD 515, HD 520, HD 530, HD 540, HD 550 and P530 核显推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001E19</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">如果你上面的 ID 不行的话，可以尝试这个</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001B19</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">HD 510 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001E19</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 515 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>02001619</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 520/530 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>02002619</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 540/550 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>05003B19</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 580 推荐使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>如果你的核显为 HD 510 的话呢，一般还需要伪造一下 device-id 值：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>02190000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>如果你的核显为 HD 550、P530 的话呢，一般还需要伪造一下 device-id 值：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>16190000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>缓冲区的设置如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="kaby-lake-1">Kaby Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties24.webp" alt="3.3DeviceProperties24" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>过 WhateverGreen.kext 进行修补</li>
+<li>果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>00001B59</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">HD 615, HD 620, HD 630, HD 640 and HD 650 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001659</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">如果 <code>00001B59</code> 无法加速的话，可以尝试一下这个值</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0000C087</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">推荐用于 Amber Lake 的 UHD 617 和 Kaby Lake-R 的 UHD 62</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001E59</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 615 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00001B59</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 630推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>02002659</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">HD 640/650 推荐使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>如果你的核显为 HD 620 的话呢，一般还需要伪造一下 device-id 值：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>16590000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>所有的 HD 6XX 系列（UHD 没问题），输出会存在一些小问题，可能会导致锁定或者内核崩溃，下面的一些缓冲帧补丁可以考虑一下：</p>
+<ul>
+<li>framebuffer-con1-enable</li>
+<li>Data</li>
+<li><code>01000000</code></li>
+<li>framebuffer-con1-alldata</li>
+<li>Data</li>
+<li><code>01050A00 00080000 87010000 02040A00 00080000 87010000 FF000000 01000000 20000000</code></li>
+</ul>
+<p>其他的一些缓冲帧设置：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="coffee-lakewhiskey-lake">Coffee Lake、Whiskey Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties25.webp" alt="3.3DeviceProperties25" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>0900A53E</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">UHD 630 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00009B3E</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">UHD 620 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>07009B3E</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">UHD 620/630 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0000A53E</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">UHD 655 推荐使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>UHD 630 可以尝试使用以下 device-id 提高稳定性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>9B3E0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Coffee Lake CPU UHD 620 可以尝试使用以下 device-id 提高稳定性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>9B3E0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>其他缓冲区设置的参考设置如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="coffee-lake-plus-and-comet-lake">Coffee Lake Plus and Comet Lake</h3>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/3.3DeviceProperties/3.3DeviceProperties26.webp" alt="3.3DeviceProperties26" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<ul>
+<li><strong>PciRoot(0x0)/Pci(0x1b,0x0)</strong>
+<ul>
+<li>这个设备路径以实际为准，可能有误差，可使用 Hackintool 获取具体的设备路径</li>
+<li>layout-id</li>
+<li>AppleALC 音频注入，完整的 ALC ID 可以参考：<a href="https://github.com/acidanthera/AppleALC/wiki/Supported-codecs">AppleALC 支持设备列表</a></li>
+<li>建议大家是直接通过启动项添加 <code>alcid=xx</code> 这种形式，简单方便。</li>
+</ul>
+</li>
+<li><strong>PciRoot(0x0)/Pci(0x2,0x0)</strong>
+<ul>
+<li>基本上所有 Intel 设备的核显都是这个路径（白苹果也是这个）</li>
+<li>配置 iGPU 核显</li>
+<li>AAPL,ig-platform-id
+<ul>
+<li>macOS 用来确定 iGPU 驱动程序如何与我们的系统交互的</li>
+</ul>
+</li>
+<li>device-id
+<ul>
+<li>解决一些驱动异常问题，提高兼容度</li>
+</ul>
+</li>
+<li>framebuffer-patch-enable
+<ul>
+<li>启用通过 WhateverGreen.kext 进行修补</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 也不需要</li>
+</ul>
+</li>
+<li>framebuffer-stolenmem
+<ul>
+<li>设置核显最小被盗内存</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+<li>framebuffer-fbmem
+<ul>
+<li>设置缓冲帧内存大小</li>
+<li>如果是独显输出的话可以不需要这个属性</li>
+<li>BIOS 可以设置 <code>DVMT Pre-Allocated: 64MB</code> 的话也不需要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">AAPL,ig-platform-id</th>
+          <th style="text-align: left">Type</th>
+          <th style="text-align: left">解释说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong><code>0900A53E</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">UHD 630 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>00009B3E</code></strong></td>
+          <td style="text-align: left">Laptop</td>
+          <td style="text-align: left">UHD 620 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>07009B3E</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">UHD 620/630 推荐使用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong><code>0000A53E</code></strong></td>
+          <td style="text-align: left">NUC</td>
+          <td style="text-align: left">UHD 655 推荐使用</td>
+      </tr>
+  </tbody>
+</table>
+<p>UHD 630 可以尝试使用以下 device-id 提高稳定性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>9B3E0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Comet Lake CPU UHD 620 可以尝试使用以下 device-id 提高稳定性：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>device-id</td>
+          <td>Data</td>
+          <td><code>9B3E0000</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>其他缓冲区设置的参考设置如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>Key</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>framebuffer-patch-enable</td>
+          <td>Data</td>
+          <td><code>01000000</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-stolenmem</td>
+          <td>Data</td>
+          <td><code>00003001</code></td>
+      </tr>
+      <tr>
+          <td>framebuffer-fbmem</td>
+          <td>Data</td>
+          <td><code>00009000</code></td>
+      </tr>
+  </tbody>
+</table></article><section aria-labelledby="license-heading" class="p-6 md:p-8 rounded-xl border border-border/40 backdrop-blur bg-muted/20 flex items-center gap-x-8">
+
+    <i class="i-carbon-scales w-2rem h-2rem text-primary/70 shrink-0" aria-hidden="true"></i>
+
+    <div class="space-y-2">
+        <h2 id="license-heading" class="font-medium">License</h2>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>许可协议</span>
+            <a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh-Hans
+                target="_blank" rel="noopener noreferrer license"
+                class="font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">CC BY-SA 4.0</a>
+        </p>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>原文链接</span>
+            <a href="https://guoke.co/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/"
+                class="license-link font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">https://guoke.co/3.3-%E9%85%8D%E7%BD%AEdeviceproperties/</a>
+        </p>
+    </div>
+</section>
+        <nav class="w-full mt-4" aria-label="文章导航">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-between gap-4"><a href="/mac%E4%B8%8B%E9%80%9A%E8%BF%87clashx%E5%AE%9E%E7%8E%B0%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/" aria-label="上一篇: Mac下通过ClashX实现全局透明代理" class="post-nav__link post-nav__prev inline-flex w-full sm:w-auto justify-start items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors max-w-full">
+                    <i class="i-carbon-chevron-left w-4 h-4" aria-hidden="true"></i>
+                    <div class="truncate text-sm text-left">
+                        <div class="text-xs text-muted-foreground">上一篇</div>
+                        <div class="font-medium">Mac下通过ClashX实现全局透明代理</div>
+                    </div>
+                </a><a href="/3.4-%E9%85%8D%E7%BD%AEkernel/" aria-label="下一篇: 3.4 配置Kernel" class="post-nav__link post-nav__next inline-flex w-full sm:w-auto justify-end items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors sm:ml-auto max-w-full">
+                    <div class="truncate text-sm text-right sm:text-right">
+                        <div class="text-xs text-muted-foreground">下一篇</div>
+                        <div class="font-medium">3.4 配置Kernel</div>
+                    </div>
+                    <i class="i-carbon-chevron-right w-4 h-4" aria-hidden="true"></i>
+                </a></div>
+        </nav>
+
+
+<div class="mt-8 md:mt-12 pt-4 md:pt-8 border-t border-border/40">
+    <div class="flex items-center gap-2 mb-8 mx-2">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h2 class="text-lg font-medium">评论</h3>
+    </div>
+    <link rel="stylesheet" href="/css/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous"><div id="twikoo"></div>
+
+
+<script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        try {
+            console.log('Twikoo: envId=', 'https:\/\/twikoo.guoke.co');
+            if (typeof twikoo === 'undefined') {
+                console.error('Twikoo script not loaded. Check network/CDN and the script URL.');
+                return;
+            }
+
+            twikoo.init({
+                envId: 'https:\/\/twikoo.guoke.co',
+                el: '#twikoo',
+                lang: 'zh-CN',
+                
+                path: location.pathname
+            });
+            console.log('Twikoo: init called');
+        } catch (e) {
+            console.error('Twikoo init error:', e);
+        }
+    });
+</script><script src="/js/article/twikoo-owo.5554ee7aca5ca1c54a073a87d0fa5c9ad8f1d7c8115add1f9a9d11f74e89bb45.js" integrity="sha256-VVTuespcocVKBzqH0Ppcmtjx18gRWt0fmp0R906Ju0U=" crossorigin="anonymous"defer></script>
+</div>
+</div><div id="article-readprog" class="
+        fixed right-4 bottom-20 md:right-8 w-12 h-12 rounded-full 
+        backdrop-blur z-50 shadow-lg border border-border/20
+        flex items-center justify-center text-sm font-medium tabular-nums
+        transition-all duration-300 opacity-0 translate-y-24
+        data-visible:opacity-100 data-visible:translate-y-0
+    " aria-label="阅读进度">
+    0%
+</div><script src="/js/article/reading-progress.c3851b928ecafc8c70fa59e73d708523d48d3cab685b1cfe9bdf3398cd72524e.js" integrity="sha256-w4Ubko7K/Ixw&#43;lnnPXCFI9SNPKtoWxz&#43;m98zmM1yUk4=" crossorigin="anonymous"defer></script></div></main><footer border="t border/50" class="mt-auto py-4 backdrop-blur">
+    <div m="x-auto" p="x-4" flex="~ col" gap="6" class="container">
+        <div text="sm muted-foreground/70" gap="3" m="t-3" class="hidden md:flex items-center"><div class="flex items-center gap-2">
+    <i class="i-carbon-time w-4 h-4"></i>
+    <span>已被世界欠拟合</span>
+    <span class="tabular-nums font-mono tracking-wider" id="runningtime" data-start-date="2022/07/12 00:00:00"></span>
+</div><script src="/js/global/runtime.9e9d6de2edbc0c1fd1e49fe58f78438aec2e85362f4d69d1494d517bdd32611b.js" integrity="sha256-np1t4u28DB/R5J/lj3hDiuwuhTYvTWnRSU1Re90yYRs=" crossorigin="anonymous"defer></script><span w="1" h="1" rounded="full" bg="muted-foreground/30"></span><div class="flex items-center gap-2">
+    <i class="i-carbon-text-font w-4 h-4"></i>
+    <span>
+        共 <span class="tabular-nums font-mono">238389</span> 字，写完一本简·奥斯汀的《傲慢与偏见》了!</span>
+</div>
+</div>
+
+        <div text="sm muted-foreground/60" flex="~ col md:row" gap="3" class="items-center justify-between"><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2">
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-1.5"></span>
+        <span>
+            2026 dodopoi
+        </span>
+    </div>
+
+    <span> <a href="https://guoke.co" target="_blank" rel="noopener noreferrer"
+            class="hover:text-primary transition-colors">言别离·时雨下天渐凉</a></span>
+    <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/3OfTfbpwqM5xf8dD/quote.js?theme=#1690FF,#333333,#999999,#333333,#FFFFFF,#1690FF,14&f=14&display=0,0,1,1,0,0,0,1"></script>
+
+    
+    
+    <div class="hidden md:inline-flex items-center gap-3">
+        
+        
+    </div>
+    
+
+    
+</div>
+<div class="flex flex-col md:flex-row items-center gap-y-2
+            md:divide-x md:divide-gray-300/60 md:dark:divide-gray-600/60"><a href="/changelogs/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a><a href="/copyright/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a><a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+            <img src="https://tuchuang.guoke.co/hermeneutics/static/img/ico64.png" alt="" class="w-4 h-4 mr-2 inline-block" />
+        <span>萌ICP备20240549号</span>
+    </a></div></div>
+    </div>
+</footer><script src="/vendor/instantpage.min.c1abca35430b525f9334c62bc065ace80a98c6ca2b9f180fdb969934b71fd254.js" integrity="sha256-wavKNUMLUl&#43;TNMYrwGWs6AqYxsornxgP25aZNLcf0lQ=" crossorigin="anonymous"></script></body>
+
+</html>

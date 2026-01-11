@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>2.8 Kexts微调 | 果壳中的宇宙</title><meta name="description" content="追求源于热爱."><meta name="keywords" content="Blog ,dodopoi ,Writing ,中文博客"><link rel="alternate" hreflang="zh" href="https://guoke.co/2.8-kexts%E5%BE%AE%E8%B0%83/" /><link rel="alternate" hreflang="x-default" href="https://guoke.co/2.8-kexts%E5%BE%AE%E8%B0%83/" /><meta property="og:url" content="https://guoke.co/2.8-kexts%E5%BE%AE%E8%B0%83/">
+  <meta property="og:site_name" content="果壳中的宇宙">
+  <meta property="og:title" content="2.8 Kexts微调">
+  <meta property="og:description" content="追求源于热爱.">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-06-20T02:12:29+08:00">
+    <meta property="article:modified_time" content="2023-06-20T02:12:29+08:00">
+    <meta property="article:tag" content="黑苹果">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2.8 Kexts微调">
+  <meta name="twitter:description" content="追求源于热爱.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/global.bundle.min.1c793d7a16d60faa1d6fd36e529e61333ce85741ee3ba6f386a21b4f42ec5724.css" integrity="sha256-HHk9ehbWD6odb9NuUp5hMzzoV0HuO6bzhqIbT0LsVyQ=" crossorigin="anonymous"><script>(function () {
+    const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (theme === 'dark' ||
+        (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    }
+})();</script><link rel="stylesheet" href="/css/article.bundle.min.fa1e43adce600254b06a21d71b8ae98bbba6cfb8fffd43897fc05b24cf96a472.css" integrity="sha256-&#43;h5Drc5gAlSwaiHXG4rpi7umz7j//UOJf8BbJM&#43;WpHI=" crossorigin="anonymous"><script src="/js/article/lightbox.2fcfd676a80d4d7d991baf85af3506429c7951b00ce1804940eb144269e007f1.js" integrity="sha256-L8/WdqgNTX2ZG6&#43;FrzUGQpx5UbAM4YBJQOsUQmngB/E=" crossorigin="anonymous"defer></script><script src="/js/article/clickcopy.5bbf4d054a73a21043f7d84298fc4772b74b329b7609640ee165a537d054c93c.js" integrity="sha256-W79NBUpzohBD99hCmPxHcrdLMpt2CWQO4WWlN9BUyTw=" crossorigin="anonymous"defer></script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3OfTfbpwqM5xf8dD",ck:"3OfTfbpwqM5xf8dD"})</script></head>
+
+<body class="min-h-screen flex flex-col gap-y-4 bg-background text-foreground transition-colors"><div class="h-card p-author hidden">
+    <span class="p-name">dodopoi</span>
+
+    <img class="u-photo" src="https://guoke.co/img/avatar.webp" alt="dodopoi"><p class="p-note">夕晴照雪霁无瑕.</p><a class="u-url u-uid" href="https://guoke.co/">https://guoke.co/</a><span class="p-category">金克斯的含义就是金克斯</span><span class="p-category">如无必要勿增实体</span></div><header class="sticky top-0 left-0 right-0 bg-background/80 backdrop-blur z-[var(--herm-zidx-header)]">
+    <div class="container mx-auto px-4 flex items-center justify-between h-[var(--herm-header-height)] relative">
+        
+        <div class="flex-1 flex justify-start">
+            <a rel="me" href="/" class="shrink-0">
+                <img src="/img/avatar.webp" alt="avatar"
+                    class="w-8 h-8 rounded-full object-cover ring-2 ring-background shadow-sm">
+            </a>
+        </div>
+
+        
+        <nav class="hidden md:flex flex-shrink-0" id="header-menu" aria-label="Main navigation">
+            <ul
+                class="flex items-center bg-muted/50 backdrop-blur rounded-full px-4 h-9 gap-6 text-sm font-medium text-muted-foreground"><li class="relative group">
+                    <a aria-label="Menu 归档" href="https://guoke.co/"
+                        class="hover:text-primary transition-colors">
+                        归档
+                    </a><ul class="flex flex-col overflow-hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 invisible 
+                       group-hover:opacity-100 group-hover:visible transition-all duration-200
+                       w-32 py-1 rounded-lg border border-border/50 backdrop-blur
+                       shadow-lg shadow-muted/5"><li>
+                            <a aria-label="时间" href="https://guoke.co/posts" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">时间</a>
+                        </li><li>
+                            <a aria-label="分类" href="https://guoke.co/categories" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">分类</a>
+                        </li><li>
+                            <a aria-label="标签" href="https://guoke.co/tags" class="block px-2 py-1.5 text-center text-muted-foreground/70 hover:text-primary hover:bg-muted/40 transition-colors
+                              ">标签</a>
+                        </li></ul></li><li class="relative group">
+                    <a aria-label="Menu 友链" href="https://guoke.co/links"
+                        class="hover:text-primary transition-colors">
+                        友链
+                    </a></li><li class="relative group">
+                    <a aria-label="Menu 关于" href="https://guoke.co/about"
+                        class="hover:text-primary transition-colors">
+                        关于
+                    </a></li></ul>
+        </nav>
+
+        
+        <div class="md:hidden" id="header-mobilemenu">
+            
+            <input type="checkbox" id="header-mobilemenu__check" class="hidden" tabindex="-1">
+
+            
+            <label for="header-mobilemenu__check" id="header-mobilemenu__toggle" aria-label="Toggle menu"
+                class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-background/80 text-muted-foreground/70 hover:bg-muted/50 transition-colors cursor-pointer z-[var(--herm-zidx-header)] relative"
+                role="button">
+                <span class="header-mobilemenu__toggle--open i-carbon-menu w-4 h-4" aria-hidden="true"></span>
+                <span class="header-mobilemenu__toggle--close i-carbon-close w-4 h-4" aria-hidden="true"></span>
+            </label>
+
+            
+            <nav id="header-mobilemenu__panel"
+                class="fixed top-[var(--herm-header-height)] left-0 right-0 bg-background/95 backdrop-blur border-b border-border/50 z-[var(--herm-zidx-dropdown)]">
+                <div class="container max-w-container-content mx-auto px-4 py-4">
+                    <ul class="px-4 space-y-4"><li>
+                            <a aria-label="归档" href="https://guoke.co/" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">归档</a><ul class="mt-2 ml-4 space-y-3"><li>
+                                    <a aria-label="时间" href="https://guoke.co/posts" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">时间</a>
+                                </li><li>
+                                    <a aria-label="分类" href="https://guoke.co/categories" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">分类</a>
+                                </li><li>
+                                    <a aria-label="标签" href="https://guoke.co/tags" class="block text-sm text-muted-foreground/70 hover:text-primary transition-colors
+                            ">标签</a>
+                                </li></ul></li><li>
+                            <a aria-label="友链" href="https://guoke.co/links" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">友链</a></li><li>
+                            <a aria-label="关于" href="https://guoke.co/about" class="block text-base font-medium text-muted-foreground hover:text-primary transition-colors
+                    ">关于</a></li></ul>
+                </div>
+            </nav>
+        </div>
+
+        
+        <div class="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 max-w-[50%] sm:max-w-[60%]"
+            id="header-title">
+            <button class="text-base font-medium truncate" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});"
+                aria-label="返回顶部">2.8 Kexts微调</button>
+        </div>
+
+        
+        <div class="flex-1 flex justify-end">
+            <div class="flex items-center gap-2"><label for="toc-toggle" class="header-button hidden md:inline-flex" aria-label="切换目录显示" role="button">
+                    <i class="i-carbon-table-of-contents w-4 h-4"></i>
+                </label><a href="/search" class="header-button" aria-label="搜索">
+                    <i class="i-carbon-search w-4 h-4" aria-hidden="true"></i>
+                </a>
+
+                <button id="header-btns__theme" class="header-button" aria-label="切换主题">
+                    <i class="i-carbon-sun w-4 h-4 block dark:hidden" aria-hidden="true"></i>
+                    <i class="i-carbon-moon w-4 h-4 hidden dark:block" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header><script>const THEME_KEY = 'theme';
+const THEMES = ['light', 'dark'];
+let currentTheme = null;
+
+const getTheme = () => {
+    if (currentTheme) return currentTheme;
+    const saved = localStorage.getItem(THEME_KEY);
+    return (THEMES.includes(saved)) ? saved : 'light';
+};
+
+const setTheme = (theme) => {
+    const html = document.documentElement;
+    THEMES.forEach(t => html.classList.remove(t));
+    html.classList.add(theme);
+    currentTheme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+};
+
+const bindThemeToggle = () => {
+    const btn = document.getElementById('header-btns__theme');
+    btn?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+};
+
+const handleNavScroll = () => {
+    const headerMenu = document.getElementById('header-menu');
+    const headerTitle = document.getElementById('header-title');
+    const mobileMenu = document.getElementById('header-mobilemenu');
+    const threshold = 100;
+
+    const updateNav = () => {
+        const y = window.scrollY;
+        if (!headerMenu || !headerTitle) return;
+
+        const isScrolled = y > threshold;
+        headerMenu.style.opacity = isScrolled ? '0' : '1';
+        headerMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        mobileMenu.style.opacity = isScrolled ? '0' : '1';
+        mobileMenu.style.pointerEvents = isScrolled ? 'none' : 'auto';
+        headerTitle.style.opacity = isScrolled ? '1' : '0';
+        headerTitle.style.pointerEvents = isScrolled ? 'auto' : 'none';
+    };
+
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTheme(getTheme());
+    bindThemeToggle();
+    handleNavScroll();
+});
+</script><main class="flex-grow anim-fadein">
+        <span class="sr-only">主要内容区域</span>
+<div class="container relative max-w-[var(--herm-main-width-wd)] mx-auto px-4 pt-[var(--herm-content-offset)]"><link rel="stylesheet" href="/css/article/toc.css"><input type="checkbox" id="toc-toggle" class="toc-toggle__checkbox hidden" tabindex="-1" aria-hidden="true">
+
+<aside class="toc-sidebar hidden lg:block left-4 h-full">
+    <div class="sticky top-[var(--herm-toc-offset)]">
+        <div class="text-base flex flex-col gap-4 ">
+            <h2 class="font-medium text-foreground/80">目录</h2>
+            <nav id="toc-main" class="toc-main text-foreground/70"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#自动调整-kexts-顺序">自动调整 Kexts 顺序</a></li>
+    <li><a href="#手动调整-kexts-顺序">手动调整 Kexts 顺序</a>
+      <ul>
+        <li><a href="#opencore-configurator">OpenCore Configurator</a></li>
+        <li><a href="#ocauxiliarytools">OCAuxiliaryTools</a></li>
+      </ul>
+    </li>
+    <li><a href="#常见-kexts-的调整细节">常见 Kexts 的调整细节</a>
+      <ul>
+        <li><a href="#必备-kexts-的加载顺序">必备 Kexts 的加载顺序</a></li>
+        <li><a href="#bcm-博通无线和蓝牙加载顺序">BCM 博通无线和蓝牙加载顺序</a></li>
+        <li><a href="#bcm-博通无线细节调整">BCM 博通无线细节调整</a></li>
+        <li><a href="#intel-无线和蓝牙加载顺序">Intel 无线和蓝牙加载顺序</a></li>
+        <li><a href="#笔记本-ps2-键鼠触控板加载顺序">笔记本 PS2 键鼠、触控板加载顺序</a></li>
+        <li><a href="#笔记本-i2c-和-ps2-配合驱动触控板加载顺序">笔记本 I2C 和 PS2 配合驱动触控板加载顺序</a></li>
+        <li><a href="#笔记本-ps2smart-键盘驱动加载顺序">笔记本 PS2Smart 键盘驱动加载顺序</a></li>
+        <li><a href="#笔记本-voodoormikext-和-voodoosmbuskext-细节调整">笔记本 VoodooRMI.kext 和 VoodooSMBus.kext 细节调整</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav><script src="/js/article/toc-sync.js" defer></script></div>
+    </div>
+</aside><div class="max-w-[var(--herm-main-width-nr)] mx-auto flex flex-col gap-y-8 h-entry">
+        <header class="space-y-6">
+            <h1 data-pagefind-meta="title" class="text-2xl md:text-3xl font-bold p-name">2.8 Kexts微调</h1><aside class="text-sm text-muted-foreground ml-2 space-y-6">
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-calendar w-4 h-4"></i>
+            <time class="dt-published" datetime=" 2023-06-20T02:12:29&#43;08:00">2023-06-20</time>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-time w-4 h-4"></i>
+            <span>2 分钟阅读</span>
+        </li>
+
+        <li class="flex items-center gap-2">
+            <i class="i-carbon-text-font w-4 h-4"></i>
+            <span>809 字</span>
+        </li><li class="flex items-center gap-2">
+            <i class="i-carbon-folder w-4 h-4"></i>
+            <span>折腾</span>
+        </li></ul><ul class="flex flex-wrap gap-2"><li class="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted rounded-md text-muted-foreground">
+            <i class="i-carbon-tag w-4 h-4" aria-hidden="true"></i>
+            <span>黑苹果</span>
+        </li></ul>
+</aside></header><article data-pagefind-body class="prose e-content"><h1 id="kexts微调">Kexts微调</h1>
+<p>Kexts 也有顺序的要求，而且有些 Kexts 会冲突无法开机，关于这块也比杂了，因为 Kexts 的开发者都不相同。</p>
+<h2 id="自动调整-kexts-顺序">自动调整 Kexts 顺序</h2>
+<p>ProperTree 在进行 <strong>Cmd/Ctrl + Shift + R</strong> 或者使用图形化菜单选择 「Clean Snapshot」操作的时候，会自动调整 Kexts 的加载顺序并且禁用掉冲突的 Kexts</p>
+<p>实际上 OpenCore Configurator 也有这个功能，点击底部的「检查 Kexts」即可：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8Kexts%E5%BE%AE%E8%B0%83/2.8Kexts%E5%BE%AE%E8%B0%8301.webp" alt="2.8Kexts微调01" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h2 id="手动调整-kexts-顺序">手动调整 Kexts 顺序</h2>
+<p>软件自动调整的顺序不一定是最准确的，因为他不知道你用了哪些乱七八糟的 Kexts，所以有时候还需要我们手动调整下 Kexts 的加载顺序。</p>
+<h3 id="opencore-configurator">OpenCore Configurator</h3>
+<p>OpenCore Configurator 操作比较简单，选择好你要操作的 Kext，然后直接上下拖动即可调整顺序：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8Kexts%E5%BE%AE%E8%B0%83/2.8Kexts%E5%BE%AE%E8%B0%8302.webp" alt="2.8Kexts微调02" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="ocauxiliarytools">OCAuxiliaryTools</h3>
+<p>OCAuxiliaryTools 虽然无法直接拖动，但可以使用底部的「向上」和「向下」箭头的图标来调整 Kexts 的加载顺序：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8Kexts%E5%BE%AE%E8%B0%83/2.8Kexts%E5%BE%AE%E8%B0%8303.webp" alt="2.8Kexts微调03" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h2 id="常见-kexts-的调整细节">常见 Kexts 的调整细节</h2>
+<h3 id="必备-kexts-的加载顺序">必备 Kexts 的加载顺序</h3>
+<ol>
+<li>Lilu.kext</li>
+<li>VirtualSMC.kext</li>
+<li>WhateverGreen.kext</li>
+<li>SMCBatteryManager.kext （台式机不需要）</li>
+<li>SMCLightSensor.kext （台式机不需要）</li>
+<li>SMCProcessor.kext</li>
+<li>SMCSuperIO.kext</li>
+<li>AppleALC.kext</li>
+</ol>
+<h3 id="bcm-博通无线和蓝牙加载顺序">BCM 博通无线和蓝牙加载顺序</h3>
+<ol>
+<li>AirportBrcmFixup.kext</li>
+<li>BrcmBluetoothInjector.kext</li>
+<li>BrcmFirmwareData.kext</li>
+<li>BrcmPatchRAM3.kext</li>
+</ol>
+<h3 id="bcm-博通无线细节调整">BCM 博通无线细节调整</h3>
+<p>直接加载 AirportBrcmFixup.kext 会发现实际上加载了 3 个 Kext：</p>
+<ol>
+<li>AirportBrcmFixup.kext</li>
+<li>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</li>
+<li>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcm4360_Injector.kext</li>
+</ol>
+<p>其中安装 Big Sur 以及更新版本的话，AirPortBrcm4360_Injector.kext 默认情况下会出问题，所以需要我们设置一下最大内核为 19.9.9 ，这样可能会减少一些异常错误：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8Kexts%E5%BE%AE%E8%B0%83/2.8Kexts%E5%BE%AE%E8%B0%8304.webp" alt="2.8Kexts微调04" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<p>另外，BCM94352Z 芯片的网卡往往还需要在启动项里面添加：<code>brcmfx-driver=2</code> 解决一些睡眠或者其他玄学问题：</p>
+<p><figure class="my-8"><img src="https://tuchuang.guoke.co/guoke/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0%E9%BB%91%E8%8B%B9%E6%9E%9C/2.8Kexts%E5%BE%AE%E8%B0%83/2.8Kexts%E5%BE%AE%E8%B0%8305.webp" alt="2.8Kexts微调05" 
+            class="mx-auto rounded-lg block" loading="lazy"  />
+</figure></p>
+<h3 id="intel-无线和蓝牙加载顺序">Intel 无线和蓝牙加载顺序</h3>
+<ol>
+<li>AirportItlwm.kext</li>
+<li>IntelBluetoothInjector.kext</li>
+<li>IntelBluetoothFirmware.kext</li>
+</ol>
+<h3 id="笔记本-ps2-键鼠触控板加载顺序">笔记本 PS2 键鼠、触控板加载顺序</h3>
+<ol>
+<li>VoodooPS2Controller.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</li>
+<li>BrightnessKeys.kext（功能亮度调节按键驱动 不一定需要）</li>
+</ol>
+<h3 id="笔记本-i2c-和-ps2-配合驱动触控板加载顺序">笔记本 I2C 和 PS2 配合驱动触控板加载顺序</h3>
+<ol>
+<li>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</li>
+<li>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</li>
+<li>VoodooI2C.kext</li>
+<li>VoodooI2CHID.kext</li>
+<li>VoodooPS2Controller.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</li>
+<li>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</li>
+<li>BrightnessKeys.kext （功能亮度调节按键驱动 不一定需要）</li>
+</ol>
+<blockquote class="border-l-2 border-border pl-4">
+    <p><strong>补充一个小姿势：因为 IC2 和 PS2 都有 VoodooInput.kext，所以如果不删除掉或者禁用掉 PS2 的 VoodooInput.kext 的话，会导致开机内核冲突卡死无法开机。</strong></p>
+</blockquote><h3 id="笔记本-ps2smart-键盘驱动加载顺序">笔记本 PS2Smart 键盘驱动加载顺序</h3>
+<ol>
+<li>ApplePS2SmartTouchPad.kext/Contents/PlugIns/ApplePS2Controller.kext</li>
+<li>ApplePS2SmartTouchPad.kext/Contents/PlugIns/ApplePS2Keyboard.kext</li>
+<li>ApplePS2SmartTouchPad.kext</li>
+</ol>
+<h3 id="笔记本-voodoormikext-和-voodoosmbuskext-细节调整">笔记本 VoodooRMI.kext 和 VoodooSMBus.kext 细节调整</h3>
+<p>首先确保 VoodooPS2 配置如下：</p>
+<ul>
+<li>启用</li>
+<li>VoodooPS2Controller.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</li>
+<li>禁用</li>
+<li>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</li>
+</ul>
+<p>然后<strong>启用</strong>加载基础的 RMI 配置：</p>
+<ul>
+<li>VoodooRMI.kext</li>
+<li>VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext</li>
+</ul>
+<p>如果你是 SMBus 触控板的话，还需要加载：</p>
+<ul>
+<li>VoodooSMBus.kext</li>
+<li>VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext</li>
+</ul>
+<p>如果你是 I2C触控板的话，还需要加载：</p>
+<ul>
+<li>VoodooI2C.kext</li>
+<li>VoodooRMI.kext/Contents/PlugIns/RMII2C.kext</li>
+</ul></article><section aria-labelledby="license-heading" class="p-6 md:p-8 rounded-xl border border-border/40 backdrop-blur bg-muted/20 flex items-center gap-x-8">
+
+    <i class="i-carbon-scales w-2rem h-2rem text-primary/70 shrink-0" aria-hidden="true"></i>
+
+    <div class="space-y-2">
+        <h2 id="license-heading" class="font-medium">License</h2>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>许可协议</span>
+            <a href=https://creativecommons.org/licenses/by-sa/4.0/deed.zh-Hans
+                target="_blank" rel="noopener noreferrer license"
+                class="font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">CC BY-SA 4.0</a>
+        </p>
+
+        <p class="text-sm text-muted-foreground space-x-1">
+            <span>原文链接</span>
+            <a href="https://guoke.co/2.8-kexts%E5%BE%AE%E8%B0%83/"
+                class="license-link font-mono text-xs bg-muted/50 px-2 py-1 rounded hover:text-foreground/80">https://guoke.co/2.8-kexts%E5%BE%AE%E8%B0%83/</a>
+        </p>
+    </div>
+</section>
+        <nav class="w-full mt-4" aria-label="文章导航">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-between gap-4"><a href="/2.7-%E5%88%9D%E6%AD%A5%E9%85%8D%E7%BD%AE/" aria-label="上一篇: 2.7 初步配置" class="post-nav__link post-nav__prev inline-flex w-full sm:w-auto justify-start items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors max-w-full">
+                    <i class="i-carbon-chevron-left w-4 h-4" aria-hidden="true"></i>
+                    <div class="truncate text-sm text-left">
+                        <div class="text-xs text-muted-foreground">上一篇</div>
+                        <div class="font-medium">2.7 初步配置</div>
+                    </div>
+                </a><a href="/3.1-%E9%85%8D%E7%BD%AEacpi/" aria-label="下一篇: 3.1 配置ACPI" class="post-nav__link post-nav__next inline-flex w-full sm:w-auto justify-end items-center gap-3 px-3 py-2 rounded-md bg-muted/10 hover:bg-muted transition-colors sm:ml-auto max-w-full">
+                    <div class="truncate text-sm text-right sm:text-right">
+                        <div class="text-xs text-muted-foreground">下一篇</div>
+                        <div class="font-medium">3.1 配置ACPI</div>
+                    </div>
+                    <i class="i-carbon-chevron-right w-4 h-4" aria-hidden="true"></i>
+                </a></div>
+        </nav>
+
+
+<div class="mt-8 md:mt-12 pt-4 md:pt-8 border-t border-border/40">
+    <div class="flex items-center gap-2 mb-8 mx-2">
+        <div class="i-carbon-chat w-5 h-5 text-primary/80"></div>
+        <h2 class="text-lg font-medium">评论</h3>
+    </div>
+    <link rel="stylesheet" href="/css/article/comments/twikoo.min.bc09b866fdc66c4238061d442483a0156e07e41c3997d46be71f1fffc02215d0.css" integrity="sha256-vAm4Zv3GbEI4Bh1EJIOgFW4H5Bw5l9Rr5x8f/8AiFdA=" crossorigin="anonymous"><div id="twikoo"></div>
+
+
+<script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" crossorigin="anonymous" defer></script>
+<script>
+    window.addEventListener('load', () => {
+        try {
+            console.log('Twikoo: envId=', 'https:\/\/twikoo.guoke.co');
+            if (typeof twikoo === 'undefined') {
+                console.error('Twikoo script not loaded. Check network/CDN and the script URL.');
+                return;
+            }
+
+            twikoo.init({
+                envId: 'https:\/\/twikoo.guoke.co',
+                el: '#twikoo',
+                lang: 'zh-CN',
+                
+                path: location.pathname
+            });
+            console.log('Twikoo: init called');
+        } catch (e) {
+            console.error('Twikoo init error:', e);
+        }
+    });
+</script><script src="/js/article/twikoo-owo.5554ee7aca5ca1c54a073a87d0fa5c9ad8f1d7c8115add1f9a9d11f74e89bb45.js" integrity="sha256-VVTuespcocVKBzqH0Ppcmtjx18gRWt0fmp0R906Ju0U=" crossorigin="anonymous"defer></script>
+</div>
+</div><div id="article-readprog" class="
+        fixed right-4 bottom-20 md:right-8 w-12 h-12 rounded-full 
+        backdrop-blur z-50 shadow-lg border border-border/20
+        flex items-center justify-center text-sm font-medium tabular-nums
+        transition-all duration-300 opacity-0 translate-y-24
+        data-visible:opacity-100 data-visible:translate-y-0
+    " aria-label="阅读进度">
+    0%
+</div><script src="/js/article/reading-progress.c3851b928ecafc8c70fa59e73d708523d48d3cab685b1cfe9bdf3398cd72524e.js" integrity="sha256-w4Ubko7K/Ixw&#43;lnnPXCFI9SNPKtoWxz&#43;m98zmM1yUk4=" crossorigin="anonymous"defer></script></div></main><footer border="t border/50" class="mt-auto py-4 backdrop-blur">
+    <div m="x-auto" p="x-4" flex="~ col" gap="6" class="container">
+        <div text="sm muted-foreground/70" gap="3" m="t-3" class="hidden md:flex items-center"><div class="flex items-center gap-2">
+    <i class="i-carbon-time w-4 h-4"></i>
+    <span>已被世界欠拟合</span>
+    <span class="tabular-nums font-mono tracking-wider" id="runningtime" data-start-date="2022/07/12 00:00:00"></span>
+</div><script src="/js/global/runtime.9e9d6de2edbc0c1fd1e49fe58f78438aec2e85362f4d69d1494d517bdd32611b.js" integrity="sha256-np1t4u28DB/R5J/lj3hDiuwuhTYvTWnRSU1Re90yYRs=" crossorigin="anonymous"defer></script><span w="1" h="1" rounded="full" bg="muted-foreground/30"></span><div class="flex items-center gap-2">
+    <i class="i-carbon-text-font w-4 h-4"></i>
+    <span>
+        共 <span class="tabular-nums font-mono">238389</span> 字，写完一本简·奥斯汀的《傲慢与偏见》了!</span>
+</div>
+</div>
+
+        <div text="sm muted-foreground/60" flex="~ col md:row" gap="3" class="items-center justify-between"><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2">
+    <div class="inline-flex items-center">
+        <span class="i-mdi-copyleft w-4 h-4 mr-1.5"></span>
+        <span>
+            2026 dodopoi
+        </span>
+    </div>
+
+    <span> <a href="https://guoke.co" target="_blank" rel="noopener noreferrer"
+            class="hover:text-primary transition-colors">言别离·时雨下天渐凉</a></span>
+    <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/3OfTfbpwqM5xf8dD/quote.js?theme=#1690FF,#333333,#999999,#333333,#FFFFFF,#1690FF,14&f=14&display=0,0,1,1,0,0,0,1"></script>
+
+    
+    
+    <div class="hidden md:inline-flex items-center gap-3">
+        
+        
+    </div>
+    
+
+    
+</div>
+<div class="flex flex-col md:flex-row items-center gap-y-2
+            md:divide-x md:divide-gray-300/60 md:dark:divide-gray-600/60"><a href="/changelogs/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>日志</span>
+    </a><a href="/copyright/" 
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+        <span>copyright</span>
+    </a><a href="https://icp.gov.moe/?keyword=20240549" target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center px-2 md:px-4 hover:text-primary transition-colors">
+            <img src="https://tuchuang.guoke.co/hermeneutics/static/img/ico64.png" alt="" class="w-4 h-4 mr-2 inline-block" />
+        <span>萌ICP备20240549号</span>
+    </a></div></div>
+    </div>
+</footer><script src="/vendor/instantpage.min.c1abca35430b525f9334c62bc065ace80a98c6ca2b9f180fdb969934b71fd254.js" integrity="sha256-wavKNUMLUl&#43;TNMYrwGWs6AqYxsornxgP25aZNLcf0lQ=" crossorigin="anonymous"></script></body>
+
+</html>
