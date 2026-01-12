@@ -63,6 +63,9 @@
     try {
       if (document.querySelector('.article-video-modal__overlay')) return; // prevent double init
 
+      // don't create modal elements if there are no youtube cards on the page
+      if (!document.querySelector('.youtube-card, .youtube-lite, .play-btn')) return;
+
       const overlay = document.createElement('div');
       overlay.className = 'article-video-modal__overlay article-lightbox__overlay';
 
