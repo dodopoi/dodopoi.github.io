@@ -1,18 +1,31 @@
-User-agent: *
-Disallow: /index.xml
-# Feed support removed
-Disallow: /categories/
-Disallow: /categories/*
-Disallow: /tags/
-Disallow: /tags/*
-Disallow: /posts/
-Disallow: /series/
-Disallow: /series/*
-Disallow: /annoucement
-Disallow: /keys/*
-# Removed specific .well-known disallow; no WKD or related files are served
+# Allow Google
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /
+
+# Allow Baidu
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+# Allow Yandex
+User-agent: Yandex
+Allow: /
+
+# Allow DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
 
 Sitemap: /sitemap.xml
+
+# Disallow all other bots
+User-agent: *
+Disallow: /
 
 # Block Uptime robot
 User-agent: UptimeRobot/2.0
@@ -44,22 +57,6 @@ Disallow: /
 
 # Block pricepi
 User-agent: pimonster
-Disallow: /
-
-# Block some search engines
-User-agent: Baiduspider
-User-agent: Baiduspider-image
-User-agent: ChinasoSpider
-User-agent: EasouSpider
-User-agent: Sogou News Spider
-User-agent: Sogou Orion spider
-User-agent: Sogou blog
-User-agent: Sogou inst spider
-User-agent: Sogou spider2
-User-agent: Sogou web spider
-User-agent: Sosospider
-User-agent: YoudaoBot
-User-agent: yisouspider
 Disallow: /
 
 # Block other known malicious, spammy, or excessive AI/ML bots.
