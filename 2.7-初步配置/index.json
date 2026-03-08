@@ -25,7 +25,7 @@
     "summary": "",
     "date": "2026-01-12T20:00:00+08:00",
     "tags": [null],
-    "content": " 人美心善坎蒂丝 言別离 89 2 0 0 0 2025-12-12 ▶\rBuilding the PERFECT Linux PC with Linus Torvalds\rLinus Torvalds\r"
+    "content": " 人美心善坎蒂丝 言别离 91 2 0 0 0 2025-12-12 ▶\rBuilding the PERFECT Linux PC with Linus Torvalds\rLinus Torvalds\r"
   },{
     "title": "苹果历年发布会",
     "url": "/%E8%8B%B9%E6%9E%9C%E5%8E%86%E5%B9%B4%E5%8F%91%E5%B8%83%E4%BC%9A/",
@@ -54,6 +54,13 @@
     "date": "2025-12-07T08:00:27+08:00",
     "tags": ["魅族16sPro"],
     "content": "A（公开版）\n出厂系统\n版本：Flyme 7.3.4.2A 直链 联通云盘[提取码：bHhd]\nMD5：0817110a60d6d6b4207c3a515362b1dc\n文件大小：2242MB\n发布时间：2019-10-30\n开发者：Flyme\n更新记录\n功能调整 • 系统 优化系统稳定性 优化超级夜景成像效果 更新 Android 安全补丁，提升手机安全性\n问题改进 • 系统 解决偶现无法唤醒语音助手的问题 解决部分场景下系统界面无响应的问题 解决开启息屏显示亮屏闪烁的问题 解决使用过程中偶现手机无声的问题 解决偶现前置拍照偶现卡死的问题 解决偶现录像视频灰色显示的问题 解决指纹耗电异常的问题 解决偶现屏幕触控失灵的问题\n更新说明 • 通过手机推送更新是安全高效的升级方式，本次更新不会影响任何现有数据 • 更新大约耗时 10 分钟，请耐心等待，更新过程中切勿按压手机按键，避免更新失败 • 更新期间手机将自动重启，整机温度有小幅上升属正常现象，勿需担心 • 部分变更内容实际效果可能随机型、系统版本或网络运营商而有所差异，请见谅 • 「用户帮助」 App、魅族客服是 Flyme 官方指定反馈渠道，使用期间如有任何问题或建议请及时与我们联系\n"
+  },{
+    "title": "Steam对Windows10停止支持的时候才算",
+    "url": "/steam%E5%AF%B9windows10%E5%81%9C%E6%AD%A2%E6%94%AF%E6%8C%81%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E7%AE%97/",
+    "summary": "\u003cp\u003e为什么不升级Windows11？\u003c/p\u003e\n\u003cp\u003e右键菜单有延迟。另外，还是喜欢方方正正的页面。\u003c/p\u003e\n\u003cp\u003e\u003cfigure class=\"my-8\"\u003e\u003cimg src=\"https://tuchuang.guoke.co/guoke/steam%E5%AF%B9Windows10%E5%81%9C%E6%AD%A2%E6%94%AF%E6%8C%81%E7%9A%84%E6%97%B6%E5%80%99%E6%89%8D%E7%AE%97/Snipaste_2026-03-08_22-02-17.webp\" alt=\"\" \n            class=\"mx-auto rounded-lg block\" loading=\"lazy\"  /\u003e\n\u003c/figure\u003e\u003c/p\u003e",
+    "date": "2025-10-14T00:00:00+08:00",
+    "tags": [null],
+    "content": "为什么不升级Windows11？\n右键菜单有延迟。另外，还是喜欢方方正正的页面。\n"
   },{
     "title": "一个github账号下创建多个github pages页面的方法",
     "url": "/%E4%B8%80%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7%E4%B8%8B%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AAgithub-pages%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%96%B9%E6%B3%95/",
@@ -292,4 +299,11 @@
     "date": "2022-07-23T21:18:13+08:00",
     "tags": ["git"],
     "content": "Git是什么？ Git是目前世界上最先进的分布式版本控制系统（没有之一）。\n什么是版本控制系统？\n如果你用Microsoft Word写过长篇大论，那你一定有这样的经历：\n想删除一个段落，又怕将来想恢复找不回来怎么办？有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，改到一定程度，再“另存为……”一个新文件，这样一直改下去。\n过了一周，你想找回被删除的文字，但是已经记不清删除前保存在哪个文件里了，只好一个一个文件去找，真麻烦。\n看着一堆乱七八糟的文件，想保留最新的一个，然后把其他的删掉，又怕哪天会用上，还不敢删，真郁闷。\n更要命的是，有些部分需要你的财务同事帮助填写，于是你把文件copy到U盘里给她（也可能通过Email发送一份给她），然后，你继续修改Word文件。一天后，同事再把Word文件传给你，此时，你必须想想，发给她之后到你收到她的文件期间，你做了哪些改动，得把你的改动和她的部分合并，真困难。\n于是你想，如果有一个软件，不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。如果想查看某次改动，只需要在软件里瞄一眼就可以，岂不是很方便？\n这个软件用起来就应该像这个样子，能记录每次文件的改动：\n文件名 文件名 说明 说明 日期 1 service.doc 张三 删除了软件服务条款5 7/12 10:38 2 service.doc 张三 增加了License人数限制 7/12 18:09 3 service.doc 李四 财务部门调整了合同金额 7/13 9:51 4 service.doc 张三 延长了免费升级周期 7/14 15:17 这样，你就结束了手动管理多个“版本”的史前时代，进入到版本控制的20世纪。\n注：\nword为二进制文件，因此，版本控制系统是没法跟踪word文件的改动的。\n上述例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。\nGit安装 安装完成后，还需要最后一步设置，在命令行输入：\ngit config --global user.name \u0026quot;Your Name\u0026quot; git config --global user.email \u0026quot;email@example.com\u0026quot; 因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。\n注意git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。\n创建版本库 什么是版本库呢？版本库又名仓库（Repository），你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。\n所以，创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：\nmkdir learngit cd learngit pwd #显示当前目录 第二步，通过git init命令把这个目录变成Git可以管理的仓库：\n$ git init Initialized empty Git repository in C:/Users/kai/Desktop/learngit/.git/ 瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。\n如果你没有看到.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见。\n把文件添加到版本库 首先这里再明确一下，所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道。\n不幸的是，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的，前面我们举的例子只是为了演示，如果要真正使用版本控制系统，就要以纯文本方式编写文件。\n因为文本是有编码的，比如中文有常用的GBK编码，日文有Shift_JIS编码，如果没有历史遗留问题，强烈建议使用标准的UTF-8编码，所有语言使用同一种编码，既没有冲突，又被所有平台所支持。\n使用Windows的童鞋要特别注意：千万不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载Visual Studio Code代替记事本，不但功能强大，而且免费！\ngit is a version control system. git is a free software. 一定要放到learngit目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。\n和把大象放到冰箱需要3步相比，把一个文件放到Git仓库只需要两步。\n第一步，用命令git add告诉Git，把文件添加到仓库：\ngit add readme.txt 第二步，用命令git commit告诉Git，把文件提交到仓库：\ngit commit -m \u0026quot;wrote a readme file\u0026quot; $ git commit -m \u0026quot;wrote a readme file\u0026quot; [master (root-commit) e6b5d93] wrote a readme file 1 file changed, 2 insertions(+) create mode 100644 readme.txt 简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。\ngit commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）。\ndir #显示文件里的文件 为什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：\ngit add file1.txt git add file2.txt file3.txt git commit -m \u0026quot;add 3 files.\u0026quot; "
+  },{
+    "title": "魅族FLyme9安卓10安装谷歌三件套方法",
+    "url": "/%E9%AD%85%E6%97%8Fflyme9%E5%AE%89%E5%8D%9310%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E4%B8%89%E4%BB%B6%E5%A5%97%E6%96%B9%E6%B3%95/",
+    "summary": "\u003cp\u003eFlyme8安卓9系列直接按照顺序直接安装对应版本的Google Services Framework、Google Play Service和Google Play Store即可。升级到FLyme9或者安卓10版本的FLyme8后，完成上述操作以后，需要在设置、辅助功能里打开谷歌基础服务，不然手机重启后谷歌商店的图标会消失，谷歌服务也不会正常工作。\u003c/p\u003e",
+    "date": "2021-06-05T21:34:43+08:00",
+    "tags": ["魅族16sPro"],
+    "content": "Flyme8安卓9系列直接按照顺序直接安装对应版本的Google Services Framework、Google Play Service和Google Play Store即可。升级到FLyme9或者安卓10版本的FLyme8后，完成上述操作以后，需要在设置、辅助功能里打开谷歌基础服务，不然手机重启后谷歌商店的图标会消失，谷歌服务也不会正常工作。\n"
   }]
